@@ -37,6 +37,12 @@ export default function ViewMode({ children, header }: ViewProps) {
   const mode = useContext(ModeContext);
   const className = 'pokemon-grid ' + mode;
 
+  function localStore() {
+    typeof window !== 'undefined' && localStorage.getItem('view') !== undefined
+      ? localStorage.getItem('view')
+      : 'list-view';
+  }
+
   return (
     <main className='content-grid'>
       <div className='flex flex-row justify-between items-center'>
@@ -69,11 +75,7 @@ export default function ViewMode({ children, header }: ViewProps) {
       </div>
       <ModeContext.Provider
         // @ts-ignore
-        value={
-          localStorage.getItem('view') !== undefined
-            ? localStorage.getItem('view')
-            : 'list-view'
-        }>
+        value={localStore()}>
         <div className={className}>{children}</div>
       </ModeContext.Provider>
     </main>
