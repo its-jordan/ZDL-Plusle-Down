@@ -1,15 +1,10 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
+import { PiArrowLeftBold } from 'react-icons/pi';
+
 export default function Loading() {
   const placeholderPokemon = [
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
-    'Loading...',
     'Loading...',
     'Loading...',
     'Loading...',
@@ -29,10 +24,20 @@ export default function Loading() {
     { stat: '??', name: 'SPD' },
     { stat: '??', name: 'SPE' },
   ];
+  const router = useRouter();
   const placeholderTypes = ['?', '?'];
   return (
     <main className='content-grid'>
       <div className='flex flex-row justify-between items-center'>
+        <button
+          type='button'
+          className='back-selector'
+          onClick={() => router.back()}>
+          <div className='back-button'>
+            <PiArrowLeftBold />
+            <div>Teams</div>
+          </div>
+        </button>
         <h1 className='page-header'>Loading...</h1>
       </div>
       <div className='pokemon-grid grid-view'>

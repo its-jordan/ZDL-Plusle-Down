@@ -1,12 +1,15 @@
 'use client';
 
+import Link from 'next/link';
 import React, { createContext, useContext, useEffect } from 'react';
 import {
   PiGridFourLight,
   PiGridFourFill,
   PiListNumbersLight,
   PiListNumbersFill,
+  PiArrowLeftBold,
 } from 'react-icons/pi';
+import { useRouter } from 'next/navigation';
 
 interface ViewProps {
   children: React.ReactNode;
@@ -36,17 +39,24 @@ export default function ViewMode({ children, header }: ViewProps) {
   const ModeContext = createContext(view);
   const mode = useContext(ModeContext);
   const className = 'pokemon-grid ' + mode;
+  const router = useRouter();
 
   function localStore() {
-    typeof window !== 'undefined' && localStorage.getItem('view') !== undefined
+    typeof window !== 'undefined' && localStorage.view !== undefined
       ? localStorage.getItem('view')
       : 'list-view';
   }
 
   return (
     <main className='content-grid'>
-      <div className='flex flex-row justify-between items-center'>
-        <h1 className='page-header'>{header}</h1>
+      <div className='header-container flex flex-row justify-between items-center gap-4'>
+        <Link className='back-selector' href={'/teams'}>
+          <div className='back-button'>
+            <PiArrowLeftBold />
+            <div>Teams</div>
+          </div>
+        </Link>
+        <h1 className='page-header flex-grow'>{header}</h1>
         {view === 'list-view' ? (
           <button
             // @ts-ignore

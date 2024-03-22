@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import {
   RiHome2Line,
   RiHome2Fill,
-  RiArrowLeftLine,
+  RiArrowRightLine,
   RiArrowDownLine,
   RiTimerFlashLine,
   RiTimerFlashFill,
@@ -25,14 +25,14 @@ import {
 import { FaRegUser, FaUser } from 'react-icons/fa';
 import { BiSpreadsheet, BiSolidSpreadsheet } from 'react-icons/bi';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React, { useEffect, createContext, useContext } from 'react';
 
 function usePosition() {
   const [position, setPosition] = React.useState(
-    typeof window !== 'undefined' ? localStorage.position : 'bottom'
+    typeof window !== 'undefined' ? localStorage.position : 'visible'
   );
 
-  const navPosition = position === 'bottom' ? 'bottom' : 'left';
+  const navPosition = position === 'visible' ? 'visible' : 'hidden';
 
   useEffect(() => {
     const body = window.document.body;
@@ -45,24 +45,81 @@ function usePosition() {
   return [navPosition, setPosition];
 }
 
+interface ViewProps {
+  children: React.ReactNode;
+}
+
+export function ViewMode({ children }: ViewProps) {
+  const [position, setPosition] = usePosition();
+  const PositionContext = createContext(position);
+  const mode = useContext(PositionContext);
+  const className = 'navigation_container ' + mode;
+
+  function localStore() {
+    typeof window !== 'undefined' && localStorage.position !== undefined
+      ? localStorage.getItem('position')
+      : 'visible';
+  }
+
+  function handlePosition() {
+    if (position === 'visible') {
+      return (
+        <button
+          // @ts-ignore
+          onClick={() => setPosition('hidden')}
+          className='nav-position-selector item-5'
+          data-current-position={position}
+          aria-label={`Hides Navigation`}>
+          <div
+            className='hover-only navigation_title'
+            aria-hidden='true'
+            aria-label='Move navigation to the left'>
+            Hide Navigation
+          </div>
+          <RiArrowDownLine className='navigation_icon_button' />
+        </button>
+      );
+    } else if (position === 'hidden') {
+      return (
+        <button
+          className='nav-position-selector item-5'
+          data-current-position={position}
+          aria-label={`Shows Navigation`}
+          // @ts-ignore
+          onClick={() => setPosition('visible')}>
+          <div
+            className='hover-only navigation_title'
+            aria-hidden='true'
+            aria-label='Move navigation to the bottom'>
+            Show Navigation
+          </div>
+          <RiArrowRightLine className='navigation_icon_button' />
+        </button>
+      );
+    }
+  }
+
+  return (
+    <PositionContext.Provider
+      // @ts-ignore
+      value={localStore()}>
+      <div className={className}>
+        <nav
+          className='navigation'
+          aria-hidden={position == 'hidden' ? true : false}>
+          {children}
+          {handlePosition()}
+        </nav>
+      </div>
+    </PositionContext.Provider>
+  );
+}
+
 export default function Navbar() {
   const pathname = usePathname();
-  const [position, setPosition] = usePosition();
 
   const NavLinks = [
     { path: '/', title: 'Home', icon: RiHome2Line, iconActive: RiHome2Fill },
-    {
-      path: '/draft',
-      title: 'Draft',
-      icon: RiTimerFlashLine,
-      iconActive: RiTimerFlashFill,
-    },
-    {
-      path: '/pokemon',
-      title: 'Pokemon',
-      icon: CgPokemon,
-      iconActive: MdCatchingPokemon,
-    },
     {
       path: '/teams',
       title: 'Teams',
@@ -87,54 +144,16 @@ export default function Navbar() {
       icon: HiOutlineVideoCamera,
       iconActive: HiVideoCamera,
     },
-    {
-      path: '/user',
-      title: 'User',
-      icon: FaRegUser,
-      iconActive: FaUser,
-    },
   ];
 
-  function handlePosition() {
-    if (position === 'bottom') {
-      return (
-        <button
-          // @ts-ignore
-          onClick={() => setPosition('left')}
-          className='nav-position-selector item-8'
-          data-current-position={position}
-          aria-label={`Move ${position} navigation to the left of the screen`}>
-          <div
-            className='hover-only navigation_title'
-            aria-hidden='true'
-            aria-label='Move navigation to the left'>
-            Move Nav to Left
-          </div>
-          <RiArrowLeftLine className='navigation_icon_button' />
-        </button>
-      );
-    } else if (position === 'left') {
-      return (
-        <button
-          className='nav-position-selector item-8'
-          data-current-position={position}
-          aria-label={`Move ${position} navigation to the bottom of the screen`}
-          // @ts-ignore
-          onClick={() => setPosition('bottom')}>
-          <div
-            className='hover-only navigation_title'
-            aria-hidden='true'
-            aria-label='Move navigation to the bottom'>
-            Move Nav to Bottom
-          </div>
-          <RiArrowDownLine className='navigation_icon_button' />
-        </button>
-      );
-    }
-  }
-
   function targetType(e: string) {
-    if (e === 'Home' || e === 'Draft' || e === 'Teams' || e === 'Pokemon') {
+    if (
+      e === 'Home' ||
+      e === 'Draft' ||
+      e === 'Teams' ||
+      e === 'Pokemon' ||
+      e === 'Scores'
+    ) {
       return '';
     } else {
       return '_blank';
@@ -142,69 +161,27 @@ export default function Navbar() {
   }
 
   return (
-    <>
-      {position === 'bottom' ? (
-        <div className='navigation_container bottom'>
-          <nav className='navigation'>
-            {NavLinks.map((link, index) => {
-              return (
-                <Link
-                  key={index}
-                  className={`navigation_link item-${index} ${
-                    pathname == link.path ? 'active' : ''
-                  }`}
-                  aria-label={link.title}
-                  data-link={link.title}
-                  href={`${link.path}`}
-                  target={targetType(link.title)}>
-                  <div className='hover-only navigation_title'>
-                    {link.title}
-                  </div>
-                  {pathname == link.path ? (
-                    <link.iconActive
-                      className='navigation_icon'
-                      aria-hidden='true'
-                    />
-                  ) : (
-                    <link.icon className='navigation_icon' aria-hidden='true' />
-                  )}
-                </Link>
-              );
-            })}
-            {handlePosition()}
-          </nav>
-        </div>
-      ) : (
-        <div className='navigation_container left'>
-          <nav className='navigation'>
-            {NavLinks.map((link, index) => {
-              return (
-                <Link
-                  key={index}
-                  className={`navigation_link item-${index} ${
-                    pathname == link.path ? 'active' : ''
-                  }`}
-                  data-link={link.title}
-                  href={`${link.path}`}
-                  target={targetType(link.title)}>
-                  <div
-                    className='hover-only navigation_title'
-                    aria-hidden='true'
-                    title={link.title}>
-                    {link.title}
-                  </div>
-                  {pathname == link.path ? (
-                    <link.iconActive className='navigation_icon' />
-                  ) : (
-                    <link.icon className='navigation_icon' />
-                  )}
-                </Link>
-              );
-            })}
-            {handlePosition()}
-          </nav>
-        </div>
-      )}
-    </>
+    <ViewMode>
+      {NavLinks.map((link, index) => {
+        return (
+          <Link
+            key={index}
+            className={`navigation_link item-${index} ${
+              pathname == link.path ? 'active' : ''
+            }`}
+            aria-label={link.title}
+            data-link={link.title}
+            href={`${link.path}`}
+            target={targetType(link.title)}>
+            <div className='hover-only navigation_title'>{link.title}</div>
+            {pathname == link.path ? (
+              <link.iconActive className='navigation_icon' aria-hidden='true' />
+            ) : (
+              <link.icon className='navigation_icon' aria-hidden='true' />
+            )}
+          </Link>
+        );
+      })}
+    </ViewMode>
   );
 }

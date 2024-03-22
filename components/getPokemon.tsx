@@ -1,11 +1,13 @@
 import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
+import { getTypeWeaknesses } from '../data/pokemon-types/index';
+import Image from 'next/image';
 
 interface Pokemon extends Partial<CSSStyleDeclaration> {
   pokemon: string;
 }
 
-function nameSplit(e: string) {
+export function nameSplit(e: string) {
   if (e.includes('galar') == true) {
     return `${
       e.split('-')[1].charAt(0).toUpperCase() +
@@ -59,7 +61,7 @@ function nameSplit(e: string) {
   }
 }
 
-function replaceStatNames(e: string) {
+export function replaceStatNames(e: string) {
   return e
     .replace('-', ' ')
     .replace('pecial attack', 'pa')
@@ -70,13 +72,26 @@ function replaceStatNames(e: string) {
     .toUpperCase();
 }
 
-export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
-  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
+export async function callPokemon({ pokemon }: Pokemon) {
+  const res = await fetch(
+    `https://pokeapi.co/api/v2/pokemon/${pokemon
+      .replace('silvally-bug', 'silvally')
+      .replace('silvally-flying', 'silvally')}`
+  );
   const pokData = await res.json();
   const res2 = await fetch(
     `https://pokeapi.co/api/v2/pokemon-species/${pokemon?.split('-')[0]}`
   );
   const data2 = await res2.json();
+  const pokWeakness = getTypeWeaknesses(
+    pokData.types[0].type.name,
+    pokData.types[1]?.type.name
+  );
+  const pokArray = Object.entries(pokWeakness)
+    .map((a) => a.join(': '))
+    .filter((a) => !a.includes('1'))
+    .map((i) => i + 'x')
+    .sort();
   const pokemonInfo = [
     {
       name: pokData.name,
@@ -84,6 +99,7 @@ export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
       types: [pokData.types[0].type.name, pokData.types[1]?.type?.name],
       sprite: pokData.sprites.other['official-artwork'].front_default,
       color: data2.color.name,
+      weakness: pokArray,
       stats: [
         {
           stat: pokData.stats[0].base_stat,
@@ -112,9 +128,90 @@ export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
       ],
     },
   ];
+  return pokemonInfo;
+}
+
+const types = [
+  'normal',
+  'fire',
+  'water',
+  'electric',
+  'grass',
+  'ice',
+  'fighting',
+  'poison',
+  'ground',
+  'flying',
+  'psychic',
+  'bug',
+  'rock',
+  'ghost',
+  'dragon',
+  'dark',
+  'steel',
+  'fairy',
+];
+
+export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
   return (
     <>
-      {pokemonInfo.map((data, index) => {
+      {(await callPokemon({ pokemon })).map((data, index) => {
+        return (
+          <div className='type-matchup-data' key={index}>
+            <div
+              className='type-matchup-pokemon'
+              data-type={`${data.types[0]}`}>
+              <img
+                loading='lazy'
+                className='pokemon-img'
+                src={data.sprite}
+                alt={`Sprite for ${data.name}.`}
+                data-type={data.types[1] ? data.types[1] : data.types[0]}
+              />
+              <div className=''>{nameSplit(data.name)}</div>
+            </div>
+            {types.map((type, index) => {
+              return (
+                <div key={index} className={`type-heading ${type}`}>
+                  {data.weakness.includes(`${type}: .25x`) ? (
+                    <div
+                      className={`multiplier quarter`}
+                      data-multiplier={'.25x'}>
+                      {'1/4'}
+                    </div>
+                  ) : data.weakness.includes(`${type}: 0.5x`) ? (
+                    <div className={`multiplier half`} data-multiplier={'.5x'}>
+                      {'1/2'}
+                    </div>
+                  ) : data.weakness.includes(`${type}: 2x`) ? (
+                    <div className={`multiplier double`} data-multiplier={'2x'}>
+                      {'2x'}
+                    </div>
+                  ) : data.weakness.includes(`${type}: 4x`) ? (
+                    <div
+                      className={`multiplier quadruple`}
+                      data-multiplier={'4x'}>
+                      {'4x'}
+                    </div>
+                  ) : (
+                    <div className={`multiplier normal`} data-multiplier={'1x'}>
+                      {''}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </>
+  );
+}
+
+export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
+  return (
+    <>
+      {(await callPokemon({ pokemon })).map((data, index) => {
         return (
           <Link
             href={`https://www.smogon.com/dex/sv/pokemon/${data.name}`}
@@ -132,6 +229,7 @@ export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
                   }
             }>
             <div className='pokemon-number'>#{data.id}</div>
+
             <div className='pokemon-name'>{nameSplit(data.name)}</div>
             <div className='pokemon-types'>
               {data.types.map((type, index) => {
@@ -163,6 +261,37 @@ export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
                   <div className='pokemon-stat' key={index}>
                     <div className='pokemon-stat-value'>{stat.stat}</div>
                     <div className='pokemon-stat-name'>{stat.name}</div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className='damage-relation-types-alt'>
+              {data.weakness?.map((value, index) => {
+                return (
+                  <div
+                    key={index}
+                    data-type={value.split(':')[0]}
+                    data-multiplier={value
+                      .split(':')[1]
+                      .replace(' ', '')
+                      .replace('x', '')}
+                    className='relations-type-alt'>
+                    <div>
+                      <Image
+                        className={`relations-type-icon-alt`}
+                        src={`../icons/${value.split(':')[0]}.svg`}
+                        alt={`${value.split(':')[0]}-type icon`}
+                        height={30}
+                        width={30}></Image>
+                    </div>
+                    <div
+                      className={`relation-type-name-hover ${
+                        value.split(':')[0]
+                      }`}
+                      aria-hidden='true'>
+                      {value.split(':')[0].charAt(0).toUpperCase() +
+                        value.split(':')[0].slice(1)}
+                    </div>
                   </div>
                 );
               })}

@@ -6,12 +6,12 @@ import Navbar from '@/components/ui/nav';
 import GetCurrentTime, { GetCurrentDate } from '@/utils/getdate';
 
 export const metadata: Metadata = {
-  title: 'Freddy Woodz Invitational - Little Cup',
-  description: 'Draft app for FWI - Little Cup League',
+  title: 'ZDL - Plusle Down',
+  description: 'Plusle Down! Minun Up!',
 };
 
 const backgroundColor = {
-  backgroundColor: 'rgb(12, 12, 12',
+  backgroundColor: 'rgb(12, 12, 12)',
 };
 
 export default function RootLayout({
@@ -22,14 +22,14 @@ export default function RootLayout({
   return (
     <html lang='en' style={backgroundColor}>
       <body className={`dark ${GeistSans.className}`}>
-        <div className='date-time-container'>
+        {/* <div className='date-time-container'>
           <div className={`date ${GeistMono.className}`}>
             <GetCurrentDate />
           </div>
           <div className={`time ${GeistMono.className}`}>
             <GetCurrentTime />
           </div>
-        </div>
+        </div> */}
         <Navbar />
         {children}
       </body>
