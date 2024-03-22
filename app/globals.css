@@ -1181,6 +1181,7 @@ body.light {
   border: 1px solid var(--background-hovers);
   border-radius: 2rem;
   overflow: hidden;
+  grid-column: 1/-1;
 }
 
 .type-matchup-header {
@@ -1273,6 +1274,21 @@ body.light {
   padding: 0.5rem;
 }
 
+.pokemon-grid.grid-view .pokemon-img.matchup-data {
+  display: flex;
+  border-radius: 9999px;
+  background-color: color-mix(
+    in srgb,
+    var(--_type-color) 10%,
+    rgba(12, 12, 12, 0.25)
+  );
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  order: 1;
+  animation: fadeIn 750ms ease-in;
+}
+
 .type-matchup-spacer {
   display: flex;
   flex-flow: row nowrap;
@@ -1282,6 +1298,11 @@ body.light {
   background-color: var(--background-secondary);
 }
 
-* {
-  box-sizing: border-box;
+.type-chart-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  grid-column: 1/-1;
 }

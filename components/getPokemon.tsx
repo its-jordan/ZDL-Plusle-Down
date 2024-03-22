@@ -163,7 +163,7 @@ export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
               data-type={`${data.types[0]}`}>
               <img
                 loading='lazy'
-                className='pokemon-img'
+                className='pokemon-img matchup-data'
                 src={data.sprite}
                 alt={`Sprite for ${data.name}.`}
                 data-type={data.types[1] ? data.types[1] : data.types[0]}

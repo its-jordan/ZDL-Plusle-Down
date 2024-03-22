@@ -114,7 +114,7 @@ export default function Teams() {
           />
         );
       })}
-      <div className='flex flex-row justify-start items-start w-full'>
+      <div className='type-chart-header'>
         <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
       </div>
       <div className='type-relations-list-view'>
