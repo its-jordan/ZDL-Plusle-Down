@@ -5,6 +5,8 @@ import Image from 'next/image';
 
 interface Pokemon extends Partial<CSSStyleDeclaration> {
   pokemon: string;
+  direction?: 'ascending' | 'descending';
+  sortStat?: 'HP' | 'ATK' | 'SPATK' | 'DEF' | 'SPDEF' | 'SPEED';
 }
 
 export function nameSplit(e: string) {
@@ -212,26 +214,56 @@ export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
   );
 }
 
-export default async function ReturnPokemon({ pokemon, animation }: Pokemon) {
+export default async function ReturnPokemon({
+  pokemon,
+  animation,
+  direction,
+  sortStat,
+}: Pokemon) {
+  function setStyle(data: any) {
+    if (sortStat == 'HP') {
+      return animation != undefined && direction == 'ascending'
+        ? { order: `${data.stats[0].stat}`, animation: animation }
+        : { order: `-${data.stats[0].stat}`, animation: animation };
+    } else if (sortStat == 'ATK') {
+      return animation != undefined && direction == 'ascending'
+        ? { order: `${data.stats[1].stat}`, animation: animation }
+        : { order: `-${data.stats[1].stat}`, animation: animation };
+    } else if (sortStat == 'SPATK') {
+      return animation != undefined && direction == 'ascending'
+        ? { order: `${data.stats[2].stat}`, animation: animation }
+        : { order: `-${data.stats[2].stat}`, animation: animation };
+    } else if (sortStat == 'DEF') {
+      return animation != undefined && direction == 'ascending'
+        ? { order: `${data.stats[3].stat}`, animation: animation }
+        : { order: `-${data.stats[3].stat}`, animation: animation };
+    } else if (sortStat == 'SPDEF') {
+      return animation != undefined && direction == 'ascending'
+        ? { order: `${data.stats[4].stat}`, animation: animation }
+        : { order: `-${data.stats[4].stat}`, animation: animation };
+    } else if (sortStat == 'SPEED') {
+      return animation != undefined && direction == 'ascending'
+        ? { order: `${data.stats[5].stat}`, animation: animation }
+        : { order: `-${data.stats[5].stat}`, animation: animation };
+    } else {
+      return animation != undefined && direction == 'ascending'
+        ? { animation: animation }
+        : { animation: animation };
+    }
+  }
+
   return (
     <>
       {(await callPokemon({ pokemon })).map((data, index) => {
         return (
           <Link
             href={`https://www.smogon.com/dex/sv/pokemon/${data.name}`}
+            data-speed={`${data.stats[5].stat}`}
             key={index}
             className='pokemon-card'
             target='_blank'
             data-type={`${data.types[0]}`}
-            style={
-              animation != undefined
-                ? {
-                    animation: animation,
-                  }
-                : {
-                    animation: 'none',
-                  }
-            }>
+            style={setStyle(data)}>
             <div className='pokemon-number'>#{data.id}</div>
 
             <div className='pokemon-name'>{nameSplit(data.name)}</div>

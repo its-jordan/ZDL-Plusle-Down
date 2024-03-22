@@ -111,6 +111,8 @@ export default function Teams() {
             pokemon={pokemon}
             key={index}
             animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+            direction='descending'
+            sortStat={'SPEED'}
           />
         );
       })}

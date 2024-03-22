@@ -53,29 +53,29 @@
   ],
   "week-3": [
     {
-      "player1": "ifurgat",
-      "player2": "dtbaggins",
+      "player1": "resolamxxy",
+      "player2": "castleflutes",
       "score": "0-0"
     },
+    {
+      "player1": "revelreloaded",
+      "player2": "its_jordan",
+      "score": "0-0"
+    },
+    {
+      "player1": "thanabros",
+      "player2": "seanboyq",
+      "score": "0-0"
+    },
+    {
+      "player1": "tokotoro",
+      "player2": "c0c0_",
+      "score": "0-0"
+    },
+    { "player1": "dtbaggins", "player2": "danknett", "score": "0-0" },
     {
       "player1": "beachwatch",
-      "player2": "thanabros",
-      "score": "0-0"
-    },
-    {
-      "player1": "danknett",
-      "player2": "tokotoro",
-      "score": "0-0"
-    },
-    {
-      "player1": "c0c0_",
-      "player2": "resolamxxy",
-      "score": "0-0"
-    },
-    { "player1": "castleflutes", "player2": "revelreloaded", "score": "0-0" },
-    {
-      "player1": "its_jordan",
-      "player2": "seanboyq",
+      "player2": "ifurgat",
       "score": "0-0"
     }
   ],

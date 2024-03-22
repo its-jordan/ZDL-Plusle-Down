@@ -1306,3 +1306,11 @@ body.light {
   width: 100%;
   grid-column: 1/-1;
 }
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}

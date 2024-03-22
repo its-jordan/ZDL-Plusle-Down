@@ -1,4 +1,5 @@
 import replaceUsername from '@/functions/replaceUsername';
+import Link from 'next/link';
 import React from 'react';
 
 interface ViewProps {
@@ -55,7 +56,8 @@ function replaceTeamName(e: string) {
 
 export function MatchTemplate({ match, index }: ViewProps) {
   return (
-    <div
+    <Link
+      href={`/scores/${match?.player1}-${match?.player2}`}
       key={index}
       className='match-container'
       data-score1={match?.score.charAt(0)}
@@ -84,6 +86,6 @@ export function MatchTemplate({ match, index }: ViewProps) {
           {match !== undefined ? replaceUsername(match.player2) : <></>}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
