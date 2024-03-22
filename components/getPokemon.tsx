@@ -193,6 +193,10 @@ export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
                       data-multiplier={'4x'}>
                       {'4x'}
                     </div>
+                  ) : data.weakness.includes(`${type}: 0x`) ? (
+                    <div className={`multiplier immune`} data-multiplier={'0'}>
+                      {'0'}
+                    </div>
                   ) : (
                     <div className={`multiplier normal`} data-multiplier={'1x'}>
                       {''}

@@ -136,7 +136,7 @@ export default function Teams() {
         </div>
         <div className='type-matchup-data-container'>
           {returnPathTextArray().map((pokemon: any, index: number) => {
-            return <ReturnTypeMatchup pokemon={pokemon} />;
+            return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
           })}
         </div>
       </div>
