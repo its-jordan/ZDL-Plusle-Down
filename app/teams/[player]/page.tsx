@@ -124,7 +124,7 @@ export default function Teams() {
           <div className='type-matchup-spacer'>Pokemon</div>
           {types.map((type, index) => {
             return (
-              <div key={index}>
+              <div className='type-icon-container type-matchup' key={index}>
                 <img
                   src={`/icons/${type}.svg`}
                   height={30}
@@ -132,6 +132,9 @@ export default function Teams() {
                   data-type={type}
                   className='pokemon-type-icon list-view'
                 />
+                <div className='hover-only type_title' data-type={type}>
+                  {type.charAt(0).toUpperCase() + type.slice(1)}
+                </div>
               </div>
             );
           })}
