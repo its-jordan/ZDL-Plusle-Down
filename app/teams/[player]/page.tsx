@@ -9,7 +9,7 @@ import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
 import { MdArrowDropDown } from 'react-icons/md';
 
-export function useStats() {
+function useStats() {
   const [stat, setStat] = React.useState<string>(
     typeof window !== 'undefined' && window.localStorage
       ? localStorage.stat
