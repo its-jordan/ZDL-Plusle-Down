@@ -16,13 +16,15 @@ function useStats() {
       : 'HP'
   );
 
+  const pokemonStat = stat === 'HP' ? 'HP' : localStorage.stat;
+
   useEffect(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
       localStorage.setItem('stat', stat);
     }
   }, [stat]);
 
-  return [stat, setStat];
+  return [pokemonStat, setStat];
 }
 
 export default function Teams() {
