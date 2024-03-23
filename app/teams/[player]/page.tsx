@@ -9,7 +9,7 @@ import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
 import { MdArrowDropDown } from 'react-icons/md';
 
-export function sortStats() {
+export function useStats() {
   const [stat, setStat] = React.useState<string>(
     typeof window !== 'undefined' && window.localStorage
       ? localStorage.stat
@@ -26,7 +26,7 @@ export function sortStats() {
 }
 
 export default function Teams() {
-  const [stat, setStat] = sortStats();
+  const [stat, setStat] = useStats();
   const StatContext = createContext(stat);
   const stats = useContext(StatContext);
   const pathname = usePathname().replace('/teams/', '');
