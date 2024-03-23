@@ -3,6 +3,7 @@ import { BsDiscord } from 'react-icons/bs';
 import { MdOutlineCatchingPokemon } from 'react-icons/md';
 import Link from 'next/link';
 import replaceUsername from '../../functions/replaceUsername';
+import { Header } from '@/components/viewButton';
 
 const teamsArray = [
   {
@@ -46,9 +47,9 @@ const teamsArray = [
 export default function Teams() {
   return (
     <main className='content-grid'>
-      <div className='flex flex-row justify-between items-center'>
+      <Header>
         <h1 className='page-header'>All Teams</h1>
-      </div>
+      </Header>
       <div className='team-name-container'>
         {teamsArray.map((team, index) => {
           return (

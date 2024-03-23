@@ -2,32 +2,33 @@
 
 import { usePathname } from 'next/navigation';
 
-import React, { useEffect } from 'react';
-import { GoKebabHorizontal } from 'react-icons/go';
-import { BsList, BsGridFill } from 'react-icons/bs';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import ReturnPokemon, { ReturnTypeMatchup } from '@/components/getPokemon';
-import ViewButton, { useView } from '@/components/viewButton';
 import ViewMode from '@/components/viewButton';
 import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
-import Link from 'next/link';
+import { MdArrowDropDown } from 'react-icons/md';
 
-const teamsArray = [
-  'danknett',
-  'seanboyq',
-  'resolamxxy',
-  'beachwatch',
-  'revelreloaded',
-  'dtbaggins',
-  'c0c0_',
-  'ifurgat',
-  'tokotoro',
-  'castleflutes',
-  'thanabros',
-  'its_jordan',
-];
+export function sortStats() {
+  const [stat, setStat] = React.useState<string>(
+    typeof window !== 'undefined' && window.localStorage
+      ? localStorage.stat
+      : 'HP'
+  );
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem('stat', stat);
+    }
+  }, [stat]);
+
+  return [stat, setStat];
+}
 
 export default function Teams() {
+  const [stat, setStat] = sortStats();
+  const StatContext = createContext(stat);
+  const stats = useContext(StatContext);
   const pathname = usePathname().replace('/teams/', '');
   function returnPathTextArray() {
     if (pathname == 'danknett') {
@@ -72,6 +73,12 @@ export default function Teams() {
     }
   }
 
+  function localStore() {
+    typeof window !== 'undefined' && localStorage.stat !== undefined
+      ? localStorage.getItem('stat')
+      : 'HP';
+  }
+
   function pathnameApos() {
     if (
       pathname == 'dtbaggins' ||
@@ -103,19 +110,55 @@ export default function Teams() {
     'fairy',
   ];
 
+  const statsArray = ['HP', 'ATK', 'SPATK', 'DEF', 'SPDEF', 'SPEED'];
+
   return (
     <ViewMode header={`${replaceUsername(pathname)}${pathnameApos()} Team`}>
-      {returnPathTextArray().map((pokemon: any, index: number) => {
-        return (
-          <ReturnPokemon
-            pokemon={pokemon}
-            key={index}
-            animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
-            direction='descending'
-            sortStat={'SPEED'}
-          />
-        );
-      })}
+      <div className='stat-topbar'>
+        <div className='stat-sort-container'>
+          <div className='stat-sort-header'>
+            <div className='sort'>Sort by</div>{' '}
+            <div className='sort-stat'>
+              {stat !== null ? stat.toString() : <></>}
+            </div>
+            <MdArrowDropDown />
+          </div>
+          <div className='stat-filter-container'>
+            {statsArray.map((stat, index) => {
+              return (
+                <button
+                  className='stat-filter-button'
+                  key={index}
+                  data-stat={stat}
+                  // @ts-ignore
+                  onClick={() => setStat(stat)}>
+                  {stat}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <StatContext.Provider
+        // @ts-ignore
+        value={localStore()}>
+        {returnPathTextArray().map((pokemon: any, index: number) => {
+          return (
+            <ReturnPokemon
+              pokemon={pokemon}
+              key={index}
+              animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+              direction='descending'
+              // @ts-ignore
+              sortStat={
+                localStorage.stat !== null && localStorage.stat !== undefined
+                  ? stat
+                  : 'HP'
+              }
+            />
+          );
+        })}
+      </StatContext.Provider>
       <div className='type-chart-header'>
         <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
       </div>

@@ -13,7 +13,11 @@ import { useRouter } from 'next/navigation';
 
 interface ViewProps {
   children: React.ReactNode;
-  header: string;
+  header?: string;
+}
+
+export function Header({ children }: ViewProps) {
+  return <div className='header-container'>{children}</div>;
 }
 
 export function useView() {
@@ -49,7 +53,7 @@ export default function ViewMode({ children, header }: ViewProps) {
 
   return (
     <main className='content-grid'>
-      <div className='header-container flex flex-row justify-between items-center gap-4'>
+      <Header>
         <Link className='back-selector' href={'/teams'}>
           <div className='back-button'>
             <PiArrowLeftBold />
@@ -82,7 +86,7 @@ export default function ViewMode({ children, header }: ViewProps) {
             </div>
           </button>
         )}
-      </div>
+      </Header>
       <ModeContext.Provider
         // @ts-ignore
         value={localStore()}>

@@ -1,6 +1,7 @@
 import replaceUsername from '@/functions/replaceUsername';
 import Link from 'next/link';
 import React from 'react';
+import { Header } from './viewButton';
 
 interface ViewProps {
   children?: React.ReactNode;
@@ -17,9 +18,9 @@ export default function CommonPage({
 }: ViewProps) {
   return (
     <main className='content-grid'>
-      <div className='flex flex-row justify-between items-center'>
+      <Header>
         <h1 className='page-header'>{header}</h1>
-      </div>
+      </Header>
       <div className={customClass}>{children}</div>
     </main>
   );

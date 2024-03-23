@@ -22,7 +22,6 @@ import {
   HiOutlineVideoCamera,
   HiVideoCamera,
 } from 'react-icons/hi';
-import { FaRegUser, FaUser } from 'react-icons/fa';
 import { BiSpreadsheet, BiSolidSpreadsheet } from 'react-icons/bi';
 import Link from 'next/link';
 import React, { useEffect, createContext, useContext } from 'react';

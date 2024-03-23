@@ -229,11 +229,11 @@ export default async function ReturnPokemon({
       return animation != undefined && direction == 'ascending'
         ? { order: `${data.stats[1].stat}`, animation: animation }
         : { order: `-${data.stats[1].stat}`, animation: animation };
-    } else if (sortStat == 'SPATK') {
+    } else if (sortStat == 'DEF') {
       return animation != undefined && direction == 'ascending'
         ? { order: `${data.stats[2].stat}`, animation: animation }
         : { order: `-${data.stats[2].stat}`, animation: animation };
-    } else if (sortStat == 'DEF') {
+    } else if (sortStat == 'SPATK') {
       return animation != undefined && direction == 'ascending'
         ? { order: `${data.stats[3].stat}`, animation: animation }
         : { order: `-${data.stats[3].stat}`, animation: animation };
@@ -301,42 +301,6 @@ export default async function ReturnPokemon({
                 );
               })}
             </div>
-            <div className='damage-relation-types-alt'>
-              {data.weakness?.map((value, index) => {
-                return (
-                  <div
-                    key={index}
-                    data-type={value.split(':')[0]}
-                    data-multiplier={value
-                      .split(':')[1]
-                      .replace(' ', '')
-                      .replace('x', '')}
-                    className='relations-type-alt'>
-                    <div>
-                      <Image
-                        className={`relations-type-icon-alt`}
-                        src={`../icons/${value.split(':')[0]}.svg`}
-                        alt={`${value.split(':')[0]}-type icon`}
-                        height={30}
-                        width={30}></Image>
-                    </div>
-                    <div
-                      className={`relation-type-name-hover ${
-                        value.split(':')[0]
-                      }`}
-                      aria-hidden='true'>
-                      {value.split(':')[0].charAt(0).toUpperCase() +
-                        value.split(':')[0].slice(1)}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-            {/* <div className='pokemon-moves-container'>
-              {pokData.moves.map((move: any, index: number) => {
-                return <div key={index}>{move.move.name}</div>;
-              })}
-            </div> */}
             <div className='show-more'>
               <GoKebabHorizontal />
             </div>
