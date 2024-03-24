@@ -1471,3 +1471,8 @@ body.light {
   margin-top: -0.5rem;
   margin-bottom: calc(-6rem + 8px);
 }
+
+.type-chart-header.player-name {
+  margin-top: -1.75rem;
+  border-top: none !important;
+}

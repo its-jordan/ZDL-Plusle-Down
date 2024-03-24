@@ -155,7 +155,12 @@ export default function Teams() {
   return (
     <>
       <ViewMode
-        header={`${replaceUsername(player1)} vs. ${replaceUsername(player1)}`}>
+        header={`${replaceUsername(player1)} vs. ${replaceUsername(player2)}`}>
+        <div className='type-chart-header player-name'>
+          <h2 className='page-header w-full justify-start flex'>
+            {replaceUsername(player1)}
+          </h2>
+        </div>
         {returnPathTextArrayP1().map((pokemon: any, index: number) => {
           return (
             <ReturnPokemon
@@ -166,9 +171,30 @@ export default function Teams() {
           );
         })}
         <div className='type-chart-header'>
-          <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
+          <h2 className='page-header w-full justify-start flex'>
+            {replaceUsername(player2)}
+          </h2>
         </div>
+
+        {returnPathTextArrayP2().map((pokemon: any, index: number) => {
+          return (
+            <ReturnPokemon
+              pokemon={pokemon}
+              key={index}
+              animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+            />
+          );
+        })}
+        <div className='type-chart-header'>
+          <h2 className='page-header w-full justify-start flex'>Type Charts</h2>
+        </div>
+
         <div className='type-relations-list-view'>
+          <div className='type-chart-header'>
+            <h2 className='page-header w-full justify-start flex'>
+              {replaceUsername(player1)}
+            </h2>
+          </div>
           <div className='type-matchup-header'>
             <div className='type-matchup-spacer'>Pokemon</div>
             {types.map((type, index) => {
@@ -191,44 +217,35 @@ export default function Teams() {
             })}
           </div>
         </div>
-      </ViewMode>
-      <ViewMode header={`${replaceUsername(player2)}${pathnameApos()} Team`}>
-        {returnPathTextArrayP2().map((pokemon: any, index: number) => {
-          return (
-            <ReturnPokemon
-              pokemon={pokemon}
-              key={index}
-              animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
-            />
-          );
-        })}
-      </ViewMode>
-      <div className='type-chart-header'>
-        <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
-      </div>
-      <div className='type-relations-list-view'>
-        <div className='type-matchup-header'>
-          <div className='type-matchup-spacer'>Pokemon</div>
-          {types.map((type, index) => {
-            return (
-              <div key={index}>
-                <img
-                  src={`/icons/${type}.svg`}
-                  height={30}
-                  width={30}
-                  data-type={type}
-                  className='pokemon-type-icon list-view'
-                />
-              </div>
-            );
-          })}
+        <div className='type-relations-list-view'>
+          <div className='type-chart-header'>
+            <h2 className='page-header w-full justify-start flex'>
+              {replaceUsername(player2)}
+            </h2>
+          </div>
+          <div className='type-matchup-header'>
+            <div className='type-matchup-spacer'>Pokemon</div>
+            {types.map((type, index) => {
+              return (
+                <div key={index}>
+                  <img
+                    src={`/icons/${type}.svg`}
+                    height={30}
+                    width={30}
+                    data-type={type}
+                    className='pokemon-type-icon list-view'
+                  />
+                </div>
+              );
+            })}
+          </div>
+          <div className='type-matchup-data-container'>
+            {returnPathTextArrayP2().map((pokemon: any, index: number) => {
+              return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
+            })}
+          </div>
         </div>
-        <div className='type-matchup-data-container'>
-          {mergedArray.map((pokemon: any, index: number) => {
-            return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
-          })}
-        </div>
-      </div>
+      </ViewMode>
     </>
   );
 }
