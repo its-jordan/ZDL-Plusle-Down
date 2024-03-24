@@ -176,7 +176,7 @@ export default function Teams() {
                   className='pokemon-type-icon list-view'
                 />
                 <div className='hover-only type_title' data-type={type}>
-                  {type.charAt(0).toUpperCase() + type.slice(1)}
+                  {type.charAt(0).toUpperCase() + type.slice(1)} A
                 </div>
               </div>
             );
