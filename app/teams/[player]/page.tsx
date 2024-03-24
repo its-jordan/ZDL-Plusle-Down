@@ -152,7 +152,7 @@ export default function Teams() {
               // @ts-ignore
               sortStat={
                 localStorage.stat !== null && localStorage.stat !== undefined
-                  ? stats
+                  ? stats.toString()
                   : 'HP'
               }
             />
