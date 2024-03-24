@@ -1,3 +1,5 @@
+'use client';
+
 export default function replaceUsername(e: string) {
   if (e == 'danknett') {
     return e.replace('d', 'D');

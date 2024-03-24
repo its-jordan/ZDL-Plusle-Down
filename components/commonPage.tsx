@@ -1,4 +1,3 @@
-import replaceUsername from '@/functions/replaceUsername';
 import Link from 'next/link';
 import React from 'react';
 import { Header } from './viewButton';
@@ -9,6 +8,22 @@ interface ViewProps {
   match?: { player1: string; player2: string; score: string };
   index?: number;
   customClass?: string;
+}
+
+function replaceUsername(e: string) {
+  if (e == 'danknett') {
+    return e.replace('d', 'D');
+  } else if (e == 'seanboyq') {
+    return e.replace('s', 'S').replace('b', 'B').replace('q', 'Q');
+  } else if (e == 'dtbaggins') {
+    return e.replace('dtb', 'DTB');
+  } else if (e == 'ifurgat') {
+    return e.replace('f', 'F');
+  } else if (e == 'tokotoro') {
+    return e.replace('t', 'T');
+  } else {
+    return e;
+  }
 }
 
 export default function CommonPage({

@@ -3,14 +3,10 @@
 import { usePathname } from 'next/navigation';
 
 import React, { useEffect } from 'react';
-import { GoKebabHorizontal } from 'react-icons/go';
-import { BsList, BsGridFill } from 'react-icons/bs';
 import ReturnPokemon, { ReturnTypeMatchup } from '@/components/getPokemon';
-import ViewButton, { useView } from '@/components/viewButton';
 import ViewMode from '@/components/viewButton';
 import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
-import Link from 'next/link';
 
 const teamsArray = [
   'danknett',

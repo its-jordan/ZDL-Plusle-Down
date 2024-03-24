@@ -2,7 +2,6 @@ import React from 'react';
 import { BsDiscord } from 'react-icons/bs';
 import { MdOutlineCatchingPokemon } from 'react-icons/md';
 import Link from 'next/link';
-import replaceUsername from '../../functions/replaceUsername';
 import { Header } from '@/components/viewButton';
 
 const teamsArray = [
@@ -43,6 +42,22 @@ const teamsArray = [
     showdown: 'doomedschultze',
   },
 ];
+
+function replaceUsername(e: string) {
+  if (e == 'danknett') {
+    return e.replace('d', 'D');
+  } else if (e == 'seanboyq') {
+    return e.replace('s', 'S').replace('b', 'B').replace('q', 'Q');
+  } else if (e == 'dtbaggins') {
+    return e.replace('dtb', 'DTB');
+  } else if (e == 'ifurgat') {
+    return e.replace('f', 'F');
+  } else if (e == 'tokotoro') {
+    return e.replace('t', 'T');
+  } else {
+    return e;
+  }
+}
 
 export default function Teams() {
   return (
