@@ -1345,12 +1345,13 @@ body.light {
 }
 
 .stat-sort-container {
+  --_width: 13.5rem;
   display: flex;
   flex-flow: column nowrap;
-  position: relative;
+  position: fixed;
+  top: 1.75rem;
   align-items: end;
-  width: 100%;
-  width: 14rem;
+  width: var(--_width);
 }
 
 .stat-sort-header {
@@ -1359,7 +1360,7 @@ body.light {
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  width: 14rem;
+  width: var(--_width);
   padding: 0.75rem 1.25rem 0.75rem 1.75rem;
   background-color: var(--background-secondary);
   border: 1px solid var(--background-hovers);
@@ -1383,7 +1384,6 @@ body.light {
   display: flex;
   opacity: 0;
   flex-flow: column nowrap;
-  width: 14rem;
   gap: 0;
   position: absolute;
   z-index: 10000;
@@ -1396,20 +1396,31 @@ body.light {
 
 .stat-filter-button {
   display: flex;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  align-items: center;
   flex-flow: row nowrap;
+  gap: 1rem;
   background-color: var(--background-secondary);
   border: 1px solid var(--background-hovers);
   backdrop-filter: blur(10px);
   padding: 1rem 2rem;
   border-radius: 0;
-  width: 100%;
+  width: var(--_width);
   transition: background-color 300ms ease;
+}
+
+.stat-filter-button svg {
+  height: 1rem !important;
+  width: 1rem !important;
+  transform: rotate(0deg) !important;
 }
 
 .stat-filter-button:hover {
   background-color: var(--background-hovers);
+}
+
+.stat-filter-button:last-child:hover {
+  background-color: rgba(146, 0, 0, 0.75);
 }
 
 .stat-filter-button:first-child {
@@ -1446,6 +1457,10 @@ body.light {
   justify-content: end;
   order: -9999;
   grid-column: 1/-1;
+  position: sticky;
+  top: 1.75rem;
+  z-index: 100000;
+  margin-right: 15rem;
 }
 
 .loading-type-data:not(:last-child) {

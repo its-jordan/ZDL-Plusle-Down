@@ -9,6 +9,11 @@ import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
 import { MdArrowDropDown } from 'react-icons/md';
 
+import { GiHealthNormal } from 'react-icons/gi';
+import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
+import { IoMdSpeedometer } from 'react-icons/io';
+import { RiCloseCircleFill } from 'react-icons/ri';
+
 function useStats() {
   const [stat, setStat] = React.useState<string>(
     typeof window !== 'undefined' && window.localStorage
@@ -23,6 +28,38 @@ function useStats() {
   }, [stat]);
 
   return [stat, setStat];
+}
+
+export function replaceStatName(e: string) {
+  if (e == 'HP') {
+    return 'HP';
+  } else if (e == 'ATK') {
+    return 'Attack';
+  } else if (e == 'SPATK') {
+    return 'Sp. Atk';
+  } else if (e == 'DEF') {
+    return 'Defense';
+  } else if (e == 'SPDEF') {
+    return 'Sp. Def';
+  } else if (e == 'SPEED') {
+    return 'Speed';
+  }
+}
+
+export function returnIcon(e: string) {
+  if (e == 'HP') {
+    return <GiHealthNormal />;
+  } else if (e == 'ATK') {
+    return <TbSword />;
+  } else if (e == 'SPATK') {
+    return <TbSwords />;
+  } else if (e == 'DEF') {
+    return <TbShield />;
+  } else if (e == 'SPDEF') {
+    return <TbShieldFilled />;
+  } else if (e == 'SPEED') {
+    return <IoMdSpeedometer />;
+  }
 }
 
 export default function Teams() {
@@ -118,10 +155,16 @@ export default function Teams() {
         <div className='stat-sort-container'>
           <div className='stat-sort-header'>
             <div className='sort'>
-              {stat !== null && stat !== undefined ? 'Sort by ' : 'Sort '}
+              {stat == null || stat == undefined || stat == ''
+                ? 'Sort '
+                : 'Sort by '}
             </div>
             <div className='sort-stat'>
-              {stat !== null ? (stat == undefined ? '' : stat.toString()) : ''}
+              {stat !== null
+                ? stat == undefined
+                  ? ''
+                  : replaceStatName(stat.toString())
+                : ''}
             </div>
             <MdArrowDropDown />
           </div>
@@ -134,10 +177,18 @@ export default function Teams() {
                   data-stat={stat}
                   // @ts-ignore
                   onClick={() => setStat(stat)}>
-                  {stat}
+                  {returnIcon(stat)}
+                  {replaceStatName(stat)}
                 </button>
               );
             })}
+            <button
+              className='stat-filter-button'
+              // @ts-ignore
+              onClick={() => setStat('')}>
+              <RiCloseCircleFill />
+              Clear Sort
+            </button>
           </div>
         </div>
       </div>
