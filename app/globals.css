@@ -1218,6 +1218,10 @@ body.light {
   background: var(--background-secondary);
 }
 
+.type-heading:nth-child(odd) [data-multiplier='1x'] {
+  background: color-mix(in srgb, var(--background-secondary));
+}
+
 [data-multiplier='2x'] {
   background: color-mix(in srgb, rgb(118, 189, 118) 85%, black);
 }
@@ -1227,7 +1231,7 @@ body.light {
 }
 
 [data-multiplier='0'] {
-  background: black;
+  background: var(--background-base);
 }
 
 .multiplier {
