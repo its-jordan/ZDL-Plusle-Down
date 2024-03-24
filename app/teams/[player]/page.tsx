@@ -117,9 +117,11 @@ export default function Teams() {
       <div className='stat-topbar'>
         <div className='stat-sort-container'>
           <div className='stat-sort-header'>
-            <div className='sort'>Sort by</div>{' '}
+            <div className='sort'>
+              {stat !== null && stat !== undefined ? 'Sort by ' : 'Sort '}
+            </div>
             <div className='sort-stat'>
-              {stat !== null && stat !== undefined ? stat.toString() : <></>}
+              {stat !== null ? (stat == undefined ? '' : stat.toString()) : ''}
             </div>
             <MdArrowDropDown />
           </div>
