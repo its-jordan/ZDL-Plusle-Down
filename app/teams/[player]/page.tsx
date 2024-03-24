@@ -30,7 +30,7 @@ function useStats() {
   return [stat, setStat];
 }
 
-export function replaceStatName(e: string) {
+function replaceStatName(e: string) {
   if (e == 'HP') {
     return 'HP';
   } else if (e == 'ATK') {
@@ -46,7 +46,7 @@ export function replaceStatName(e: string) {
   }
 }
 
-export function returnIcon(e: string) {
+function returnIcon(e: string) {
   if (e == 'HP') {
     return <GiHealthNormal />;
   } else if (e == 'ATK') {
