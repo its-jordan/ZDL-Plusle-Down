@@ -151,9 +151,7 @@ export default function Teams() {
               direction='descending'
               // @ts-ignore
               sortStat={
-                localStorage !== undefined &&
-                localStorage.stat !== null &&
-                localStorage.stat !== undefined
+                localStorage.stat !== null && localStorage.stat !== undefined
                   ? stats.toString()
                   : 'HP'
               }

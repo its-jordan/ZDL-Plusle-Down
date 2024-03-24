@@ -1443,3 +1443,12 @@ body.light {
   order: -9999;
   grid-column: 1/-1;
 }
+
+.loading-type-data:not(:last-child) {
+  border-bottom: 1px solid var(--background-hovers);
+}
+
+.list-loading {
+  margin-top: -0.5rem;
+  margin-bottom: calc(-6rem + 8px);
+}
