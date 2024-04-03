@@ -44,11 +44,6 @@ export default function CommonPage({
 export function ScheduleTemplate({ children, header }: ViewProps) {
   return (
     <div>
-      <div
-        className='subheading'
-        id={`${header?.toLowerCase().replace(' ', '-')}`}>
-        {header}
-      </div>
       <div className='schedule-container'>{children}</div>
     </div>
   );
@@ -77,31 +72,61 @@ export function MatchTemplate({ match, index }: ViewProps) {
       key={index}
       className='match-container'
       data-score1={match?.score.charAt(0)}
-      data-score2={match?.score.charAt(2)}>
-      <div className='match-player player-1'>
-        <div className='match-team-name'>
-          {match !== undefined ? replaceTeamName(match.player1) : <></>}
-        </div>
-        <div className='match-player-name'>
-          {match !== undefined ? replaceUsername(match.player1) : <></>}
-        </div>
-      </div>
+      data-score2={match?.score.charAt(2)}
+      data-played={match?.score !== '0-0' ? 'true' : 'false'}>
       {match?.score !== '0-0' ? (
-        <div className='match-score'>
-          <div className='score player-1'>{match?.score?.charAt(0)}</div>
-          <div className='score player-2'>{match?.score?.charAt(2)}</div>
-        </div>
+        <>
+          <div className='match-player-container'>
+            <div className='match-player player-1'>
+              <div className='match-team-name'>
+                {match !== undefined ? replaceTeamName(match.player1) : <></>}
+              </div>
+              <div className='match-player-name'>
+                {match !== undefined ? replaceUsername(match.player1) : <></>}
+              </div>
+            </div>
+            <div className='match-score'>
+              <div className='score player-1'>{match?.score?.charAt(0)}</div>
+            </div>
+          </div>
+          <div className='match-player-container'>
+            <div className='match-player player-2'>
+              <div className='match-team-name'>
+                {match !== undefined ? replaceTeamName(match.player2) : <></>}
+              </div>
+              <div className='match-player-name'>
+                {match !== undefined ? replaceUsername(match.player2) : <></>}
+              </div>
+            </div>
+            <div className='match-score'>
+              <div className='score player-2'>{match?.score?.charAt(2)}</div>
+            </div>
+          </div>
+        </>
       ) : (
-        <></>
+        <>
+          <div className='match-player-container'>
+            <div className='match-player player-1'>
+              <div className='match-team-name'>
+                {match !== undefined ? replaceTeamName(match.player1) : <></>}
+              </div>
+              <div className='match-player-name'>
+                {match !== undefined ? replaceUsername(match.player1) : <></>}
+              </div>
+            </div>
+          </div>
+          <div className='match-player-container'>
+            <div className='match-player player-2'>
+              <div className='match-team-name'>
+                {match !== undefined ? replaceTeamName(match.player2) : <></>}
+              </div>
+              <div className='match-player-name'>
+                {match !== undefined ? replaceUsername(match.player2) : <></>}
+              </div>
+            </div>
+          </div>
+        </>
       )}
-      <div className='match-player player-2'>
-        <div className='match-team-name'>
-          {match !== undefined ? replaceTeamName(match.player2) : <></>}
-        </div>
-        <div className='match-player-name'>
-          {match !== undefined ? replaceUsername(match.player2) : <></>}
-        </div>
-      </div>
     </Link>
   );
 }

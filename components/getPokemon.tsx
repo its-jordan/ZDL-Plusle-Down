@@ -1,12 +1,13 @@
 import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
 import { getTypeWeaknesses } from '../data/pokemon-types/index';
-import Image from 'next/image';
 
 interface Pokemon extends Partial<CSSStyleDeclaration> {
   pokemon: string;
   direction?: 'ascending' | 'descending';
   sortStat?: 'HP' | 'ATK' | 'SPATK' | 'DEF' | 'SPDEF' | 'SPEED';
+  children?: React.ReactNode;
+  link?: string;
 }
 
 export function nameSplit(e: string) {
@@ -77,8 +78,8 @@ export function replaceStatNames(e: string) {
 export async function callPokemon({ pokemon }: Pokemon) {
   const res = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${pokemon
-      .replace('silvally-bug', 'silvally')
-      .replace('silvally-flying', 'silvally')}`
+      ?.replace('silvally-bug', 'silvally')
+      ?.replace('silvally-flying', 'silvally')}`
   );
   const pokData = await res.json();
   const res2 = await fetch(
@@ -154,6 +155,11 @@ const types = [
   'fairy',
 ];
 
+export async function PokemonType({ pokemon }: Pokemon) {
+  const type = await callPokemon({ pokemon });
+  return type[0].types[0];
+}
+
 export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
   return (
     <>
@@ -174,7 +180,10 @@ export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
             </div>
             {types.map((type, index) => {
               return (
-                <div key={index} className={`type-heading ${type}`}>
+                <button
+                  key={index}
+                  className={`type-heading ${type}`}
+                  data-column={index + 1}>
                   {data.weakness.includes(`${type}: .25x`) ? (
                     <div
                       className={`multiplier quarter`}
@@ -204,7 +213,7 @@ export async function ReturnTypeMatchup({ pokemon }: Pokemon) {
                       {''}
                     </div>
                   )}
-                </div>
+                </button>
               );
             })}
           </div>
@@ -257,15 +266,15 @@ export default async function ReturnPokemon({
       {(await callPokemon({ pokemon })).map((data, index) => {
         return (
           <Link
-            href={`https://www.smogon.com/dex/sv/pokemon/${data.name}`}
+            // href={`https://www.smogon.com/dex/sv/pokemon/${data.name}`}
+            href={`/pokemon/${data.name}`}
             data-speed={`${data.stats[5].stat}`}
             key={index}
             className='pokemon-card'
-            target='_blank'
+            // target='_blank'
             data-type={`${data.types[0]}`}
             style={setStyle(data)}>
             <div className='pokemon-number'>#{data.id}</div>
-
             <div className='pokemon-name'>{nameSplit(data.name)}</div>
             <div className='pokemon-types'>
               {data.types.map((type, index) => {

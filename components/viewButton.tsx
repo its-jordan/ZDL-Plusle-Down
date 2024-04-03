@@ -8,8 +8,8 @@ import {
   PiListNumbersLight,
   PiListNumbersFill,
   PiArrowLeftBold,
+  PiArrowUpRightBold,
 } from 'react-icons/pi';
-import { useRouter } from 'next/navigation';
 
 interface ViewProps {
   children: React.ReactNode;
@@ -43,7 +43,6 @@ export default function ViewMode({ children, header }: ViewProps) {
   const ModeContext = createContext(view);
   const mode = useContext(ModeContext);
   const className = 'pokemon-grid ' + mode;
-  const router = useRouter();
 
   function localStore() {
     typeof window !== 'undefined' && localStorage.view !== undefined
