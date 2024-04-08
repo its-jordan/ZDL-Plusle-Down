@@ -44,6 +44,7 @@ export default function ViewModeIndividual({ pokemon, children }: ViewProps) {
         </Link>
       </Header>
       <div>
+        {children}
         {/* @ts-ignore */}
         <div>{ReturnPokemonIndividual({ pokemon })}</div>
       </div>

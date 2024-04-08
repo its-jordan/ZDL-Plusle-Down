@@ -13,6 +13,7 @@ import { GiHealthNormal } from 'react-icons/gi';
 import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
 import { IoMdSpeedometer } from 'react-icons/io';
 import { RiCloseCircleFill } from 'react-icons/ri';
+import pokemonData from '@/data/pokemonData.json';
 
 function useStats() {
   const [stat, setStat] = React.useState<string>(

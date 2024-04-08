@@ -50,6 +50,11 @@ export default function ViewMode({ children, header }: ViewProps) {
       : 'list-view';
   }
 
+  function getStatStore() {
+    const sort = localStorage.getItem('stat');
+    return sort?.toString();
+  }
+
   return (
     <main className='content-grid'>
       <Header>
@@ -89,7 +94,9 @@ export default function ViewMode({ children, header }: ViewProps) {
       <ModeContext.Provider
         // @ts-ignore
         value={localStore()}>
-        <div className={className}>{children}</div>
+        <div className={className} data-sort={getStatStore()}>
+          {children}
+        </div>
       </ModeContext.Provider>
     </main>
   );

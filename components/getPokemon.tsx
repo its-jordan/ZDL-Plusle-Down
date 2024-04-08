@@ -81,7 +81,7 @@ export async function callPokemon({ pokemon }: Pokemon) {
       ?.replace('silvally-bug', 'silvally')
       ?.replace('silvally-flying', 'silvally')}`
   );
-  const pokData = await res.json();
+  const pokData: any = res != null ? await res.json() : null;
   const res2 = await fetch(
     `https://pokeapi.co/api/v2/pokemon-species/${pokemon?.split('-')[0]}`
   );

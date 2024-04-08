@@ -138,10 +138,10 @@ export default function Navbar() {
       iconActive: HiClipboardList,
     },
     {
-      path: '/replays',
-      title: 'Replays',
-      icon: HiOutlineVideoCamera,
-      iconActive: HiVideoCamera,
+      path: '/pokemon',
+      title: 'Pokemon',
+      icon: CgPokemon,
+      iconActive: MdCatchingPokemon,
     },
   ];
 
