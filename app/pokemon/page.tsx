@@ -1,3 +1,5 @@
+'use client';
+
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import ReturnPokemon, { ReturnTypeMatchup } from '@/components/getPokemon';
 import ViewMode from '@/components/viewButton';
@@ -10,22 +12,23 @@ import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
 import { IoMdSpeedometer } from 'react-icons/io';
 import { RiCloseCircleFill } from 'react-icons/ri';
 import allmons from '@/data/allmons.json';
+import ReturnMon from '@/components/getPokemon';
 
-// function useStats() {
-//   const [stat, setStat] = React.useState<string>(
-//     typeof window !== 'undefined' && window.localStorage
-//       ? localStorage.stat
-//       : 'HP'
-//   );
+function useStats() {
+  const [stat, setStat] = React.useState<string>(
+    typeof window !== 'undefined' && window.localStorage
+      ? localStorage.stat
+      : 'HP'
+  );
 
-//   useEffect(() => {
-//     if (typeof window !== 'undefined' && window.localStorage) {
-//       localStorage.setItem('stat', stat);
-//     }
-//   }, [stat]);
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem('stat', stat);
+    }
+  }, [stat]);
 
-//   return [stat, setStat];
-// }
+  return [stat, setStat];
+}
 
 function replaceStatName(e: string) {
   if (e == 'HP') {
@@ -60,26 +63,14 @@ function returnIcon(e: string) {
 }
 
 export default function AllMons() {
-  // const [stat, setStat] = useStats();
-  // const StatContext = createContext(stat);
-  // const stats = useContext(StatContext);
-
-  function returnPathTextArray() {
-    const pokemonArray = allmons;
-    return pokemonArray;
-  }
+  const [stat, setStat] = useStats();
+  const StatContext = createContext(stat);
+  const stats = useContext(StatContext);
 
   function localStore() {
-    typeof window !== 'undefined' && localStorage.view !== undefined
-      ? localStorage.getItem('view')
-      : 'list-view';
-  }
-
-  function getStatStore() {
-    if (typeof window !== 'undefined') {
-      const sort = localStorage.getItem('stat');
-      return sort?.toString();
-    }
+    typeof window !== 'undefined' && localStorage.stat !== undefined
+      ? localStorage.getItem('stat')
+      : 'HP';
   }
 
   const types = [
@@ -107,59 +98,67 @@ export default function AllMons() {
 
   return (
     <ViewMode header={`All Pokemon`}>
-      {/* <div className='stat-topbar'>
-          <div className='stat-sort-container'>
-            <div className='stat-sort-header'>
-              <div className='sort'>
-                {stat == null || stat == undefined || stat == ''
-                  ? 'Sort '
-                  : 'Sort by '}
-              </div>
-              <div className='sort-stat'>
-                {stat !== null
-                  ? stat == undefined
-                    ? ''
-                    : replaceStatName(stat.toString())
-                  : ''}
-              </div>
-              <MdArrowDropDown />
+      <div className='stat-topbar'>
+        <div className='stat-sort-container'>
+          <div className='stat-sort-header'>
+            <div className='sort'>
+              {stat == null || stat == undefined || stat == ''
+                ? 'Sort '
+                : 'Sort by '}
             </div>
-            <div className='stat-filter-container'>
-              {statsArray.map((stat, index) => {
-                return (
-                  <button
-                    className='stat-filter-button'
-                    key={index}
-                    data-stat={stat}
-                    // @ts-ignore
-                    onClick={() => setStat(stat)}>
-                    {returnIcon(stat)}
-                    {replaceStatName(stat)}
-                  </button>
-                );
-              })}
-              <button
-                className='stat-filter-button'
-                // @ts-ignore
-                onClick={() => setStat('')}>
-                <RiCloseCircleFill />
-                Clear Sort
-              </button>
+            <div className='sort-stat'>
+              {stat !== null
+                ? stat == undefined
+                  ? ''
+                  : replaceStatName(stat.toString())
+                : ''}
             </div>
+            <MdArrowDropDown />
           </div>
-        </div> */}
-      {returnPathTextArray().map((pokemon: any, index: number) => {
-        return (
-          <ReturnPokemon
-            pokemon={pokemon}
-            key={index}
-            animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
-            direction='descending'
-            // @ts-ignore
-            sortStat={getStatStore()}
-          />
-        );
-      })}
+          <div className='stat-filter-container'>
+            {statsArray.map((stat, index) => {
+              return (
+                <button
+                  className='stat-filter-button'
+                  key={index}
+                  data-stat={stat}
+                  // @ts-ignore
+                  onClick={() => setStat(stat)}>
+                  {returnIcon(stat)}
+                  {replaceStatName(stat)}
+                </button>
+              );
+            })}
+            <button
+              className='stat-filter-button'
+              // @ts-ignore
+              onClick={() => setStat('')}>
+              <RiCloseCircleFill />
+              Clear Sort
+            </button>
+          </div>
+        </div>
+      </div>
+      <StatContext.Provider
+        // @ts-ignore
+        value={localStore()}>
+        {allmons.map((pokemon: any, index: number) => {
+          return (
+            <ReturnMon
+              pokemon={pokemon}
+              key={index}
+              animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+              direction='descending'
+              // @ts-ignore
+              sortStat={
+                localStorage.stat !== null && localStorage.stat !== undefined
+                  ? stats.toString()
+                  : 'HP'
+              }
+            />
+          );
+        })}
+      </StatContext.Provider>
       {/* <div className='type-chart-header'>
         <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
       </div>

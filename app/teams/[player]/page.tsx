@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import ReturnPokemon, { ReturnTypeMatchup } from '@/components/getPokemon';
+import ReturnMon, { ReturnTypeMatchup } from '@/components/getPokemon';
 import ViewMode from '@/components/viewButton';
 import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
@@ -13,7 +13,6 @@ import { GiHealthNormal } from 'react-icons/gi';
 import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
 import { IoMdSpeedometer } from 'react-icons/io';
 import { RiCloseCircleFill } from 'react-icons/ri';
-import pokemonData from '@/data/pokemonData.json';
 
 function useStats() {
   const [stat, setStat] = React.useState<string>(
@@ -198,7 +197,7 @@ export default function Teams() {
         value={localStore()}>
         {returnPathTextArray().map((pokemon: any, index: number) => {
           return (
-            <ReturnPokemon
+            <ReturnMon
               pokemon={pokemon}
               key={index}
               animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}

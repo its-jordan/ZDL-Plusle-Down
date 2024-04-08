@@ -60,8 +60,10 @@
 //         return (
 //           <div key={index}>
 //             <div>
-//               "{mon.name}": {'{'}
+//               else if (e == "{mon.name}") {'{'}
 //             </div>
+//             <div>const data = {'{'}</div>
+//             <div>"name": "{mon.name}",</div>
 //             <div>"abilities": {`[`}</div>
 //             <div>"{mon.abilities[0]}",</div>
 //             {mon.abilities[1] !== null ? (
@@ -99,6 +101,8 @@
 //             </div>
 //             <div>{`]`}</div>
 //             <div>{'},'}</div>
+//             <div>return data;</div>
+//             <div>{'}'}</div>
 //           </div>
 //         );
 //       })}
@@ -119,5 +123,9 @@
 // }
 
 export default function FetchMon() {
-  return <></>;
+  return (
+    <div className='flex flex-row justify-center items-center h-screen w-screen'>
+      Placeholder for if else array creation
+    </div>
+  );
 }
