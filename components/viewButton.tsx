@@ -51,8 +51,9 @@ export default function ViewMode({ children, header }: ViewProps) {
   }
 
   function getStatStore() {
-    const sort = localStorage.getItem('stat');
-    return sort?.toString();
+    const sort =
+      typeof window !== 'undefined' ? localStorage.getItem('stat') : 'HP';
+    return sort;
   }
 
   return (

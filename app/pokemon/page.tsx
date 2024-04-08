@@ -1,10 +1,7 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import ReturnPokemon, { ReturnTypeMatchup } from '@/components/getPokemon';
+import React, { createContext, useContext, useEffect } from 'react';
 import ViewMode from '@/components/viewButton';
-import teams from '@/data/teams.json';
-import replaceUsername from '@/functions/replaceUsername';
 import { MdArrowDropDown } from 'react-icons/md';
 
 import { GiHealthNormal } from 'react-icons/gi';
@@ -151,7 +148,9 @@ export default function AllMons() {
               direction='descending'
               // @ts-ignore
               sortStat={
-                localStorage.stat !== null && localStorage.stat !== undefined
+                typeof window !== 'undefined' &&
+                localStorage.stat !== null &&
+                localStorage.stat !== undefined
                   ? stats.toString()
                   : 'HP'
               }
