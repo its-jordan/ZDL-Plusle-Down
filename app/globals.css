@@ -1340,8 +1340,7 @@ body.light {
   --_width: 13.5rem;
   display: flex;
   flex-flow: column nowrap;
-  position: fixed;
-  top: 1.75rem;
+  position: relative;
   align-items: end;
   width: var(--_width);
 }
@@ -1379,7 +1378,7 @@ body.light {
   gap: 0;
   position: absolute;
   z-index: 10000;
-  top: calc(3.65rem - 1px);
+  top: 100%;
   transform-origin: top;
   transition: opacity 300ms ease, scale 300ms 300ms ease;
   pointer-events: none;

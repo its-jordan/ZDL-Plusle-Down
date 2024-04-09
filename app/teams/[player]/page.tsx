@@ -2,70 +2,12 @@
 
 import { usePathname } from 'next/navigation';
 
-import React, { createContext, useContext, useEffect, useState } from 'react';
 import ReturnMon, { ReturnTypeMatchup } from '@/components/getPokemon';
 import ViewMode from '@/components/viewButton';
 import teams from '@/data/teams.json';
 import replaceUsername from '@/functions/replaceUsername';
-import { MdArrowDropDown } from 'react-icons/md';
-
-import { GiHealthNormal } from 'react-icons/gi';
-import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
-import { IoMdSpeedometer } from 'react-icons/io';
-import { RiCloseCircleFill } from 'react-icons/ri';
-
-function useStats() {
-  const [stat, setStat] = React.useState<string>(
-    typeof window !== 'undefined' && window.localStorage
-      ? localStorage.stat
-      : 'HP'
-  );
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      localStorage.setItem('stat', stat);
-    }
-  }, [stat]);
-
-  return [stat, setStat];
-}
-
-function replaceStatName(e: string) {
-  if (e == 'HP') {
-    return 'HP';
-  } else if (e == 'ATK') {
-    return 'Attack';
-  } else if (e == 'SPATK') {
-    return 'Sp. Atk';
-  } else if (e == 'DEF') {
-    return 'Defense';
-  } else if (e == 'SPDEF') {
-    return 'Sp. Def';
-  } else if (e == 'SPEED') {
-    return 'Speed';
-  }
-}
-
-function returnIcon(e: string) {
-  if (e == 'HP') {
-    return <GiHealthNormal />;
-  } else if (e == 'ATK') {
-    return <TbSword />;
-  } else if (e == 'SPATK') {
-    return <TbSwords />;
-  } else if (e == 'DEF') {
-    return <TbShield />;
-  } else if (e == 'SPDEF') {
-    return <TbShieldFilled />;
-  } else if (e == 'SPEED') {
-    return <IoMdSpeedometer />;
-  }
-}
 
 export default function Teams() {
-  const [stat, setStat] = useStats();
-  const StatContext = createContext(stat);
-  const stats = useContext(StatContext);
   const pathname = usePathname().replace('/teams/', '');
   function returnPathTextArray() {
     if (pathname == 'danknett') {
@@ -110,12 +52,6 @@ export default function Teams() {
     }
   }
 
-  function localStore() {
-    typeof window !== 'undefined' && localStorage.stat !== undefined
-      ? localStorage.getItem('stat')
-      : 'HP';
-  }
-
   function pathnameApos() {
     if (
       pathname == 'dtbaggins' ||
@@ -147,71 +83,26 @@ export default function Teams() {
     'fairy',
   ];
 
-  const statsArray = ['HP', 'ATK', 'SPATK', 'DEF', 'SPDEF', 'SPEED'];
-
   return (
     <ViewMode header={`${replaceUsername(pathname)}${pathnameApos()} Team`}>
-      <div className='stat-topbar'>
-        <div className='stat-sort-container'>
-          <div className='stat-sort-header'>
-            <div className='sort'>
-              {stat == null || stat == undefined || stat == ''
-                ? 'Sort '
-                : 'Sort by '}
-            </div>
-            <div className='sort-stat'>
-              {stat !== null
-                ? stat == undefined
-                  ? ''
-                  : replaceStatName(stat.toString())
-                : ''}
-            </div>
-            <MdArrowDropDown />
-          </div>
-          <div className='stat-filter-container'>
-            {statsArray.map((stat, index) => {
-              return (
-                <button
-                  className='stat-filter-button'
-                  key={index}
-                  data-stat={stat}
-                  // @ts-ignore
-                  onClick={() => setStat(stat)}>
-                  {returnIcon(stat)}
-                  {replaceStatName(stat)}
-                </button>
-              );
-            })}
-            <button
-              className='stat-filter-button'
-              // @ts-ignore
-              onClick={() => setStat('')}>
-              <RiCloseCircleFill />
-              Clear Sort
-            </button>
-          </div>
-        </div>
-      </div>
-      <StatContext.Provider
-        // @ts-ignore
-        value={localStore()}>
-        {returnPathTextArray().map((pokemon: any, index: number) => {
-          return (
-            <ReturnMon
-              pokemon={pokemon}
-              key={index}
-              animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
-              direction='descending'
-              // @ts-ignore
-              sortStat={
-                localStorage.stat !== null && localStorage.stat !== undefined
-                  ? stats.toString()
-                  : 'HP'
-              }
-            />
-          );
-        })}
-      </StatContext.Provider>
+      {returnPathTextArray().map((pokemon: any, index: number) => {
+        return (
+          <ReturnMon
+            pokemon={pokemon}
+            key={index}
+            animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+            direction='descending'
+            // @ts-ignore
+            sortStat={
+              typeof window !== 'undefined' &&
+              localStorage.stat !== null &&
+              localStorage.stat !== undefined
+                ? localStorage.stat.toString()
+                : 'HP'
+            }
+          />
+        );
+      })}
       <div className='type-chart-header'>
         <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
       </div>
