@@ -9945,15 +9945,74 @@ export default function returnMons(e: string) {
       ],
     };
     return data;
-  } else if (e == 'silvally') {
+  } else if (e == 'silvally-bug') {
     const data = {
       name: 'silvally',
       abilities: ['rks-system'],
       id: 773,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png',
-      types: ['normal'],
-      weaknesses: ['fighting: 2x', 'ghost: 0x'],
+      types: ['bug'],
+      weaknesses: [
+        'fighting: 0.5x',
+        'fire: 2x',
+        'flying: 2x',
+        'grass: 0.5x',
+        'ground: 0.5x',
+        'rock: 2x',
+      ],
+      stats: [
+        { stat: 95, name: 'HP' },
+        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'DEF' },
+        { stat: 95, name: 'SPA' },
+        { stat: 95, name: 'SPD' },
+        { stat: 95, name: 'SPE' },
+      ],
+    };
+    return data;
+  } else if (e == 'silvally-ice') {
+    const data = {
+      name: 'silvally',
+      abilities: ['rks-system'],
+      id: 773,
+      sprite:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png',
+      types: ['ice'],
+      weaknesses: [
+        'fighting: 2x',
+        'fire: 2x',
+        'ice: 0.5x',
+        'rock: 2x',
+        'steel: 2x',
+      ],
+      stats: [
+        { stat: 95, name: 'HP' },
+        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'DEF' },
+        { stat: 95, name: 'SPA' },
+        { stat: 95, name: 'SPD' },
+        { stat: 95, name: 'SPE' },
+      ],
+    };
+    return data;
+  } else if (e == 'silvally-flying') {
+    const data = {
+      name: 'Silvally',
+      abilities: ['rks-system'],
+      id: 773,
+      sprite:
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png',
+      types: ['flying'],
+      weaknesses: [
+        'bug: 0.5x',
+        'electric: 2x',
+        'fighting: 0.5x',
+        'grass: 0.5x',
+        'ground: 0x',
+        'ice: 2x',
+        'rock: 2x',
+      ],
       stats: [
         { stat: 95, name: 'HP' },
         { stat: 95, name: 'ATT' },
