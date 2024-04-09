@@ -47,7 +47,6 @@ export default function Home() {
     <NextUIProvider>
       <main>
         <div className='flex flex-col justify-center items-center'>
-          {}
           {plusleArray.map((data, index) => {
             return (
               <Image

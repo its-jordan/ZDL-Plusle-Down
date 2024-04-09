@@ -2,6 +2,8 @@ import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
 import { getTypeWeaknesses } from '../data/pokemon-types/index';
 import returnMons from '@/data/pokemonData';
+import { PiArrowUpRightBold } from 'react-icons/pi';
+import { MdCatchingPokemon } from 'react-icons/md';
 
 interface Pokemon extends Partial<CSSStyleDeclaration> {
   pokemon: string;
@@ -100,65 +102,6 @@ export function replaceStatNames(e: string) {
     .toUpperCase();
 }
 
-// export async function callPokemon({ pokemon }: Pokemon) {
-//   const res = await fetch(
-//     `https://pokeapi.co/api/v2/pokemon/${pokemon
-//       ?.replace('silvally-bug', 'silvally')
-//       ?.replace('silvally-flying', 'silvally')}`
-//   );
-//   const pokData: any = res != null ? await res.json() : null;
-//   const res2 = await fetch(
-//     `https://pokeapi.co/api/v2/pokemon-species/${pokemon?.split('-')[0]}`
-//   );
-//   const data2 = await res2.json();
-//   const pokWeakness = getTypeWeaknesses(
-//     pokData.types[0].type.name,
-//     pokData.types[1]?.type.name
-//   );
-//   const pokArray = Object.entries(pokWeakness)
-//     .map((a) => a.join(': '))
-//     .filter((a) => !a.includes('1'))
-//     .map((i) => i + 'x')
-//     .sort();
-//   const pokemonInfo = [
-//     {
-//       name: pokData.name,
-//       id: data2.order,
-//       types: [pokData.types[0].type.name, pokData.types[1]?.type?.name],
-//       sprite: pokData.sprites.other['official-artwork'].front_default,
-//       color: data2.color.name,
-//       weakness: pokArray,
-//       stats: [
-//         {
-//           stat: pokData.stats[0].base_stat,
-//           name: replaceStatNames(pokData.stats[0].stat.name),
-//         },
-//         {
-//           stat: pokData.stats[1].base_stat,
-//           name: replaceStatNames(pokData.stats[1].stat.name),
-//         },
-//         {
-//           stat: pokData.stats[2].base_stat,
-//           name: replaceStatNames(pokData.stats[2].stat.name),
-//         },
-//         {
-//           stat: pokData.stats[3].base_stat,
-//           name: replaceStatNames(pokData.stats[3].stat.name),
-//         },
-//         {
-//           stat: pokData.stats[4].base_stat,
-//           name: replaceStatNames(pokData.stats[4].stat.name),
-//         },
-//         {
-//           stat: pokData.stats[5].base_stat,
-//           name: replaceStatNames(pokData.stats[5].stat.name),
-//         },
-//       ],
-//     },
-//   ];
-//   return pokemonInfo;
-// }
-
 const types = [
   'normal',
   'fire',
@@ -240,109 +183,18 @@ export function ReturnTypeMatchup({ pokemon }: Pokemon) {
   );
 }
 
-// export default async function ReturnPokemon({
-//   pokemon,
-//   animation,
-//   direction,
-//   sortStat,
-// }: Pokemon) {
-//   function setStyle(data: any) {
-//     if (sortStat == 'HP') {
-//       return animation != undefined && direction == 'ascending'
-//         ? { order: `${data.stats[0].stat}`, animation: animation }
-//         : { order: `-${data.stats[0].stat}`, animation: animation };
-//     } else if (sortStat == 'ATK') {
-//       return animation != undefined && direction == 'ascending'
-//         ? { order: `${data.stats[1].stat}`, animation: animation }
-//         : { order: `-${data.stats[1].stat}`, animation: animation };
-//     } else if (sortStat == 'DEF') {
-//       return animation != undefined && direction == 'ascending'
-//         ? { order: `${data.stats[2].stat}`, animation: animation }
-//         : { order: `-${data.stats[2].stat}`, animation: animation };
-//     } else if (sortStat == 'SPATK') {
-//       return animation != undefined && direction == 'ascending'
-//         ? { order: `${data.stats[3].stat}`, animation: animation }
-//         : { order: `-${data.stats[3].stat}`, animation: animation };
-//     } else if (sortStat == 'SPDEF') {
-//       return animation != undefined && direction == 'ascending'
-//         ? { order: `${data.stats[4].stat}`, animation: animation }
-//         : { order: `-${data.stats[4].stat}`, animation: animation };
-//     } else if (sortStat == 'SPEED') {
-//       return animation != undefined && direction == 'ascending'
-//         ? { order: `${data.stats[5].stat}`, animation: animation }
-//         : { order: `-${data.stats[5].stat}`, animation: animation };
-//     } else {
-//       return animation != undefined && direction == 'ascending'
-//         ? { animation: animation }
-//         : { animation: animation };
-//     }
-//   }
-
-//   return (
-//     <>
-//       {(await callPokemon({ pokemon })).map((data, index) => {
-//         return (
-//           <Link
-//             // href={`https://www.smogon.com/dex/sv/pokemon/${data.name}`}
-//             href={`/pokemon/${data.name}`}
-//             data-speed={`${data.stats[5].stat}`}
-//             key={index}
-//             className='pokemon-card'
-//             // target='_blank'
-//             data-type={`${data.types[0]}`}
-//             style={setStyle(data)}>
-//             <div className='pokemon-number'>#{data.id}</div>
-//             <div className='pokemon-name'>{nameSplit(data.name)}</div>
-//             <div className='pokemon-types'>
-//               {data.types.map((type, index) => {
-//                 return (
-//                   <>
-//                     {type !== undefined ? (
-//                       <div className='type-icon-container' key={index}>
-//                         <img
-//                           src={`/icons/${type}.svg`}
-//                           height={30}
-//                           width={30}
-//                           data-type={type}
-//                           className='pokemon-type-icon'
-//                         />
-//                         <div className='hover-only type_title' data-type={type}>
-//                           {type.charAt(0).toUpperCase() + type.slice(1)}
-//                         </div>
-//                       </div>
-//                     ) : (
-//                       <></>
-//                     )}
-//                   </>
-//                 );
-//               })}
-//             </div>
-//             <div className='pokemon-stat-container'>
-//               {data.stats.map((stat, index) => {
-//                 return (
-//                   <div className='pokemon-stat' key={index}>
-//                     <div className='pokemon-stat-value'>{stat.stat}</div>
-//                     <div className='pokemon-stat-name'>{stat.name}</div>
-//                   </div>
-//                 );
-//               })}
-//             </div>
-//             <div className='show-more'>
-//               <GoKebabHorizontal />
-//             </div>
-//             <img
-//               loading='lazy'
-//               className='pokemon-img'
-//               src={data.sprite}
-//               alt={`Sprite for ${data.name}.`}
-//               data-type={data.types[1] ? data.types[1] : data.types[0]}
-//             />
-//           </Link>
-//         );
-//       })}
-//     </>
-//   );
-// }
+function nameReplace(e: string) {
+  const moveName = e;
+  const moveNameFront =
+    moveName?.split('-')[1] !== undefined
+      ? moveName?.charAt(0).toUpperCase() +
+        moveName?.split('-')[0].slice(1) +
+        ' ' +
+        moveName?.split('-')[1].charAt(0).toUpperCase() +
+        moveName?.split('-')[1].slice(1)
+      : moveName?.charAt(0).toUpperCase() + moveName?.slice(1);
+  return moveNameFront;
+}
 
 export default function ReturnMon({
   pokemon,
@@ -421,6 +273,15 @@ export default function ReturnMon({
           );
         })}
       </div>
+      <div className='pokemon-abilities-container'>
+        {data.abilities.map((data, index) => {
+          return (
+            <div className='pokemon-ability' key={index}>
+              {nameReplace(data)}
+            </div>
+          );
+        })}
+      </div>
       <div className='pokemon-stat-container'>
         {data.stats.map((stat, index) => {
           return (
@@ -432,8 +293,15 @@ export default function ReturnMon({
         })}
       </div>
       <div className='show-more'>
-        <GoKebabHorizontal />
+        <Link
+          // @ts-ignore
+          href={`https://www.smogon.com/dex/sv/pokemon/${pokemon}`}
+          target='_blank'>
+          <MdCatchingPokemon />
+          <div className='hover-only smogon-hover'>View on Smogon</div>
+        </Link>
       </div>
+
       <img
         loading='lazy'
         className='pokemon-img'
