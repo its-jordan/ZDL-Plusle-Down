@@ -1,217 +1,392 @@
 {
   "week-1": [
-    { "player1": "thanabros", "player2": "its_jordan", "score": "1-0" },
+    {
+      "player1": "thanabros",
+      "player2": "its_jordan",
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
+    },
     {
       "player1": "seanboyq",
       "player2": "castleflutes",
-      "score": "0-1"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "sunflora", "defeatedmon": "floragato" },
+        { "pokemon": "herdier", "defeatedmon": "sunflora" },
+        { "pokemon": "herdier", "defeatedmon": "loudred" },
+        { "pokemon": "plusle", "defeatedmon": "herdier" },
+        { "pokemon": "sudowoodo", "defeatedmon": "plusle" },
+        { "pokemon": "sudowoodo", "defeatedmon": "wartortle" },
+        { "pokemon": "bronzor", "defeatedmon": "vulpix" },
+        { "pokemon": "heatmor", "defeatedmon": "bronzor" },
+        { "pokemon": "hippopotas", "defeatedmon": "heatmor" }
+      ]
     },
-    { "player1": "revelreloaded", "player2": "c0c0_", "score": "1-0" },
+    {
+      "player1": "revelreloaded",
+      "player2": "c0c0_",
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "wormadam-plant", "defeatedmon": "" },
+        { "pokemon": "wormadam-plant", "defeatedmon": "" },
+        { "pokemon": "wormadam-plant", "defeatedmon": "" },
+        { "pokemon": "wormadam-plant", "defeatedmon": "" },
+        { "pokemon": "wormadam-plant", "defeatedmon": "" },
+        { "pokemon": "wormadam-plant", "defeatedmon": "" }
+      ]
+    },
     {
       "player1": "resolamxxy",
       "player2": "danknett",
-      "score": "1-0"
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "clefairy", "defeatedmon": "stunfisk" },
+        { "pokemon": "ditto", "defeatedmon": "clefairy" },
+        { "pokemon": "tinkatuff", "defeatedmon": "murkrow" },
+        { "pokemon": "cherrim", "defeatedmon": "tinkatuff" },
+        { "pokemon": "pignite", "defeatedmon": "cherrim" },
+        { "pokemon": "dragonair", "defeatedmon": "poliwhirl" },
+        { "pokemon": "dragonair", "defeatedmon": "pignite" },
+        { "pokemon": "dragonair", "defeatedmon": "ditto" },
+        { "pokemon": "dragonair", "defeatedmon": "lickitung" }
+      ]
     },
     {
       "player1": "tokotoro",
       "player2": "ifurgat",
-      "score": "0-1"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "pikachu", "defeatedmon": "ariados" },
+        { "pokemon": "lampent", "defeatedmon": "fletchinder" },
+        { "pokemon": "lampent", "defeatedmon": "amaura" },
+        { "pokemon": "mawile", "defeatedmon": "lopunny" },
+        { "pokemon": "seviper", "defeatedmon": "mawile" },
+        { "pokemon": "spidops", "defeatedmon": "emolga" },
+        { "pokemon": "ponyta-galar", "defeatedmon": "ponyta-galar" },
+        { "pokemon": "seviper", "defeatedmon": "spidops" },
+        { "pokemon": "seviper", "defeatedmon": "pikachu" },
+        { "pokemon": "seviper", "defeatedmon": "eldegoss" }
+      ]
     },
     {
       "player1": "dtbaggins",
       "player2": "beachwatch",
-      "score": "0-1"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     }
   ],
   "week-2": [
     {
       "player1": "ifurgat",
       "player2": "dtbaggins",
-      "score": "1-0"
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
     {
       "player1": "beachwatch",
       "player2": "thanabros",
-      "score": "0-0"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
     {
       "player1": "danknett",
       "player2": "tokotoro",
-      "score": "0-0"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
     {
       "player1": "c0c0_",
       "player2": "resolamxxy",
-      "score": "0-1"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
-    { "player1": "castleflutes", "player2": "revelreloaded", "score": "0-0" },
+    {
+      "player1": "castleflutes",
+      "player2": "revelreloaded",
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
+    },
     {
       "player1": "its_jordan",
       "player2": "seanboyq",
-      "score": "1-0"
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "heatmor", "defeatedmon": "pyukumuku" },
+        { "pokemon": "whirlipede", "defeatedmon": "marshtomp" },
+        { "pokemon": "mightyena", "defeatedmon": "whirlipede" },
+        { "pokemon": "mightyena", "defeatedmon": "plusle" },
+        { "pokemon": "whirlipede", "defeatedmon": "mightyena" },
+        { "pokemon": "farfetchd-galar", "defeatedmon": "vulpix" },
+        { "pokemon": "sunflora", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "sunflora", "defeatedmon": "farfetchd-galar" },
+        { "pokemon": "togedemaru", "defeatedmon": "sunflora" },
+        { "pokemon": "togedemaru", "defeatedmon": "wartortle" },
+        { "pokemon": "togedemaru", "defeatedmon": "heatmor" }
+      ]
     }
   ],
   "week-3": [
     {
       "player1": "resolamxxy",
       "player2": "castleflutes",
-      "score": "0-0"
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
     {
       "player1": "revelreloaded",
       "player2": "its_jordan",
-      "score": "0-0"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
     {
       "player1": "thanabros",
       "player2": "seanboyq",
-      "score": "0-0"
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
     {
       "player1": "tokotoro",
       "player2": "c0c0_",
-      "score": "0-0"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     },
-    { "player1": "dtbaggins", "player2": "danknett", "score": "0-0" },
+    {
+      "player1": "dtbaggins",
+      "player2": "danknett",
+      "score": "1-0",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
+    },
     {
       "player1": "beachwatch",
       "player2": "ifurgat",
-      "score": "0-0"
+      "score": "0-1",
+      "defeatlog": [
+        { "pokemon": "ivysaur", "defeatedmon": "wormadam-trash" },
+        { "pokemon": "ivysaur", "defeatedmon": "illumise" },
+        { "pokemon": "ivysaur", "defeatedmon": "mightyena" },
+        { "pokemon": "ivysaur", "defeatedmon": "marshtomp" },
+        { "pokemon": "ivysaur", "defeatedmon": "pyukumuku" },
+        { "pokemon": "ivysaur", "defeatedmon": "togedemaru" }
+      ]
     }
   ],
   "week-4": [
     {
-      "player1": "ifurgat",
-      "player2": "dtbaggins",
-      "score": "0-0"
-    },
-    {
-      "player1": "beachwatch",
-      "player2": "thanabros",
-      "score": "0-0"
-    },
-    {
-      "player1": "danknett",
+      "player1": "castleflutes",
       "player2": "tokotoro",
       "score": "0-0"
     },
     {
-      "player1": "c0c0_",
-      "player2": "resolamxxy",
+      "player1": "danknett",
+      "player2": "beachwatch",
       "score": "0-0"
     },
-    { "player1": "castleflutes", "player2": "revelreloaded", "score": "0-0" },
     {
-      "player1": "its_jordan",
-      "player2": "seanboyq",
+      "player1": "c0c0_",
+      "player2": "dtbaggins",
+      "score": "0-0"
+    },
+    {
+      "player1": "ifurgat",
+      "player2": "thanabros",
+      "score": "0-0"
+    },
+    { "player1": "its_jordan", "player2": "resolamxxy", "score": "0-0" },
+    {
+      "player1": "seanboyq",
+      "player2": "revelreloaded",
       "score": "0-0"
     }
   ],
   "week-5": [
-    { "player1": "thanabros", "player2": "its_jordan", "score": "0-0" },
+    { "player1": "beachwatch", "player2": "c0c0_", "score": "0-0" },
     {
-      "player1": "seanboyq",
+      "player1": "resolamxxy",
+      "player2": "seanboyq",
+      "score": "0-0"
+    },
+    { "player1": "tokotoro", "player2": "its_jordan", "score": "0-0" },
+    {
+      "player1": "dtbaggins",
       "player2": "castleflutes",
       "score": "0-0"
     },
-    { "player1": "revelreloaded", "player2": "c0c0_", "score": "0-0" },
     {
-      "player1": "resolamxxy",
+      "player1": "thanabros",
+      "player2": "revelreloaded",
+      "score": "0-0"
+    },
+    {
+      "player1": "ifurgat",
       "player2": "danknett",
-      "score": "0-0"
-    },
-    {
-      "player1": "tokotoro",
-      "player2": "ifurgat",
-      "score": "0-0"
-    },
-    {
-      "player1": "dtbaggins",
-      "player2": "beachwatch",
       "score": "0-0"
     }
   ],
   "week-6": [
     {
-      "player1": "ifurgat",
-      "player2": "dtbaggins",
-      "score": "0-0"
-    },
-    {
-      "player1": "beachwatch",
-      "player2": "thanabros",
-      "score": "0-0"
-    },
-    {
-      "player1": "danknett",
-      "player2": "tokotoro",
+      "player1": "revelreloaded",
+      "player2": "resolamxxy",
       "score": "0-0"
     },
     {
       "player1": "c0c0_",
-      "player2": "resolamxxy",
+      "player2": "ifurgat",
       "score": "0-0"
     },
-    { "player1": "castleflutes", "player2": "revelreloaded", "score": "0-0" },
+    {
+      "player1": "castleflutes",
+      "player2": "beachwatch",
+      "score": "0-0"
+    },
     {
       "player1": "its_jordan",
-      "player2": "seanboyq",
+      "player2": "dtbaggins",
+      "score": "0-0"
+    },
+    { "player1": "seanboyq", "player2": "tokotoro", "score": "0-0" },
+    {
+      "player1": "danknett",
+      "player2": "thanabros",
       "score": "0-0"
     }
   ],
   "week-7": [
     {
-      "player1": "ifurgat",
-      "player2": "dtbaggins",
+      "player1": "danknett",
+      "player2": "c0c0_",
+      "score": "0-0"
+    },
+    {
+      "player1": "tokotoro",
+      "player2": "revelreloaded",
+      "score": "0-0"
+    },
+    {
+      "player1": "dtbaggins",
+      "player2": "seanboyq",
       "score": "0-0"
     },
     {
       "player1": "beachwatch",
-      "player2": "thanabros",
+      "player2": "its_jordan",
       "score": "0-0"
     },
+    { "player1": "ifurgat", "player2": "castleflutes", "score": "0-0" },
     {
-      "player1": "danknett",
-      "player2": "tokotoro",
-      "score": "0-0"
-    },
-    {
-      "player1": "c0c0_",
+      "player1": "thanabros",
       "player2": "resolamxxy",
-      "score": "0-0"
-    },
-    { "player1": "castleflutes", "player2": "revelreloaded", "score": "0-0" },
-    {
-      "player1": "its_jordan",
-      "player2": "seanboyq",
       "score": "0-0"
     }
   ],
   "week-8": [
     {
-      "player1": "ifurgat",
+      "player1": "revelreloaded",
       "player2": "dtbaggins",
       "score": "0-0"
     },
     {
-      "player1": "beachwatch",
-      "player2": "thanabros",
+      "player1": "castleflutes",
+      "player2": "danknett",
       "score": "0-0"
     },
-    {
-      "player1": "danknett",
-      "player2": "tokotoro",
-      "score": "0-0"
-    },
-    {
-      "player1": "c0c0_",
-      "player2": "resolamxxy",
-      "score": "0-0"
-    },
-    { "player1": "castleflutes", "player2": "revelreloaded", "score": "0-0" },
     {
       "player1": "its_jordan",
-      "player2": "seanboyq",
+      "player2": "ifurgat",
+      "score": "0-0"
+    },
+    {
+      "player1": "seanboyq",
+      "player2": "beachwatch",
+      "score": "0-0"
+    },
+    { "player1": "c0c0_", "player2": "thanabros", "score": "0-0" },
+    {
+      "player1": "resolamxxy",
+      "player2": "tokotoro",
       "score": "0-0"
     }
   ]

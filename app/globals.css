@@ -1916,3 +1916,88 @@ html:has(.pokemon-page-container[data-color='red']) body {
   opacity: 1;
   scale: 1;
 }
+
+/* Results */
+
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-block: 1rem 6rem;
+}
+
+.results-log {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-hovers);
+  border-radius: 1.5rem;
+}
+
+.results-log-image {
+  width: 50px;
+}
+
+.results-log-mons {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.results-log-number {
+  width: 25px;
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.standings-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  margin-block: 1rem 6rem;
+}
+
+.standings-header,
+.standings-data {
+  display: grid;
+  grid-template-columns: 5fr 70px 70px 90px 70px 70px;
+  justify-content: start;
+  padding-inline: 2rem;
+
+  gap: 0rem;
+  border-radius: 1.5rem;
+}
+
+.standings-header :not(:first-child),
+.standings-data :not(:first-child) {
+  justify-self: end;
+}
+
+.standings-header {
+  padding-block-end: 0.5rem;
+}
+
+.standings-data {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-hovers);
+  padding-block: 1.5rem;
+}
+
+.diff-positive {
+  color: var(--accent-primary-green);
+}
+
+.diff-negative {
+  color: var(--accent-primary-red);
+}
+
+.diff-zero {
+  color: var(--_icon-hover);
+}

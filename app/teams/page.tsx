@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { BsDiscord } from 'react-icons/bs';
 import { MdOutlineCatchingPokemon } from 'react-icons/md';

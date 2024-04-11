@@ -68,7 +68,11 @@ function replaceTeamName(e: string) {
 export function MatchTemplate({ match, index }: ViewProps) {
   return (
     <Link
-      href={`/scores/${match?.player1}-${match?.player2}`}
+      href={
+        match?.score.charAt(0) == '1' || match?.score.charAt(2) == '1'
+          ? `/result/${match?.player1}-${match?.player2}`
+          : `/scores/${match?.player1}-${match?.player2}`
+      }
       key={index}
       className='match-container'
       data-score1={match?.score.charAt(0)}
