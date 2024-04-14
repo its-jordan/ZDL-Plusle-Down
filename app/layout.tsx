@@ -4,6 +4,7 @@ import { GeistMono } from 'geist/font/mono';
 import './globals.css';
 import Navbar from '@/components/ui/nav';
 import GetCurrentTime, { GetCurrentDate } from '@/utils/getdate';
+import Profile from '@/utils/getProfilePic';
 
 export const metadata: Metadata = {
   title: 'ZDL - Plusle Down',

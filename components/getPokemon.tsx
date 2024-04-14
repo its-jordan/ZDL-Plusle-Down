@@ -4,6 +4,7 @@ import { getTypeWeaknesses } from '../data/pokemon-types/index';
 import returnMons from '@/data/pokemonData';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 import { MdCatchingPokemon } from 'react-icons/md';
+import Image from 'next/image';
 
 interface Pokemon extends Partial<CSSStyleDeclaration> {
   pokemon: string;
@@ -136,10 +137,12 @@ export function ReturnTypeMatchup({ pokemon }: Pokemon) {
   return (
     <div className='type-matchup-data'>
       <div className='type-matchup-pokemon' data-type={`${data.types[0]}`}>
-        <img
+        <Image
           loading='lazy'
           className='pokemon-img matchup-data'
           src={data.sprite}
+          width={100}
+          height={100}
           alt={`Sprite for ${data.name}.`}
           data-type={data.types[1] ? data.types[1] : data.types[0]}
         />
@@ -255,11 +258,12 @@ export default function ReturnMon({
             <>
               {type !== undefined || null ? (
                 <div className='type-icon-container' key={index}>
-                  <img
+                  <Image
                     src={`/icons/${type}.svg`}
                     height={30}
                     width={30}
                     data-type={type}
+                    alt={`${type} icon.`}
                     className='pokemon-type-icon'
                   />
                   <div className='hover-only type_title' data-type={type}>
@@ -276,9 +280,12 @@ export default function ReturnMon({
       <div className='pokemon-abilities-container'>
         {data.abilities.map((data, index) => {
           return (
-            <div className='pokemon-ability' key={index}>
+            <Link
+              href={`https://www.smogon.com/dex/sv/abilities/${data}`}
+              className='pokemon-ability'
+              key={index}>
               {nameReplace(data)}
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -302,11 +309,13 @@ export default function ReturnMon({
         </Link>
       </div>
 
-      <img
+      <Image
         loading='lazy'
         className='pokemon-img'
         src={data.sprite ? data.sprite : ''}
         alt={`Sprite for ${data.name}.`}
+        width={300}
+        height={300}
         data-type={data.types[1] ? data.types[1] : data.types[0]}
       />
     </Link>

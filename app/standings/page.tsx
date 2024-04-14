@@ -3,6 +3,7 @@
 import CommonPage from '@/components/commonPage';
 import replaceUsername from '@/functions/replaceUsername';
 import { standings } from '@/data/standings';
+import Link from 'next/link';
 
 const winPercentage = (wins: number, losses: number) => {
   return wins / (wins + losses);
@@ -18,7 +19,7 @@ const sortedStandingsReverse = [...standings].sort((a, b) => a.wins - b.wins);
 const maxWins = sortedStandingsReverse.pop()?.wins;
 
 const gamesBehind = (wins: number, maxWins: number) => {
-  return maxWins - wins;
+  return maxWins - wins != 0 ? maxWins - wins : '-';
 };
 
 export default function Standings() {
@@ -31,11 +32,14 @@ export default function Standings() {
           <div className='standings-header-content'>Losses</div>
           <div className='standings-header-content'>Win Pct.</div>
           <div className='standings-header-content'>GB</div>
-          <div className='standings-header-content'>+ -</div>
+          {/* <div className='standings-header-content'>+ -</div> */}
         </div>
         {sortedStandings.map((data, index) => {
           return (
-            <div className='standings-data' key={index}>
+            <Link
+              href={`/teams/${data.name}`}
+              className='standings-data'
+              key={index}>
               <div className='standings-data-content' data-type='name'>
                 {replaceUsername(data.name)}
               </div>
@@ -53,7 +57,7 @@ export default function Standings() {
               <div className='standings-data-gb'>
                 {maxWins ? gamesBehind(data.wins, maxWins) : ''}
               </div>
-              <div
+              {/* <div
                 className={`${
                   Math.sign(data.defeats - data.deaths) == 1
                     ? 'standings-data-diff diff-positive'
@@ -67,8 +71,8 @@ export default function Standings() {
                   ? ''
                   : ''}
                 {data.defeats - data.deaths}
-              </div>
-            </div>
+              </div> */}
+            </Link>
           );
         })}
       </div>

@@ -240,6 +240,14 @@ body.light {
   transition: 300ms ease;
 }
 
+.navigation_icon.profile {
+  padding: 0.25rem;
+}
+
+.navigation_link:hover .navigation_icon.profile {
+  padding: 0 !important;
+}
+
 .navigation_container.hidden .navigation_link:hover > .navigation_icon {
   width: var(--_icon-hover);
   height: var(--_icon-hover);
@@ -687,7 +695,7 @@ body.light {
 }
 
 .pokemon-name {
-  width: 12rem;
+  width: 10rem;
   order: 3;
 }
 
@@ -1967,7 +1975,9 @@ html:has(.pokemon-page-container[data-color='red']) body {
 .standings-header,
 .standings-data {
   display: grid;
-  grid-template-columns: 5fr 70px 70px 90px 70px 70px;
+  grid-template-columns:
+    5fr 70px 70px 90px 70px
+    /* 70px */;
   justify-content: start;
   padding-inline: 2rem;
 
@@ -1988,6 +1998,11 @@ html:has(.pokemon-page-container[data-color='red']) body {
   background-color: var(--background-secondary);
   border: 1px solid var(--background-hovers);
   padding-block: 1.5rem;
+  transition: background-color 300ms ease;
+}
+
+.standings-data:hover {
+  background-color: var(--background-hovers);
 }
 
 .diff-positive {
@@ -2000,4 +2015,93 @@ html:has(.pokemon-page-container[data-color='red']) body {
 
 .diff-zero {
   color: var(--_icon-hover);
+}
+
+/* Settings */
+
+.settings-container {
+  margin-block: 1rem 6rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.setting-header {
+  grid-column: 1;
+  font-size: 0.775rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.settings-button {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 0.5rem;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-hovers);
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.settings-profile {
+  grid-column: 2;
+  justify-self: end;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.settings-profile.username {
+  grid-column: 2;
+  justify-self: end;
+  width: max-content;
+  height: 30px;
+  border-radius: 0;
+}
+
+.settings-input {
+  grid-column: 1/-1;
+  background-color: transparent;
+  border-bottom: 1px solid var(--background-hovers);
+  transition: border-bottom 300ms ease;
+}
+
+.settings-input.pic {
+  width: 100%;
+}
+
+.settings-input:focus,
+.settings-input:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--color-base);
+}
+
+input:invalid {
+  border-bottom: 1px solid red !important;
+}
+
+.settings-note {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+
+.profile-hover {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-hover :last-child {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  transition: all 300ms ease;
+}
+
+.profile-hover :last-child:hover {
+  color: skyblue;
+  text-decoration-thickness: 2px;
 }
