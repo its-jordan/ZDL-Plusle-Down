@@ -25,7 +25,7 @@ import {
 import { BiSpreadsheet, BiSolidSpreadsheet } from 'react-icons/bi';
 import Link from 'next/link';
 import React, { useEffect, createContext, useContext } from 'react';
-import Profile from '@/utils/getProfilePic';
+// import Profile from '@/utils/getProfilePic';
 
 function usePosition() {
   const [position, setPosition] = React.useState(
@@ -109,7 +109,7 @@ export function ViewMode({ children }: ViewProps) {
           aria-hidden={position == 'hidden' ? true : false}>
           {children}
           {handlePosition()}
-          <Profile />
+          {/* <Profile /> */}
         </nav>
       </div>
     </PositionContext.Provider>
