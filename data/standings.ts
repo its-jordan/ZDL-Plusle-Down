@@ -42,7 +42,7 @@ export function allResults(filter: string) {
     .concat(week7.winners)
     .concat(week8.winners);
 
-  const winnerFilter = winnerArray.filter(
+  const winnerFilter: number = winnerArray.filter(
     (ele: string) => ele == filter
   ).length;
 
@@ -55,106 +55,68 @@ export function allResults(filter: string) {
     .concat(week7.losers)
     .concat(week8.losers);
 
-  const loserFilter = losersArray.filter((ele: string) => ele == filter).length;
+  const loserFilter: number = losersArray.filter(
+    (ele: string) => ele == filter
+  ).length;
 
   return { winnerFilter, loserFilter };
 }
 
+export function useTeamName(e: string) {
+  if (e == 'danknett') {
+    return 'BFI (Big Fucking Illumise)';
+  } else if (e == 'seanboyq') {
+    return 'Despicable Plusle and Friends';
+  } else if (e == 'resolamxxy') {
+    return 'Zeta\u0027s boob window 😚';
+  } else if (e == 'beachwatch') {
+    return 'Shit I found under the rug';
+  } else if (e == 'revelreloaded') {
+    return 'NY Yampers';
+  } else if (e == 'dtbaggins') {
+    return 'Grotto Gremlins';
+  } else if (e == 'c0c0_') {
+    return 'Clown Central';
+  } else if (e == 'ifurgat') {
+    return 'CUTENESS OVERLOAD ≧◡≦';
+  } else if (e == 'tokotoro') {
+    return 'Wooloo \u0026 Crew';
+  } else if (e == 'castleflutes') {
+    return 'Max Mensingus';
+  } else if (e == 'thanabros') {
+    return 'The Weathermen';
+  } else if (e == 'its_jordan') {
+    return 'OMGVAMPIRESARESOKAWAII🧛';
+  } else return '';
+}
+
+export function standingConstructor(
+  name: string,
+  type: string,
+  eliminated: boolean
+) {
+  return {
+    name: name,
+    teamName: useTeamName(name),
+    wins: allResults(name).winnerFilter,
+    losses: allResults(name).loserFilter,
+    eliminated: eliminated,
+    primaryType: type,
+  };
+}
+
 export const standings = [
-  {
-    name: 'danknett',
-    teamName: 'BFI (Big Fucking Illumise)',
-    wins: allResults('danknett').winnerFilter,
-    losses: allResults('danknett').loserFilter,
-    eliminated: false,
-    primaryType: 'water',
-  },
-  {
-    name: 'seanboyq',
-    teamName: 'Despicable Plusle and Friends',
-    wins: allResults('seanboyq').winnerFilter,
-    losses: allResults('seanboyq').loserFilter,
-    eliminated: false,
-    primaryType: 'fire',
-  },
-  {
-    name: 'resolamxxy',
-    teamName: 'Zeta\u0027s boob window 😚',
-    wins: allResults('resolamxxy').winnerFilter,
-    losses: allResults('resolamxxy').loserFilter,
-    eliminated: false,
-    primaryType: 'water',
-  },
-  {
-    name: 'beachwatch',
-    teamName: 'Shit I found under the rug',
-    wins: allResults('beachwatch').winnerFilter,
-    losses: allResults('beachwatch').loserFilter,
-    eliminated: false,
-    primaryType: 'bug',
-  },
-  {
-    name: 'revelreloaded',
-    teamName: 'NY Yampers',
-    wins: allResults('revelreloaded').winnerFilter,
-    losses: allResults('revelreloaded').loserFilter,
-    eliminated: false,
-    primaryType: 'electric',
-  },
-  {
-    name: 'dtbaggins',
-    teamName: 'Grotto Gremlins',
-    wins: allResults('dtbaggins').winnerFilter,
-    losses: allResults('dtbaggins').loserFilter,
-    eliminated: false,
-    primaryType: 'grass',
-  },
-  {
-    name: 'c0c0_',
-    teamName: 'Clown Central',
-    wins: allResults('c0c0_').winnerFilter,
-    losses: allResults('c0c0_').loserFilter,
-    eliminated: false,
-    primaryType: 'bug',
-  },
-  {
-    name: 'ifurgat',
-    teamName: 'CUTENESS OVERLOAD ≧◡≦',
-    wins: allResults('ifurgat').winnerFilter,
-    losses: allResults('ifurgat').loserFilter,
-    eliminated: false,
-    primaryType: 'poison',
-  },
-  {
-    name: 'tokotoro',
-    teamName: 'Wooloo \u0026 Crew',
-    wins: allResults('tokotoro').winnerFilter,
-    losses: allResults('tokotoro').loserFilter,
-    eliminated: false,
-    primaryType: 'fire',
-  },
-  {
-    name: 'castleflutes',
-    teamName: 'Max Mensingus',
-    wins: allResults('castleflutes').winnerFilter,
-    losses: allResults('castleflutes').loserFilter,
-    eliminated: false,
-    primaryType: 'ground',
-  },
-  {
-    name: 'thanabros',
-    teamName: 'The Weathermen',
-    wins: allResults('thanabros').winnerFilter,
-    losses: allResults('thanabros').loserFilter,
-    eliminated: false,
-    primaryType: 'normal',
-  },
-  {
-    name: 'its_jordan',
-    teamName: 'OMGVAMPIRESARESOKAWAII🧛',
-    wins: allResults('its_jordan').winnerFilter,
-    losses: allResults('its_jordan').loserFilter,
-    eliminated: false,
-    primaryType: 'bug',
-  },
+  // Name: string, Type: string, Eliminated: boolean
+  standingConstructor('danknett', 'water', false),
+  standingConstructor('seanboyq', 'fire', false),
+  standingConstructor('resolamxxy', 'water', false),
+  standingConstructor('beachwatch', 'bug', false),
+  standingConstructor('revelreloaded', 'electric', false),
+  standingConstructor('dtbaggins', 'grass', false),
+  standingConstructor('c0c0_', 'bug', false),
+  standingConstructor('ifurgat', 'poison', false),
+  standingConstructor('tokotoro', 'fire', false),
+  standingConstructor('castleflutes', 'ground', false),
+  standingConstructor('thanabros', 'normal', false),
+  standingConstructor('its_jordan', 'bug', false),
 ];
