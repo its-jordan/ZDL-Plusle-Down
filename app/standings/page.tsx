@@ -10,9 +10,7 @@ const winPercentage = (wins: number, losses: number) => {
 };
 
 const sortedStandings = [...standings].sort(
-  (a, b) =>
-    winPercentage(b.wins, b.losses) - winPercentage(a.wins, a.losses) ||
-    b.defeats - b.deaths - (a.defeats - a.deaths)
+  (a, b) => winPercentage(b.wins, b.losses) - winPercentage(a.wins, a.losses)
 );
 const sortedStandingsReverse = [...standings].sort((a, b) => a.wins - b.wins);
 
@@ -27,6 +25,7 @@ export default function Standings() {
     <CommonPage header='Standings'>
       <div className='standings-container' role='treegrid'>
         <div className='standings-header'>
+          <div className='standings-header-content'></div>
           <div className='standings-header-content'>Name</div>
           <div className='standings-header-content'>Wins</div>
           <div className='standings-header-content'>Losses</div>
@@ -39,9 +38,38 @@ export default function Standings() {
             <Link
               href={`/teams/${data.name}`}
               className='standings-data'
+              data-type={data.primaryType}
               key={index}>
+              <div
+                className='type-icon-container type-matchup'
+                key={index}
+                data-type='type'>
+                <img
+                  src={`/icons/${data.primaryType}.svg`}
+                  height={30}
+                  width={30}
+                  data-type={data.primaryType}
+                  className='pokemon-type-icon'
+                />
+                <div
+                  className='hover-only type_title'
+                  data-type={data.primaryType}>
+                  {data.primaryType.charAt(0).toUpperCase() +
+                    data.primaryType.slice(1)}
+                </div>
+              </div>
               <div className='standings-data-content' data-type='name'>
-                {replaceUsername(data.name)}
+                <div className='standings-data-teamname'>
+                  <div>{data.teamName} </div>
+                  {data.eliminated ? (
+                    <div className='eliminated-badge'>Eliminated</div>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+                <div className='standings-data-username'>
+                  {replaceUsername(data.name)}
+                </div>
               </div>
               <div className='standings-data-content' data-type='wins'>
                 {data.wins}
@@ -57,21 +85,6 @@ export default function Standings() {
               <div className='standings-data-gb'>
                 {maxWins ? gamesBehind(data.wins, maxWins) : ''}
               </div>
-              {/* <div
-                className={`${
-                  Math.sign(data.defeats - data.deaths) == 1
-                    ? 'standings-data-diff diff-positive'
-                    : Math.sign(data.defeats - data.deaths) == 0
-                    ? 'standings-data-diff diff-zero'
-                    : 'standings-data-diff diff-negative'
-                }`}>
-                {Math.sign(data.defeats - data.deaths) == 1
-                  ? '+'
-                  : Math.sign(data.defeats - data.deaths) == 0
-                  ? ''
-                  : ''}
-                {data.defeats - data.deaths}
-              </div> */}
             </Link>
           );
         })}
