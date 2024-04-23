@@ -6,7 +6,7 @@ import { MdOutlineCatchingPokemon } from 'react-icons/md';
 import Link from 'next/link';
 import { Header } from '@/components/viewButton';
 
-export const teamsArray = [
+const teamsArray = [
   {
     player: 'danknett',
     teamName: 'BFI (Big Fucking Illumise)',
