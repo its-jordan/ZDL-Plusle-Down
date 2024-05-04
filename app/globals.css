@@ -574,7 +574,7 @@ body.light {
   padding: 0.5rem 0.5rem;
   background: linear-gradient(
     125deg,
-    color-mix(in hsl, var(--_type-color), var(--background-secondary)),
+    color-mix(in srgb, var(--_type-color), var(--background-secondary)),
     var(--background-secondary) 50%
   );
   border: 1px solid var(--background-icons);
@@ -584,7 +584,7 @@ body.light {
 .pokemon-card:hover {
   background: linear-gradient(
     125deg,
-    color-mix(in hsl, var(--_type-color) 90%, var(--background-secondary)),
+    color-mix(in srgb, var(--_type-color) 90%, var(--background-secondary)),
     var(--background-secondary) 50%
   );
 }
@@ -654,7 +654,7 @@ body.light {
     var(--background-secondary)
   );
   border: 1px solid
-    color-mix(in hsl, var(--_type-color) 50%, var(--background-secondary));
+    color-mix(in srgb, var(--_type-color) 50%, var(--background-secondary));
   backdrop-filter: blur(5px);
   opacity: 0;
   scale: 0;
@@ -774,7 +774,7 @@ body.light {
   aspect-ratio: 276/378;
   background: linear-gradient(
     180deg,
-    color-mix(in hsl, var(--_type-color), rgb(44, 44, 44)),
+    color-mix(in srgb, var(--_type-color), rgb(44, 44, 44)),
     rgb(44, 44, 44) 50%
   );
   transition: scale 300ms ease;
@@ -838,7 +838,7 @@ body.light {
   position: absolute;
   right: 1.375rem;
   top: 1.375rem;
-  background-color: color-mix(in hsl, var(--_type-color), rgb(44, 44, 44));
+  background-color: color-mix(in srgb, var(--_type-color), rgb(44, 44, 44));
   border-radius: 0.5rem;
   padding: 0.25rem 0.675rem;
   opacity: 1;
@@ -1167,7 +1167,7 @@ body.light {
     var(--background-secondary)
   );
   border: 1px solid
-    color-mix(in hsl, var(--_type-color) 50%, var(--background-secondary));
+    color-mix(in srgb, var(--_type-color) 50%, var(--background-secondary));
   color: white !important;
   opacity: 0;
   scale: 0;
@@ -1287,7 +1287,7 @@ body.light {
   flex-direction: row-reverse;
   background: linear-gradient(
     125deg,
-    color-mix(in hsl, var(--_type-color), var(--background-secondary)),
+    color-mix(in srgb, var(--_type-color), var(--background-secondary)),
     var(--background-secondary) 80%
   );
   padding: 0.5rem;
@@ -1910,7 +1910,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
     var(--background-secondary)
   );
   border: 1px solid
-    color-mix(in hsl, var(--_type-color) 50%, var(--background-secondary));
+    color-mix(in srgb, var(--_type-color) 50%, var(--background-secondary));
   backdrop-filter: blur(5px);
   opacity: 0;
   scale: 0;
@@ -2004,7 +2004,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
   background-color: var(--background-secondary);
   background: linear-gradient(
     125deg,
-    color-mix(in hsl, var(--_type-color), var(--background-hovers) 60%),
+    color-mix(in srgb, var(--_type-color), var(--background-hovers) 60%),
     var(--background-secondary) 50%
   );
   padding-block: 1rem;
