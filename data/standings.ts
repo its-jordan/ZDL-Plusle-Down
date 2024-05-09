@@ -1,5 +1,6 @@
 import schedule from '@/data/schedule.json';
 import { returnResults } from './results';
+import useTeamName from './teamNames';
 
 export function matches(currentWeek: string) {
   // @ts-ignore
@@ -62,34 +63,6 @@ export function allResults(filter: string) {
   return { winnerFilter, loserFilter };
 }
 
-export function useTeamName(e: string) {
-  if (e == 'danknett') {
-    return 'BFI (Big Fucking Illumise)';
-  } else if (e == 'seanboyq') {
-    return 'Despicable Plusle and Friends';
-  } else if (e == 'resolamxxy') {
-    return 'Zeta\u0027s boob window 😚';
-  } else if (e == 'beachwatch') {
-    return 'Shit I found under the rug';
-  } else if (e == 'revelreloaded') {
-    return 'NY Yampers';
-  } else if (e == 'dtbaggins') {
-    return 'Grotto Gremlins';
-  } else if (e == 'c0c0_') {
-    return 'Clown Central';
-  } else if (e == 'ifurgat') {
-    return 'CUTENESS OVERLOAD ≧◡≦';
-  } else if (e == 'tokotoro') {
-    return 'Wooloo \u0026 Crew';
-  } else if (e == 'castleflutes') {
-    return 'Max Mensingus';
-  } else if (e == 'thanabros') {
-    return 'The Weathermen';
-  } else if (e == 'its_jordan') {
-    return 'OMGVAMPIRESARESOKAWAII🧛';
-  } else return '';
-}
-
 export function standingConstructor(
   name: string,
   type: string,
@@ -99,7 +72,10 @@ export function standingConstructor(
     name: name,
     teamName: useTeamName(name),
     wins: allResults(name).winnerFilter,
-    losses: allResults(name).loserFilter,
+    losses:
+      name == 'danknett' || name == 'c0c0_'
+        ? allResults(name).loserFilter + 1
+        : allResults(name).loserFilter,
     eliminated: eliminated,
     primaryType: type,
   };

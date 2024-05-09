@@ -40,23 +40,8 @@ export default function Standings() {
               className='standings-data'
               data-type={data.primaryType}
               key={index}>
-              <div
-                className='type-icon-container type-matchup'
-                key={index}
-                data-type='type'>
-                <img
-                  src={`/icons/${data.primaryType}.svg`}
-                  height={30}
-                  width={30}
-                  data-type={data.primaryType}
-                  className='pokemon-type-icon'
-                />
-                <div
-                  className='hover-only type_title'
-                  data-type={data.primaryType}>
-                  {data.primaryType.charAt(0).toUpperCase() +
-                    data.primaryType.slice(1)}
-                </div>
+              <div className='standings-data-content' data-type='position'>
+                {index + 1}
               </div>
               <div className='standings-data-content' data-type='name'>
                 <div className='standings-data-teamname'>

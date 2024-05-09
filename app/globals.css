@@ -1977,7 +1977,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
 .standings-data {
   display: grid;
   grid-template-columns:
-    60px 5fr 70px 70px 90px 70px
+    40px 5fr 70px 70px 90px 70px
     /* 70px */;
   justify-items: start;
   align-items: center;
@@ -1993,6 +1993,10 @@ html:has(.pokemon-page-container[data-color='red']) body {
 .standings-header :first-child,
 .standings-data :first-child {
   justify-self: start;
+}
+
+.standings-data-content[data-type='position'] {
+  font-weight: 700;
 }
 
 .standings-header {
