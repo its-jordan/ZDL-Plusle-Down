@@ -1,6 +1,6 @@
 import mons from '@/data/allmons2.json';
 
-export async function tryMonsAPI(mon: string[]) {
+async function tryMonsAPI(mon: string[]) {
   return mon.forEach(async (mon) => {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${mon}`);
     if (res.ok) {
