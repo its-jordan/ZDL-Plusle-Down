@@ -8,40 +8,50 @@ import { Header } from '@/components/viewButton';
 
 const teamsArray = [
   {
-    player: 'danknett',
-    teamName: 'BFI (Big Fucking Illumise)',
-    showdown: 'Pweenween',
+    player: 'racer',
+    teamName: 'TEAMNAME',
+    showdown: 'SHOWDOWN',
   },
   {
     player: 'seanboyq',
-    teamName: 'Despicable Plusle and Friends',
+    teamName: 'TEAMNAME',
     showdown: 'SeanBoyQ',
   },
   {
     player: 'resolamxxy',
-    teamName: 'Zeta\u0027s boob window 😚',
+    teamName: 'TEAMNAME',
     showdown: 'resolamxxy',
   },
   {
     player: 'beachwatch',
-    teamName: 'Shit I found under the rug',
+    teamName: 'TEAMNAME',
     showdown: 'brickneyspears',
   },
-  { player: 'revelreloaded', teamName: 'NY Yampers', showdown: 'like p diddy' },
-  { player: 'dtbaggins', teamName: 'Grotto Gremlins', showdown: 'DTBaggins' },
-  { player: 'c0c0_', teamName: 'Clown Central', showdown: 'Wishmaker01' },
-  { player: 'ifurgat', teamName: 'CUTENESS OVERLOAD ≧◡≦', showdown: 'ifurgat' },
-  { player: 'tokotoro', teamName: 'Wooloo \u0026 Crew', showdown: 't0kotoro' },
+  { player: 'revelreloaded', teamName: 'TEAMNAME', showdown: 'like p diddy' },
+  { player: 'dtbaggins', teamName: 'TEAMNAME', showdown: 'DTBaggins' },
+  { player: 'c0c0_', teamName: 'TEAMNAME', showdown: 'Wishmaker01' },
+  { player: 'ifurgat', teamName: 'TEAMNAME', showdown: 'ifurgat' },
+  { player: 'tokotoro', teamName: 'TEAMNAME', showdown: 't0kotoro' },
   {
     player: 'castleflutes',
-    teamName: 'Max Mensingus',
+    teamName: 'TEAMNAME',
     showdown: 'johnstaraptor',
   },
-  { player: 'thanabros', teamName: 'The Weathermen', showdown: 'THANABR0S' },
+  { player: 'thanabros', teamName: 'TEAMNAME', showdown: 'THANABR0S' },
   {
     player: 'its_jordan',
-    teamName: 'OMGVAMPIRESARESOKAWAII🧛',
+    teamName: 'TEAMNAME',
     showdown: 'doomedschultze',
+  },
+  {
+    player: 'aquagtothepast',
+    teamName: 'TEAMNAME',
+    showdown: 'SHOWDOWN',
+  },
+  {
+    player: 'bigmanbinch',
+    teamName: 'TEAMNAME',
+    showdown: 'SHOWDOWN',
   },
 ];
 

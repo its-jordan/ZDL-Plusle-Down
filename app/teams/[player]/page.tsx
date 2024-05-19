@@ -4,50 +4,53 @@ import { usePathname } from 'next/navigation';
 
 import ReturnMon, { ReturnTypeMatchup } from '@/components/getPokemon';
 import ViewMode from '@/components/viewButton';
-import teams from '@/data/teams.json';
+import teams from '@/data/teamsS2.json';
 import replaceUsername from '@/functions/replaceUsername';
 
 export default function Teams() {
   const pathname = usePathname().replace('/teams/', '');
   function returnPathTextArray() {
-    if (pathname == 'danknett') {
-      const pokemonArray = teams.danknett;
-      return pokemonArray;
-    } else if (pathname == 'seanboyq') {
-      const pokemonArray = teams.seanboyq;
-      return pokemonArray;
-    } else if (pathname == 'resolamxxy') {
-      const pokemonArray = teams.resolamxxy;
-      return pokemonArray;
-    } else if (pathname == 'beachwatch') {
-      const pokemonArray = teams.beachwatch;
-      return pokemonArray;
-    } else if (pathname == 'revelreloaded') {
-      const pokemonArray = teams.revelreloaded;
-      return pokemonArray;
-    } else if (pathname == 'dtbaggins') {
-      const pokemonArray = teams.dtbaggins;
-      return pokemonArray;
-    } else if (pathname == 'c0c0_') {
-      const pokemonArray = teams.c0c0_;
-      return pokemonArray;
-    } else if (pathname == 'ifurgat') {
-      const pokemonArray = teams.ifurgat;
-      return pokemonArray;
-    } else if (pathname == 'tokotoro') {
-      const pokemonArray = teams.tokotoro;
-      return pokemonArray;
-    } else if (pathname == 'castleflutes') {
-      const pokemonArray = teams.castleflutes;
+    if (pathname == 'racer') {
+      const pokemonArray = teams.racer;
       return pokemonArray;
     } else if (pathname == 'thanabros') {
       const pokemonArray = teams.thanabros;
       return pokemonArray;
+    } else if (pathname == 'seanboyq') {
+      const pokemonArray = teams.seanboyq;
+      return pokemonArray;
+    } else if (pathname == 'bigmanbinch') {
+      const pokemonArray = teams.bigmanbinch;
+      return pokemonArray;
+    } else if (pathname == 'castleflutes') {
+      const pokemonArray = teams.castleflutes;
+      return pokemonArray;
+    } else if (pathname == 'beachwatch') {
+      const pokemonArray = teams.beachwatch;
+      return pokemonArray;
+    } else if (pathname == 'c0c0_') {
+      const pokemonArray = teams.c0c0_;
+      return pokemonArray;
+    } else if (pathname == 'dtbaggins') {
+      const pokemonArray = teams.dtbaggins;
+      return pokemonArray;
+    } else if (pathname == 'revelreloaded') {
+      const pokemonArray = teams.revelreloaded;
+      return pokemonArray;
     } else if (pathname == 'its_jordan') {
       const pokemonArray = teams.its_jordan;
       return pokemonArray;
+    } else if (pathname == 'ifurgat') {
+      const pokemonArray = teams.ifurgat;
+      return pokemonArray;
+    } else if (pathname == 'resolamxxy') {
+      const pokemonArray = teams.resolamxxy;
+      return pokemonArray;
+    } else if (pathname == 'tokotoro') {
+      const pokemonArray = teams.tokotoro;
+      return pokemonArray;
     } else {
-      const pokemonArray = teams.danknett;
+      const pokemonArray = teams.aquagtothepast;
       return pokemonArray;
     }
   }

@@ -1,7 +1,7 @@
 import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
 import { getTypeWeaknesses } from '../data/pokemon-types/index';
-import returnMons from '@/data/pokemonData';
+import returnMons from '@/data/pokemonDataS2';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 import { MdCatchingPokemon } from 'react-icons/md';
 import Image from 'next/image';
@@ -17,6 +17,20 @@ interface Pokemon extends Partial<CSSStyleDeclaration> {
 export function nameSplit(e: string) {
   if (e == 'farfetchd-galar') {
     return "Galarian Farfetch'd";
+  } else if (
+    e.includes('iron-') ||
+    e.includes('tapu-') ||
+    e.includes('raging-') ||
+    e.includes('-therian') ||
+    e.includes('-wake')
+  ) {
+    return `${
+      e.split('-')[0].charAt(0).toUpperCase() +
+      e.split('-')[0].slice(1) +
+      ' ' +
+      e.split('-')[1].charAt(0).toUpperCase() +
+      e.split('-')[1].slice(1)
+    }`;
   } else if (e.includes('galar') == true) {
     return `${
       e.split('-')[1].charAt(0).toUpperCase() +
@@ -55,7 +69,7 @@ export function nameSplit(e: string) {
     }`;
   } else if (e.includes('blade') == true) {
     return `${e.split('-')[0]}`;
-  } else if (e.includes('rotom') == true) {
+  } else if (e.includes('rotom-') == true) {
     return `${
       e.split('-')[1].charAt(0).toUpperCase() + e.split('-')[1].slice(1)
     } ${
@@ -64,6 +78,12 @@ export function nameSplit(e: string) {
   } else if (e.includes('incarnate') == true) {
     return `${
       e.split('-')[0].charAt(0).toUpperCase() + e.split('-')[0].slice(1)
+    }`;
+  } else if (e.includes('-fini') == true) {
+    return `${
+      e.split('-')[0].charAt(0).toUpperCase() +
+      e.split('-')[0].slice(1) +
+      ' Fini'
     }`;
   } else if (e.includes('-f') == true) {
     return `${
