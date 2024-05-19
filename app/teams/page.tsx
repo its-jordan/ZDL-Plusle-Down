@@ -28,7 +28,7 @@ const teamsArray = [
     showdown: 'brickneyspears',
   },
   { player: 'revelreloaded', teamName: 'TEAMNAME', showdown: 'like p diddy' },
-  { player: 'dtbaggins', teamName: 'TEAMNAME', showdown: 'DTBaggins' },
+  { player: 'dtbaggins', teamName: 'Berry Roo', showdown: 'DTBaggins' },
   { player: 'c0c0_', teamName: 'TEAMNAME', showdown: 'Wishmaker01' },
   { player: 'ifurgat', teamName: 'TEAMNAME', showdown: 'ifurgat' },
   { player: 'tokotoro', teamName: 'TEAMNAME', showdown: 't0kotoro' },
