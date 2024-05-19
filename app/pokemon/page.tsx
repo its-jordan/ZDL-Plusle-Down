@@ -1,7 +1,7 @@
 'use client';
 
 import ViewMode from '@/components/viewButton';
-import allmons from '@/data/allmons2.json';
+import allmons from '@/data/allmons.json';
 import ReturnMon from '@/components/getPokemon';
 
 export default function AllMons() {

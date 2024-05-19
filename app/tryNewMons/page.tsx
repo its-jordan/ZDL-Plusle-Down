@@ -16,7 +16,7 @@ async function tryMonsAPI(mon: string[]) {
 }
 
 export default async function TryMon() {
-  tryMonsAPI(mons);
+  // tryMonsAPI(mons);
   return (
     <div>
       Trying every pokemon against the pokeapi. Check Console for more
