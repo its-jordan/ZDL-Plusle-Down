@@ -1,25 +1,17 @@
-import schedule from '@/data/schedule.json';
+import schedule from '@/data/schedule2.json';
 import { returnResults } from './results';
-import useTeamName from './teamNames';
+import { teamArray } from './teamNames';
 
 export function matches(currentWeek: string) {
   // @ts-ignore
   const playerString = schedule[currentWeek].map((ele) => {
-    return { match: `${ele.player1}-${ele.player2}`, week: currentWeek };
+    return { player1: ele.player1, player2: ele.player2, week: currentWeek };
   });
   const winners = playerString.map((ele: any) => {
-    return returnResults(
-      ele.match.split('-')[0],
-      ele.match.split('-')[1],
-      ele.week
-    )?.winner;
+    return returnResults(ele.player1, ele.player2, ele.week)?.winner;
   });
   const losers = playerString.map((ele: any) => {
-    return returnResults(
-      ele.match.split('-')[0],
-      ele.match.split('-')[1],
-      ele.week
-    )?.loser;
+    return returnResults(ele.player1, ele.player2, ele.week)?.loser;
   });
   return { winners, losers };
 }
@@ -70,12 +62,10 @@ export function standingConstructor(
 ) {
   return {
     name: name,
-    teamName: useTeamName(name),
+    // @ts-ignore
+    teamName: teamArray[name].team,
     wins: allResults(name).winnerFilter,
-    losses:
-      name == 'danknett' || name == 'c0c0_'
-        ? allResults(name).loserFilter + 1
-        : allResults(name).loserFilter,
+    losses: allResults(name).loserFilter,
     eliminated: eliminated,
     primaryType: type,
   };
@@ -83,16 +73,18 @@ export function standingConstructor(
 
 export const standings = [
   // Name: string, Type: string, Eliminated: boolean
-  standingConstructor('danknett', 'water', false),
-  standingConstructor('seanboyq', 'fire', false),
+  standingConstructor('racer_59', 'fighting', false),
+  standingConstructor('thanabros', 'ground', false),
+  standingConstructor('seanboyq', 'flying', false),
+  standingConstructor('bigmanbinch', 'fairy', false),
+  standingConstructor('castleflutes', 'psychic', false),
+  standingConstructor('beachwatch', 'dragon', false),
+  standingConstructor('c0c0_', 'electric', false),
+  standingConstructor('dtbaggins', 'dark', false),
+  standingConstructor('revelreloaded', 'rock', false),
+  standingConstructor('its_jordan', 'water', false),
+  standingConstructor('ifurgat', 'water', false),
   standingConstructor('resolamxxy', 'water', false),
-  standingConstructor('beachwatch', 'bug', false),
-  standingConstructor('revelreloaded', 'electric', false),
-  standingConstructor('dtbaggins', 'grass', false),
-  standingConstructor('c0c0_', 'bug', false),
-  standingConstructor('ifurgat', 'poison', false),
-  standingConstructor('tokotoro', 'fire', false),
-  standingConstructor('castleflutes', 'ground', false),
-  standingConstructor('thanabros', 'normal', false),
-  standingConstructor('its_jordan', 'bug', false),
+  standingConstructor('tokotoro', 'water', false),
+  standingConstructor('aquagtothepast', 'water', false),
 ];
