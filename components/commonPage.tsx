@@ -1,11 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
 import { Header } from './viewButton';
+import { teamArray } from '@/data/teamNames';
 
 interface ViewProps {
   children?: React.ReactNode;
   header?: string;
-  match?: { player1: string; player2: string; score: string };
+  match: { player1: string; player2: string; score: string };
+  index?: number;
+  customClass?: string;
+}
+
+interface ViewPropsNoMatch {
+  children?: React.ReactNode;
+  header?: string;
   index?: number;
   customClass?: string;
 }
@@ -30,7 +38,7 @@ export default function CommonPage({
   children,
   header,
   customClass,
-}: ViewProps) {
+}: ViewPropsNoMatch) {
   return (
     <main className='content-grid'>
       <Header>
@@ -41,7 +49,7 @@ export default function CommonPage({
   );
 }
 
-export function ScheduleTemplate({ children, header }: ViewProps) {
+export function ScheduleTemplate({ children, header }: ViewPropsNoMatch) {
   return (
     <div>
       <div className='schedule-container'>{children}</div>
@@ -49,26 +57,15 @@ export function ScheduleTemplate({ children, header }: ViewProps) {
   );
 }
 
-function replaceTeamName(e: string) {
-  if (e == 'danknett') return 'BFI (Big Fucking Illumise)';
-  else if (e == 'seanboyq') return 'Despicable Plusle and Friends';
-  else if (e == 'resolamxxy') return 'Zeta\u0027s boob window 😚';
-  else if (e == 'beachwatch') return 'Shit I found under the rug';
-  else if (e == 'revelreloaded') return 'NY Yampers';
-  else if (e == 'dtbaggins') return 'Grotto Gremlins';
-  else if (e == 'c0c0_') return 'Clown Central';
-  else if (e == 'ifurgat') return 'CUTENESS OVERLOAD ≧◡≦';
-  else if (e == 'tokotoro') return 'Wooloo & Crew';
-  else if (e == 'castleflutes') return 'Max Mensingus';
-  else if (e == 'thanabros') return 'The Weathermen';
-  else if (e == 'its_jordan') return 'OMGVAMPIRESARESOKAWAII🧛';
-  else return e;
-}
-
 export function MatchTemplate({ match, index }: ViewProps) {
+  // @ts-ignore
+  const team1 = teamArray[match.player1];
+  console.log(team1);
+  // @ts-ignore
+  const team2 = teamArray[match.player2];
   return (
     <Link
-      href={`/scores/${match?.player1}-${match?.player2}`}
+      href={`/scores/${match.player1}-${match.player2}`}
       key={index}
       className='match-container'
       data-score1={match?.score.charAt(0)}
@@ -78,11 +75,10 @@ export function MatchTemplate({ match, index }: ViewProps) {
         <>
           <div className='match-player-container'>
             <div className='match-player player-1'>
-              <div className='match-team-name'>
-                {match !== undefined ? replaceTeamName(match.player1) : <></>}
-              </div>
-              <div className='match-player-name'>
-                {match !== undefined ? replaceUsername(match.player1) : <></>}
+              <img className='match-player-image' src={team1.picture}></img>
+              <div className='match-player-data'>
+                <div className='match-team-name'>{team1.team}</div>
+                <div className='match-player-name'>{team1.discord}</div>
               </div>
             </div>
             <div className='match-score'>
@@ -91,11 +87,10 @@ export function MatchTemplate({ match, index }: ViewProps) {
           </div>
           <div className='match-player-container'>
             <div className='match-player player-2'>
-              <div className='match-team-name'>
-                {match !== undefined ? replaceTeamName(match.player2) : <></>}
-              </div>
-              <div className='match-player-name'>
-                {match !== undefined ? replaceUsername(match.player2) : <></>}
+              <img className='match-player-image' src={team2.picture}></img>
+              <div className='match-player-data'>
+                <div className='match-team-name'>{team2.team}</div>
+                <div className='match-player-name'>{team2.discord}</div>
               </div>
             </div>
             <div className='match-score'>
@@ -107,21 +102,19 @@ export function MatchTemplate({ match, index }: ViewProps) {
         <>
           <div className='match-player-container'>
             <div className='match-player player-1'>
-              <div className='match-team-name'>
-                {match !== undefined ? replaceTeamName(match.player1) : <></>}
-              </div>
-              <div className='match-player-name'>
-                {match !== undefined ? replaceUsername(match.player1) : <></>}
+              <img className='match-player-image' src={team1.picture}></img>
+              <div className='match-player-data'>
+                <div className='match-team-name'>{team1.team}</div>
+                <div className='match-player-name'>{team1.discord}</div>
               </div>
             </div>
           </div>
           <div className='match-player-container'>
             <div className='match-player player-2'>
-              <div className='match-team-name'>
-                {match !== undefined ? replaceTeamName(match.player2) : <></>}
-              </div>
-              <div className='match-player-name'>
-                {match !== undefined ? replaceUsername(match.player2) : <></>}
+              <img className='match-player-image' src={team2.picture}></img>
+              <div className='match-player-data'>
+                <div className='match-team-name'>{team2.team}</div>
+                <div className='match-player-name'>{team2.discord}</div>
               </div>
             </div>
           </div>

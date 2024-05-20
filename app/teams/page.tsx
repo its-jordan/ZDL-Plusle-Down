@@ -1,59 +1,11 @@
 'use client';
 
 import React from 'react';
-import { BsDiscord } from 'react-icons/bs';
+import { BsDiscord, BsPersonFill } from 'react-icons/bs';
 import { MdOutlineCatchingPokemon } from 'react-icons/md';
 import Link from 'next/link';
 import { Header } from '@/components/viewButton';
-
-const teamsArray = [
-  {
-    player: 'racer',
-    teamName: 'TEAMNAME',
-    showdown: 'SHOWDOWN',
-  },
-  {
-    player: 'seanboyq',
-    teamName: 'TEAMNAME',
-    showdown: 'SeanBoyQ',
-  },
-  {
-    player: 'resolamxxy',
-    teamName: 'TEAMNAME',
-    showdown: 'resolamxxy',
-  },
-  {
-    player: 'beachwatch',
-    teamName: 'TEAMNAME',
-    showdown: 'brickneyspears',
-  },
-  { player: 'revelreloaded', teamName: 'TEAMNAME', showdown: 'like p diddy' },
-  { player: 'dtbaggins', teamName: 'Berry Roo', showdown: 'DTBaggins' },
-  { player: 'c0c0_', teamName: 'TEAMNAME', showdown: 'Wishmaker01' },
-  { player: 'ifurgat', teamName: 'TEAMNAME', showdown: 'ifurgat' },
-  { player: 'tokotoro', teamName: 'TEAMNAME', showdown: 't0kotoro' },
-  {
-    player: 'castleflutes',
-    teamName: 'TEAMNAME',
-    showdown: 'johnstaraptor',
-  },
-  { player: 'thanabros', teamName: 'TEAMNAME', showdown: 'THANABR0S' },
-  {
-    player: 'its_jordan',
-    teamName: 'TEAMNAME',
-    showdown: 'doomedschultze',
-  },
-  {
-    player: 'aquagtothepast',
-    teamName: 'TEAMNAME',
-    showdown: 'SHOWDOWN',
-  },
-  {
-    player: 'bigmanbinch',
-    teamName: 'TEAMNAME',
-    showdown: 'SHOWDOWN',
-  },
-];
+import { teamsArray } from '@/data/teamNames';
 
 function replaceUsername(e: string) {
   if (e == 'danknett') {
@@ -83,12 +35,17 @@ export default function Teams() {
             <Link
               key={index}
               className='team-name'
-              href={`/teams/${team.player}`}>
-              <div className='team-name-teamname'>{team.teamName}</div>
+              href={`/teams/${team.discord}`}>
+              <img className='background-team-picture' src={team.picture}></img>
+              <div className='team-name-teamname'>{team.team}</div>
               <div className='team-bottom-container'>
                 <div className='discord-link'>
+                  <BsPersonFill />
+                  {team.name}
+                </div>
+                <div className='discord-link'>
                   <BsDiscord />
-                  {replaceUsername(team.player)}
+                  {replaceUsername(team.discord)}
                 </div>
                 <Link
                   href={`https://pokemonshowdown.com/users/${team.showdown}`}

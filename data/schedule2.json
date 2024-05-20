@@ -1,0 +1,226 @@
+{
+  "week-1": [
+    {
+      "player1": "c0c0_",
+      "player2": "beachwatch",
+      "score": "1-0"
+    },
+    {
+      "player1": "revelreloaded",
+      "player2": "castleflutes",
+      "score": "0-0"
+    },
+    { "player1": "racer_59", "player2": "dtbaggins", "score": "0-0" },
+    {
+      "player1": "seanboyq",
+      "player2": "tokotoro",
+      "score": "0-0"
+    },
+    {
+      "player1": "bigmanbinch",
+      "player2": "thanabros",
+      "score": "0-0"
+    },
+    {
+      "player1": "its_jordan",
+      "player2": "aquagtothepast",
+      "score": "0-0"
+    },
+    {
+      "player1": "resolamxxy",
+      "player2": "ifurgat",
+      "score": "0-0"
+    }
+  ],
+  "week-2": [
+    { "player1": "aquagtothepast", "player2": "resolamxxy", "score": "0-0" },
+    {
+      "player1": "ifurgat",
+      "player2": "c0c0_",
+      "score": "0-0"
+    },
+    {
+      "player1": "thanabros",
+      "player2": "its_jordan",
+      "score": "0-0"
+    },
+    {
+      "player1": "tokotoro",
+      "player2": "bigmanbinch",
+      "score": "0-0"
+    },
+    { "player1": "dtbaggins", "player2": "seanboyq", "score": "0-0" },
+    {
+      "player1": "castleflutes",
+      "player2": "racer_59",
+      "score": "0-0"
+    },
+    {
+      "player1": "beachwatch",
+      "player2": "revelreloaded",
+      "score": "0-0"
+    }
+  ],
+  "week-3": [
+    {
+      "player1": "seanboyq",
+      "player2": "castleflutes",
+      "score": "0-0"
+    },
+    {
+      "player1": "racer_59",
+      "player2": "beachwatch",
+      "score": "0-0"
+    },
+    { "player1": "c0c0_", "player2": "revelreloaded", "score": "0-0" },
+    { "player1": "bigmanbinch", "player2": "dtbaggins", "score": "0-0" },
+    {
+      "player1": "its_jordan",
+      "player2": "tokotoro",
+      "score": "0-0"
+    },
+    {
+      "player1": "resolamxxy",
+      "player2": "thanabros",
+      "score": "0-0"
+    },
+    {
+      "player1": "ifurgat",
+      "player2": "aquagtothepast",
+      "score": "0-0"
+    }
+  ],
+  "week-4": [
+    {
+      "player1": "dtbaggins",
+      "player2": "its_jordan",
+      "score": "0-0"
+    },
+    {
+      "player1": "thanabros",
+      "player2": "ifurgat",
+      "score": "0-0"
+    },
+    {
+      "player1": "tokotoro",
+      "player2": "resolamxxy",
+      "score": "0-0"
+    },
+    { "player1": "aquagtothepast", "player2": "c0c0_", "score": "0-0" },
+    {
+      "player1": "castleflutes",
+      "player2": "bigmanbinch",
+      "score": "0-0"
+    },
+    {
+      "player1": "beachwatch",
+      "player2": "seanboyq",
+      "score": "0-0"
+    },
+    { "player1": "revelreloaded", "player2": "racer_59", "score": "0-0" }
+  ],
+  "week-5": [
+    {
+      "player1": "dtbaggins",
+      "player2": "its_jordan",
+      "score": "0-0"
+    },
+    {
+      "player1": "thanabros",
+      "player2": "ifurgat",
+      "score": "0-0"
+    },
+    {
+      "player1": "tokotoro",
+      "player2": "resolamxxy",
+      "score": "0-0"
+    },
+    { "player1": "aquagtothepast", "player2": "c0c0_", "score": "0-0" },
+    {
+      "player1": "castleflutes",
+      "player2": "bigmanbinch",
+      "score": "0-0"
+    },
+    {
+      "player1": "beachwatch",
+      "player2": "seanboyq",
+      "score": "0-0"
+    },
+    { "player1": "revelreloaded", "player2": "racer_59", "score": "0-0" }
+  ],
+  "week-6": [
+    { "player1": "revelreloaded", "player2": "bigmanbinch", "score": "0-0" },
+    { "player1": "tokotoro", "player2": "aquagtothepast", "score": "0-0" },
+    {
+      "player1": "dtbaggins",
+      "player2": "ifurgat",
+      "score": "0-0"
+    },
+    {
+      "player1": "castleflutes",
+      "player2": "resolamxxy",
+      "score": "0-0"
+    },
+    {
+      "player1": "beachwatch",
+      "player2": "its_jordan",
+      "score": "0-0"
+    },
+    { "player1": "thanabros", "player2": "c0c0_", "score": "0-0" },
+    { "player1": "racer_59", "player2": "seanboyq", "score": "0-0" }
+  ],
+  "week-7": [
+    { "player1": "thanabros", "player2": "tokotoro", "score": "0-0" },
+    { "player1": "bigmanbinch", "player2": "racer_59", "score": "0-0" },
+    {
+      "player1": "its_jordan",
+      "player2": "revelreloaded",
+      "score": "0-0"
+    },
+    {
+      "player1": "resolamxxy",
+      "player2": "beachwatch",
+      "score": "0-0"
+    },
+    {
+      "player1": "ifurgat",
+      "player2": "castleflutes",
+      "score": "0-0"
+    },
+    { "player1": "aquagtothepast", "player2": "dtbaggins", "score": "0-0" },
+    {
+      "player1": "c0c0_",
+      "player2": "seanboyq",
+      "score": "0-0"
+    }
+  ],
+  "week-8": [
+    {
+      "player1": "seanboyq",
+      "player2": "bigmanbinch",
+      "score": "0-0"
+    },
+    { "player1": "dtbaggins", "player2": "thanabros", "score": "0-0" },
+    {
+      "player1": "castleflutes",
+      "player2": "aquagtothepast",
+      "score": "0-0"
+    },
+    {
+      "player1": "beachwatch",
+      "player2": "ifurgat",
+      "score": "0-0"
+    },
+    {
+      "player1": "revelreloaded",
+      "player2": "resolamxxy",
+      "score": "0-0"
+    },
+    {
+      "player1": "racer_59",
+      "player2": "its_jordan",
+      "score": "0-0"
+    },
+    { "player1": "tokotoro", "player2": "c0c0_", "score": "0-0" }
+  ]
+}

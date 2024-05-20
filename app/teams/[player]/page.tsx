@@ -4,57 +4,34 @@ import { usePathname } from 'next/navigation';
 
 import ReturnMon, { ReturnTypeMatchup } from '@/components/getPokemon';
 import ViewMode from '@/components/viewButton';
-import teams from '@/data/teamsS2.json';
+import Teams from '@/data/teamNames';
+
 import replaceUsername from '@/functions/replaceUsername';
+import { teamArray } from '@/data/teamNames';
 
-export default function Teams() {
+const types = [
+  'normal',
+  'fire',
+  'water',
+  'electric',
+  'grass',
+  'ice',
+  'fighting',
+  'poison',
+  'ground',
+  'flying',
+  'psychic',
+  'bug',
+  'rock',
+  'ghost',
+  'dragon',
+  'dark',
+  'steel',
+  'fairy',
+];
+export default function TeamsView() {
+  const returnPathTextArray = Teams();
   const pathname = usePathname().replace('/teams/', '');
-  function returnPathTextArray() {
-    if (pathname == 'racer') {
-      const pokemonArray = teams.racer;
-      return pokemonArray;
-    } else if (pathname == 'thanabros') {
-      const pokemonArray = teams.thanabros;
-      return pokemonArray;
-    } else if (pathname == 'seanboyq') {
-      const pokemonArray = teams.seanboyq;
-      return pokemonArray;
-    } else if (pathname == 'bigmanbinch') {
-      const pokemonArray = teams.bigmanbinch;
-      return pokemonArray;
-    } else if (pathname == 'castleflutes') {
-      const pokemonArray = teams.castleflutes;
-      return pokemonArray;
-    } else if (pathname == 'beachwatch') {
-      const pokemonArray = teams.beachwatch;
-      return pokemonArray;
-    } else if (pathname == 'c0c0_') {
-      const pokemonArray = teams.c0c0_;
-      return pokemonArray;
-    } else if (pathname == 'dtbaggins') {
-      const pokemonArray = teams.dtbaggins;
-      return pokemonArray;
-    } else if (pathname == 'revelreloaded') {
-      const pokemonArray = teams.revelreloaded;
-      return pokemonArray;
-    } else if (pathname == 'its_jordan') {
-      const pokemonArray = teams.its_jordan;
-      return pokemonArray;
-    } else if (pathname == 'ifurgat') {
-      const pokemonArray = teams.ifurgat;
-      return pokemonArray;
-    } else if (pathname == 'resolamxxy') {
-      const pokemonArray = teams.resolamxxy;
-      return pokemonArray;
-    } else if (pathname == 'tokotoro') {
-      const pokemonArray = teams.tokotoro;
-      return pokemonArray;
-    } else {
-      const pokemonArray = teams.aquagtothepast;
-      return pokemonArray;
-    }
-  }
-
   function pathnameApos() {
     if (
       pathname == 'dtbaggins' ||
@@ -64,31 +41,14 @@ export default function Teams() {
       return '\u0027';
     else return '\u0027s';
   }
-
-  const types = [
-    'normal',
-    'fire',
-    'water',
-    'electric',
-    'grass',
-    'ice',
-    'fighting',
-    'poison',
-    'ground',
-    'flying',
-    'psychic',
-    'bug',
-    'rock',
-    'ghost',
-    'dragon',
-    'dark',
-    'steel',
-    'fairy',
-  ];
-
+  // @ts-ignore
+  const team = teamArray[pathname];
+  console.log(team);
   return (
-    <ViewMode header={`${replaceUsername(pathname)}${pathnameApos()} Team`}>
-      {returnPathTextArray().map((pokemon: any, index: number) => {
+    <ViewMode
+      header={team.team}
+      links={[team.name, team.discord, team.showdown, team.picture]}>
+      {team.pokemon.map((pokemon: any, index: number) => {
         return (
           <ReturnMon
             pokemon={pokemon}

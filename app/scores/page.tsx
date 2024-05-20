@@ -3,7 +3,7 @@ import CommonPage, {
   MatchTemplate,
   ScheduleTemplate,
 } from '@/components/commonPage';
-import WeeklySchedule from '@/data/schedule.json';
+import WeeklySchedule from '@/data/schedule2.json';
 import React from 'react';
 import { Tabs, Tab, Card, CardBody } from '@nextui-org/react';
 

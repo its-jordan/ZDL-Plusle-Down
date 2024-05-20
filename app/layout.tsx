@@ -7,8 +7,8 @@ import GetCurrentTime, { GetCurrentDate } from '@/utils/getdate';
 import Profile from '@/utils/getProfilePic';
 
 export const metadata: Metadata = {
-  title: 'ZDL - Plusle Down',
-  description: 'Plusle Down! Minun Up!',
+  title: 'ZDL - Season 2',
+  description: 'Why Mega Muk banned?',
 };
 
 const backgroundColor = {

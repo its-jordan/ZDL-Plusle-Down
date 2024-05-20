@@ -3,9 +3,10 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { createContext, useContext, useEffect } from 'react';
+import { BsDiscord, BsPersonFill } from 'react-icons/bs';
 import { GiHealthNormal } from 'react-icons/gi';
 import { IoMdSpeedometer } from 'react-icons/io';
-import { MdArrowDropDown } from 'react-icons/md';
+import { MdArrowDropDown, MdOutlineCatchingPokemon } from 'react-icons/md';
 import {
   PiGridFourLight,
   PiGridFourFill,
@@ -20,6 +21,7 @@ import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
 interface ViewProps {
   children: React.ReactNode;
   header?: string;
+  links?: [name: string, showdown: string, discord: string, picture: string];
 }
 
 export function Header({ children }: ViewProps) {
@@ -144,7 +146,7 @@ export function StatStorage() {
   );
 }
 
-export default function ViewMode({ children, header }: ViewProps) {
+export default function ViewMode({ children, header, links }: ViewProps) {
   const [view, setView] = useView();
   const ModeContext = createContext(view);
   const mode = useContext(ModeContext);
@@ -181,7 +183,36 @@ export default function ViewMode({ children, header }: ViewProps) {
             <div>Teams</div>
           </div>
         </Link>
-        <h1 className='page-header flex-grow'>{header}</h1>
+        <img className='team-image' src={links?.[3]}></img>
+        <h1 className='page-header flex-grow'>
+          {links != undefined ? (
+            <>
+              <div className='header-top'>{header}</div>
+              <div className='header-bottom'>
+                <div>
+                  <div>
+                    <BsPersonFill />
+                  </div>
+                  <div>{links[0]}</div>
+                </div>
+                <div>
+                  <div>
+                    <BsDiscord />
+                  </div>
+                  <div>{links[1]}</div>
+                </div>
+                <div>
+                  <div>
+                    <MdOutlineCatchingPokemon />
+                  </div>
+                  <div>{links[2]}</div>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>{header}</>
+          )}
+        </h1>
         <StatStorage />
         {view === 'list-view' ? (
           <button

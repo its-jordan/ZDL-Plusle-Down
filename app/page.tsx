@@ -3,62 +3,20 @@
 import Image from 'next/image';
 import { NextUIProvider } from '@nextui-org/react';
 
-const plusleArray = [
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-  'plusle',
-];
-
 export default function Home() {
   return (
     <NextUIProvider>
       <main>
-        <div className='flex flex-col justify-center items-center'>
-          {plusleArray.map((data, index) => {
-            return (
-              <Image
-                className='plusle-img'
-                src={'/plusle.gif'}
-                key={index}
-                data-pokemon={data}
-                width={index * 32}
-                height={index * 32}
-                alt='plusle and minun'></Image>
-            );
-          })}
+        <div className='home-background'>
+          <div className='home-text'>ZDL Season 2</div>
+          <Image
+            className='muk-img'
+            src={'/images/muk-mega.png'}
+            data-pokemon={'muk-mega'}
+            width={2560}
+            height={2560}
+            alt='plusle and minun'></Image>
+          <div className='home-fg'></div>
         </div>
       </main>
     </NextUIProvider>
