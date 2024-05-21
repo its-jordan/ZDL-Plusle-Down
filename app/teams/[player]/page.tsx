@@ -8,6 +8,7 @@ import Teams from '@/data/teamNames';
 
 import replaceUsername from '@/functions/replaceUsername';
 import { teamArray } from '@/data/teamNames';
+import returnMons from '@/data/pokemonDataS2';
 
 const types = [
   'normal',
@@ -29,6 +30,7 @@ const types = [
   'steel',
   'fairy',
 ];
+
 export default function TeamsView() {
   const returnPathTextArray = Teams();
   const pathname = usePathname().replace('/teams/', '');
@@ -43,7 +45,6 @@ export default function TeamsView() {
   }
   // @ts-ignore
   const team = teamArray[pathname];
-  console.log(team);
   return (
     <ViewMode
       header={team.team}
