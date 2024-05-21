@@ -65,7 +65,11 @@ export default function Standings() {
               <div className='standings-data-winpct'>
                 {winPercentage(data.wins, data.losses)
                   .toFixed(3)
-                  .replace('0.', '.')}
+                  .replace('0.', '.') == 'NaN'
+                  ? '.000'
+                  : winPercentage(data.wins, data.losses)
+                      .toFixed(3)
+                      .replace('0.', '.')}
               </div>
               <div className='standings-data-gb'>
                 {maxWins ? gamesBehind(data.wins, maxWins) : ''}

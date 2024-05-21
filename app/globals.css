@@ -2120,7 +2120,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
   background-color: var(--background-secondary);
   background: linear-gradient(
     125deg,
-    color-mix(in srgb, var(--_type-color), var(--background-hovers) 60%),
+    color-mix(in srgb, var(--_type-color), var(--background-hovers) 40%),
     var(--background-secondary) 50%
   );
   padding-block: 1rem;
