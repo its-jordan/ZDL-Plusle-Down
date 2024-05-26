@@ -10,7 +10,7 @@ export const teamArray = {
     pokemon: teams.racer_59,
     discord: 'racer_59',
     showdown: 'racer59',
-    picture: '/images/teams/racer.png',
+    picture: '/images/teams/racer_59.png',
   },
   thanabros: {
     name: 'Ben',
