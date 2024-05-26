@@ -6,11 +6,11 @@ import teams from '@/data/teamsS2.json';
 export const teamArray = {
   racer_59: {
     name: 'Brandon',
-    team: 'Brandon',
+    team: 'video games suck',
     pokemon: teams.racer_59,
     discord: 'racer_59',
     showdown: 'racer59',
-    picture: '/images/teams/racer_59.png',
+    picture: '/images/teams/racer.png',
   },
   thanabros: {
     name: 'Ben',
