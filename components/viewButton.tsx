@@ -1,5 +1,6 @@
 'use client';
 
+import { link } from 'fs';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { createContext, useContext, useEffect } from 'react';
@@ -21,7 +22,14 @@ import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
 interface ViewProps {
   children: React.ReactNode;
   header?: string;
-  links?: [name: string, showdown: string, discord: string, picture: string];
+  links?: [
+    name: string,
+    showdown: string,
+    discord: string,
+    picture: string,
+    wins: number,
+    losses: number
+  ];
 }
 
 export function Header({ children }: ViewProps) {
@@ -187,7 +195,18 @@ export default function ViewMode({ children, header, links }: ViewProps) {
         <h1 className='page-header flex-grow'>
           {links != undefined ? (
             <>
-              <div className='header-top'>{header}</div>
+              <div className='header-top'>
+                <div>{header}</div>
+                <div
+                  className='header-record'
+                  data-wins={links[4]}
+                  data-losses={links[5]}
+                  data-percentage={
+                    links[4] >= links[5] ? 'positive' : 'negative'
+                  }>
+                  {links[4]} - {links[5]}
+                </div>
+              </div>
               <div className='header-bottom'>
                 <div>
                   <div>

@@ -9,6 +9,7 @@ import Teams from '@/data/teamNames';
 import replaceUsername from '@/functions/replaceUsername';
 import { teamArray } from '@/data/teamNames';
 import returnMons from '@/data/pokemonDataS2';
+import { standingConstructor } from '@/data/standings';
 
 const types = [
   'normal',
@@ -45,10 +46,19 @@ export default function TeamsView() {
   }
   // @ts-ignore
   const team = teamArray[pathname];
+  const wins = standingConstructor(pathname, 'normal', false).wins;
+  const losses = standingConstructor(pathname, 'normal', false).losses;
   return (
     <ViewMode
       header={team.team}
-      links={[team.name, team.discord, team.showdown, team.picture]}>
+      links={[
+        team.name,
+        team.discord,
+        team.showdown,
+        team.picture,
+        wins,
+        losses,
+      ]}>
       {team.pokemon.map((pokemon: any, index: number) => {
         return (
           <ReturnMon

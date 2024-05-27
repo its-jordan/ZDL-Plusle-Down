@@ -675,6 +675,32 @@ body.light {
 .header-top {
   font-size: 1.75rem;
   font-weight: 700;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-hovers);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.header-record[data-percentage='positive'] {
+  background-color: var(--grass);
+  color: var(--background-base);
+}
+
+.header-record[data-percentage='negative'] {
+  background-color: var(--fighting);
+  color: var(--color-base);
 }
 
 .header-bottom,
