@@ -10,7 +10,10 @@ const winPercentage = (wins: number, losses: number) => {
 };
 
 const sortedStandings = [...standings].sort(
-  (a, b) => winPercentage(b.wins, b.losses) - winPercentage(a.wins, a.losses)
+  (a, b) =>
+    winPercentage(b.wins, b.losses) - winPercentage(a.wins, a.losses) ||
+    b.wins - a.wins ||
+    a.losses - b.losses
 );
 const sortedStandingsReverse = [...standings].sort((a, b) => a.wins - b.wins);
 
