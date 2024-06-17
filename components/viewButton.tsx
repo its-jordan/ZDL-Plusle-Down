@@ -191,7 +191,11 @@ export default function ViewMode({ children, header, links }: ViewProps) {
             <div>Teams</div>
           </div>
         </Link>
-        <img className='team-image' src={links?.[3]}></img>
+        {links?.[3] !== undefined ? (
+          <img className='team-image' src={links?.[3]}></img>
+        ) : (
+          <></>
+        )}
         <h1 className='page-header flex-grow'>
           {links != undefined ? (
             <>

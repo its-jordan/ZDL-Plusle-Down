@@ -17,12 +17,35 @@ interface Pokemon extends Partial<CSSStyleDeclaration> {
 export function nameSplit(e: string) {
   if (e == 'farfetchd-galar') {
     return "Galarian Farfetch'd";
+  } else if (e == 'ting-lu') {
+    return `${
+      e.split('-')[0].charAt(0).toUpperCase() +
+      e.split('-')[0].slice(1) +
+      '-' +
+      e.split('-')[1].charAt(0).toUpperCase() +
+      e.split('-')[1].slice(1)
+    }`;
+  } else if (e == 'eiscue-ice') {
+    return `${
+      e.split('-')[0].charAt(0).toUpperCase() +
+      e.split('-')[0].slice(1) +
+      '-' +
+      e.split('-')[1].charAt(0).toUpperCase() +
+      e.split('-')[1].slice(1)
+    }`;
   } else if (
     e.includes('iron-') ||
     e.includes('tapu-') ||
     e.includes('raging-') ||
     e.includes('-therian') ||
-    e.includes('-wake')
+    e.includes('-wake') ||
+    e.includes('-moon') ||
+    e.includes('-small') ||
+    e.includes('-average') ||
+    e.includes('-large') ||
+    e.includes('-super') ||
+    e.includes('-defense') ||
+    e.includes('-speed')
   ) {
     return `${
       e.split('-')[0].charAt(0).toUpperCase() +
@@ -40,11 +63,13 @@ export function nameSplit(e: string) {
     }`;
   } else if (e.includes('50')) {
     return `${e.replace('-50', '')}`;
-  } else if (e.includes('mega') == true) {
+  } else if (e.includes('-mega')) {
     return `${
-      e.split('-')[1].charAt(0).toUpperCase() + e.split('-')[1].slice(1)
-    } ${
-      ' ' + e.split('-')[0].charAt(0).toUpperCase() + e.split('-')[0].slice(1)
+      e.split('-')[1].charAt(0).toUpperCase() +
+      e.split('-')[1].slice(1) +
+      ' ' +
+      e.split('-')[0].charAt(0).toUpperCase() +
+      e.split('-')[0].slice(1)
     }`;
   } else if (e.includes('alola') == true) {
     return `${
@@ -85,13 +110,13 @@ export function nameSplit(e: string) {
       e.split('-')[0].slice(1) +
       ' Fini'
     }`;
-  } else if (e.includes('-f') == true) {
+  } else if (e.endsWith('-female')) {
     return `${
       e.split('-')[0].charAt(0).toUpperCase() +
       e.split('-')[0].slice(1) +
       ' (Female)'
     }`;
-  } else if (e.includes('-m') == true) {
+  } else if (e.endsWith('-male')) {
     return `${
       e.split('-')[0].charAt(0).toUpperCase() +
       e.split('-')[0].slice(1) +
