@@ -2314,3 +2314,35 @@ input:invalid {
   color: skyblue;
   text-decoration-thickness: 2px;
 }
+
+.standings-container {
+  --playoff-cutoff: 40px;
+  position: relative;
+}
+
+.standings-container::after {
+  content: 'Playoffs Cutoff';
+  display: flex;
+  position: absolute;
+  height: var(--playoff-cutoff);
+  background-color: var(--fighting);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  width: 100%;
+  left: 0;
+  top: calc(79px * 8 + 56px);
+  transition: top 300ms ease;
+}
+
+.standings-container:has(> :nth-child(-n + 9):not(:nth-child(1)):hover)::after {
+  top: calc(79px * 8 + 56px + 16px);
+}
+
+.standings-container :nth-child(9) {
+  margin-bottom: var(--playoff-cutoff);
+}
