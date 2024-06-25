@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Header } from './viewButton';
 import { teamArray } from '@/data/teamNames';
+import Image from 'next/image';
 
 interface ViewProps {
   children?: React.ReactNode;
@@ -75,7 +76,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
         <>
           <div className='match-player-container'>
             <div className='match-player player-1'>
-              <img className='match-player-image' src={team1.picture}></img>
+              <Image className='match-player-image' src={team1.picture} alt={`${team1.discord}'s Team Picture`} height={100} width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team1.team}</div>
                 <div className='match-player-name'>{team1.discord}</div>
@@ -87,7 +88,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
           </div>
           <div className='match-player-container'>
             <div className='match-player player-2'>
-              <img className='match-player-image' src={team2.picture}></img>
+              <Image className='match-player-image' src={team2.picture} alt={`${team2.discord}'s Team Picture`} height={100} width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team2.team}</div>
                 <div className='match-player-name'>{team2.discord}</div>
@@ -102,7 +103,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
         <>
           <div className='match-player-container'>
             <div className='match-player player-1'>
-              <img className='match-player-image' src={team1.picture}></img>
+            <Image className='match-player-image' src={team1.picture} alt={`${team1.discord}'s Team Picture`} height={100} width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team1.team}</div>
                 <div className='match-player-name'>{team1.discord}</div>
@@ -111,7 +112,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
           </div>
           <div className='match-player-container'>
             <div className='match-player player-2'>
-              <img className='match-player-image' src={team2.picture}></img>
+            <Image className='match-player-image' src={team2.picture} alt={`${team2.discord}'s Team Picture`} height={100} width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team2.team}</div>
                 <div className='match-player-name'>{team2.discord}</div>

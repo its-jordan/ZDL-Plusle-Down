@@ -13,7 +13,7 @@ const sortedStandings = [...standings].sort(
   (a, b) =>
     winPercentage(b.wins, b.losses) - winPercentage(a.wins, a.losses) ||
     b.wins - a.wins ||
-    a.losses - b.losses
+    a.losses - b.losses || b.kills - a.kills
 );
 const sortedStandingsReverse = [...standings].sort((a, b) => a.wins - b.wins);
 
@@ -34,7 +34,7 @@ export default function Standings() {
           <div className='standings-header-content'>Losses</div>
           <div className='standings-header-content'>Win Pct.</div>
           <div className='standings-header-content'>GB</div>
-          {/* <div className='standings-header-content'>+ -</div> */}
+          <div className='standings-header-content'>Kills</div>
         </div>
         {sortedStandings.map((data, index) => {
           return (
@@ -76,6 +76,9 @@ export default function Standings() {
               </div>
               <div className='standings-data-gb'>
                 {maxWins ? gamesBehind(data.wins, maxWins) : ''}
+              </div>
+              <div className='standings-data-kills'>
+                {data.kills}
               </div>
             </Link>
           );

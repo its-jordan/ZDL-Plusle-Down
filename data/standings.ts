@@ -58,8 +58,29 @@ export function allResults(filter: string) {
 export function standingConstructor(
   name: string,
   type: string,
-  eliminated: boolean
+  eliminated: boolean,
 ) {
+  enum forfeits {
+    racer_56 = 1,
+    its_jordan = 1,
+    ifurgat = 1
+  }
+  const kills = {
+    racer_59: 2 + 6 + 2 + 5 + 1 + 2 + (forfeits.racer_56 * 6),
+    thanabros: 3 + 4 + 1 + 1 + 3 + 1 + 3 + 2,
+    seanboyq: 7 + 2 + 5 + 2 + 6 + 3 + 1 + 1,
+    bigmanbinch: 3 + 8 + 1 + 1 + 2 + 3 + 3,
+    castleflutes: 2 + 1 + 1,
+    beachwatch: 5 + 3 + 2 + 1 + 1,
+    c0c0_: 7 + 2 + 2 + 2 + 5 + 1 ,
+    dtbaggins: 4 + 1 + 1 + 3 + 7 + 3 + 1,
+    revelreloaded: 4 + 4 + 5 + 2 + 4 + 4 + 2,
+    its_jordan: 1 + 5 + 1 + 9 + 3 + 2 + (forfeits.its_jordan * 6),
+    ifurgat: 7 + 1 + 7 + 6 + 1 + 1 + 1 + (forfeits.ifurgat * 6),
+    resolamxxy: 2 + 4 + 1 + 3 + 8 + 1 + 1,
+    tokotoro: 2 + 2 + 5 + 4 + 1 + 1 + 1,
+    aquagtothepast: 7 + 3 + 2 + 1 + 1 + 2 + 2 + 4 + 2,
+  }
   return {
     name: name,
     // @ts-ignore
@@ -68,6 +89,8 @@ export function standingConstructor(
     losses: allResults(name).loserFilter,
     eliminated: eliminated,
     primaryType: type,
+    // @ts-ignore
+    kills: (kills[name] - (allResults(name).winnerFilter * 6)) + (allResults(name).winnerFilter * 6)
   };
 }
 
