@@ -1,6 +1,6 @@
 import schedule from '@/data/schedule2.json';
 import { returnResults } from './results';
-import { teamArray } from './teamNames';
+import { teamArray, teamsArray } from './teamNames';
 
 export function matches(currentWeek: string) {
   // @ts-ignore
@@ -81,6 +81,8 @@ export function standingConstructor(
     tokotoro: 2 + 2 + 5 + 4 + 1 + 1 + 1,
     aquagtothepast: 7 + 3 + 2 + 1 + 1 + 2 + 2 + 4 + 2,
   }
+  const index = teamsArray.findIndex((value) => value.name == name).toString();
+  console.log(index);
   return {
     name: name,
     // @ts-ignore

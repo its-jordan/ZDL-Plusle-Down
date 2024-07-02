@@ -811,7 +811,7 @@ body.light {
 
 .pokemon-stat-container {
   display: grid;
-  grid-template-columns: repeat(6, 65px);
+  grid-template-columns: repeat(8, 65px);
   gap: 0.5rem;
   justify-content: end;
   align-items: center;

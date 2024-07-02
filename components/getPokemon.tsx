@@ -283,6 +283,12 @@ export default function ReturnMon({
   }
   const mon = pokemon;
   const data = returnMons(mon);
+  function calcMaxSpeed(e :number, item: string) {
+    const nature = 1.1;
+    const formula = (e * 2 + 99) * nature ;
+    const speed = item == 'choicescarf' ? Math.floor(formula * 1.5 - 1) : Math.floor(formula * 2 - 1);
+    return speed;
+  }
   return (
     <Link
       // href={`https://www.smogon.com/dex/sv/pokemon/${data.name}`}
@@ -343,6 +349,14 @@ export default function ReturnMon({
             </div>
           );
         })}
+        <div className='pokemon-stat'>
+          <div className='pokemon-stat-value'>{calcMaxSpeed(data.stats[5].stat, 'choicescarf')}</div>
+          <div className='pokemon-stat-name'>+1S</div>
+        </div>
+        <div className='pokemon-stat'>
+          <div className='pokemon-stat-value'>{calcMaxSpeed(data.stats[5].stat, 'tailwind')}</div>
+          <div className='pokemon-stat-name'>+2S</div>
+        </div>
       </div>
       <div className='show-more'>
         <Link
