@@ -244,6 +244,12 @@ function nameReplace(e: string) {
   return moveNameFront;
 }
 
+function replaceAbilityName(e: string) {
+  const abilityName = e;
+  const replaceName = abilityName?.replace(/(^|\/|-)(\S)/g, s=>s.toUpperCase()).replaceAll('-', ' ');
+  return replaceName;
+}
+
 export default function ReturnMon({
   pokemon,
   animation,
@@ -286,7 +292,7 @@ export default function ReturnMon({
   function calcMaxSpeed(e :number, item: string) {
     const nature = 1.1;
     const formula = (e * 2 + 99) * nature ;
-    const speed = item == 'choicescarf' ? Math.floor(formula * 1.5 - 1) : Math.floor(formula * 2 - 1);
+    const speed = item == 'choicescarf' ? Math.floor(formula * 1.5 - 1) : item == 'tailwind' ? Math.floor(formula * 2 - 1) : Math.floor(formula - 1);
     return speed;
   }
   return (
@@ -335,13 +341,16 @@ export default function ReturnMon({
               href={`https://www.smogon.com/dex/sv/abilities/${data}`}
               className='pokemon-ability'
               key={index}>
-              {nameReplace(data)}
+              {replaceAbilityName(data)}
             </Link>
           );
         })}
       </div>
       <div className='pokemon-stat-container'>
         {data.stats.map((stat, index) => {
+          if (stat.name == data.stats[5].name) {
+            return
+          }
           return (
             <div className='pokemon-stat' key={index}>
               <div className='pokemon-stat-value'>{stat.stat}</div>
@@ -349,6 +358,15 @@ export default function ReturnMon({
             </div>
           );
         })}
+        <div className='divider'></div>
+        <div className='pokemon-stat'>
+          <div className='pokemon-stat-value'>{data.stats[5].stat}</div>
+          <div className='pokemon-stat-name'>{data.stats[5].name}</div>
+        </div>
+        <div className='pokemon-stat'>
+          <div className='pokemon-stat-value'>{calcMaxSpeed(data.stats[5].stat, '')}</div>
+          <div className='pokemon-stat-name'>MAX</div>
+        </div>
         <div className='pokemon-stat'>
           <div className='pokemon-stat-value'>{calcMaxSpeed(data.stats[5].stat, 'choicescarf')}</div>
           <div className='pokemon-stat-name'>+1S</div>
@@ -357,15 +375,6 @@ export default function ReturnMon({
           <div className='pokemon-stat-value'>{calcMaxSpeed(data.stats[5].stat, 'tailwind')}</div>
           <div className='pokemon-stat-name'>+2S</div>
         </div>
-      </div>
-      <div className='show-more'>
-        <Link
-          // @ts-ignore
-          href={`https://www.smogon.com/dex/sv/pokemon/${pokemon}`}
-          target='_blank'>
-          <MdCatchingPokemon />
-          <div className='hover-only smogon-hover'>View on Smogon</div>
-        </Link>
       </div>
 
       <Image
