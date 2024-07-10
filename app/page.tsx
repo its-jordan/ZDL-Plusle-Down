@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { NextUIProvider } from '@nextui-org/react';
+import { Component } from '@/components/charts/radar';
 
 export default function Home() {
   return (
@@ -9,13 +10,15 @@ export default function Home() {
       <main>
         <div className='home-background'>
           <div className='home-text'>ZDL Season 2</div>
+          <Component />
           <Image
             className='muk-img'
             src={'/images/muk-mega.png'}
             data-pokemon={'muk-mega'}
             width={2560}
             height={2560}
-            alt='plusle and minun'></Image>
+            alt='plusle and minun'
+          ></Image>
           <div className='home-fg'></div>
         </div>
       </main>

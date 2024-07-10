@@ -4,9 +4,13 @@ import { usePathname } from 'next/navigation';
 
 import React, { useEffect } from 'react';
 import ReturnPokemon, { ReturnTypeMatchup } from '@/components/getPokemon';
-import ViewMode from '@/components/viewButton';
-import teams from '@/data/teams.json';
+import ViewMode from '@/components/viewButtonDuo';
+import teams from '@/data/teamsS2.json';
 import replaceUsername from '@/functions/replaceUsername';
+import ReturnMon from '@/components/getPokemonDuo';
+import { teamArray } from '@/data/teamNames';
+import { PokemonChart } from '@/components/charts/spider';
+import Image from 'next/image';
 
 const teamsArray = [
   'danknett',
@@ -26,106 +30,14 @@ const teamsArray = [
 export default function Teams() {
   const player1 = usePathname().replace('/scores/', '').split('-')[0];
   const player2 = usePathname().replace('/scores/', '').split('-')[1];
-  function returnPathTextArrayP1() {
-    if (player1 == 'danknett') {
-      const pokemonArray = teams.danknett;
-      return pokemonArray;
-    } else if (player1 == 'seanboyq') {
-      const pokemonArray = teams.seanboyq;
-      return pokemonArray;
-    } else if (player1 == 'resolamxxy') {
-      const pokemonArray = teams.resolamxxy;
-      return pokemonArray;
-    } else if (player1 == 'beachwatch') {
-      const pokemonArray = teams.beachwatch;
-      return pokemonArray;
-    } else if (player1 == 'revelreloaded') {
-      const pokemonArray = teams.revelreloaded;
-      return pokemonArray;
-    } else if (player1 == 'dtbaggins') {
-      const pokemonArray = teams.dtbaggins;
-      return pokemonArray;
-    } else if (player1 == 'c0c0_') {
-      const pokemonArray = teams.c0c0_;
-      return pokemonArray;
-    } else if (player1 == 'ifurgat') {
-      const pokemonArray = teams.ifurgat;
-      return pokemonArray;
-    } else if (player1 == 'tokotoro') {
-      const pokemonArray = teams.tokotoro;
-      return pokemonArray;
-    } else if (player1 == 'castleflutes') {
-      const pokemonArray = teams.castleflutes;
-      return pokemonArray;
-    } else if (player1 == 'thanabros') {
-      const pokemonArray = teams.thanabros;
-      return pokemonArray;
-    } else if (player1 == 'its_jordan') {
-      const pokemonArray = teams.its_jordan;
-      return pokemonArray;
-    } else {
-      const pokemonArray = teams.danknett;
-      return pokemonArray;
-    }
-  }
+  // @ts-ignore
+  console.log(teams[player1]);
 
-  function returnPathTextArrayP2() {
-    if (player2 == 'danknett') {
-      const pokemonArray2 = teams.danknett;
-      return pokemonArray2;
-    } else if (player2 == 'seanboyq') {
-      const pokemonArray2 = teams.seanboyq;
-      return pokemonArray2;
-    } else if (player2 == 'resolamxxy') {
-      const pokemonArray2 = teams.resolamxxy;
-      return pokemonArray2;
-    } else if (player2 == 'beachwatch') {
-      const pokemonArray2 = teams.beachwatch;
-      return pokemonArray2;
-    } else if (player2 == 'revelreloaded') {
-      const pokemonArray2 = teams.revelreloaded;
-      return pokemonArray2;
-    } else if (player2 == 'dtbaggins') {
-      const pokemonArray2 = teams.dtbaggins;
-      return pokemonArray2;
-    } else if (player2 == 'c0c0_') {
-      const pokemonArray2 = teams.c0c0_;
-      return pokemonArray2;
-    } else if (player2 == 'ifurgat') {
-      const pokemonArray2 = teams.ifurgat;
-      return pokemonArray2;
-    } else if (player2 == 'tokotoro') {
-      const pokemonArray2 = teams.tokotoro;
-      return pokemonArray2;
-    } else if (player2 == 'castleflutes') {
-      const pokemonArray2 = teams.castleflutes;
-      return pokemonArray2;
-    } else if (player2 == 'thanabros') {
-      const pokemonArray2 = teams.thanabros;
-      return pokemonArray2;
-    } else if (player2 == 'its_jordan') {
-      const pokemonArray2 = teams.its_jordan;
-      return pokemonArray2;
-    } else {
-      const pokemonArray2 = teams.danknett;
-      return pokemonArray2;
-    }
-  }
+  // @ts-ignore
+  const team1 = teamArray[player1];
 
-  const mergedArray = [...returnPathTextArrayP1(), ...returnPathTextArrayP2()];
-
-  function pathnameApos() {
-    if (
-      player1 == 'dtbaggins' ||
-      player1 == 'thanabros' ||
-      player1 == 'castleflutes' ||
-      player2 == 'dtbaggins' ||
-      player2 == 'thanabros' ||
-      player2 == 'castleflutes'
-    )
-      return '\u0027';
-    else return '\u0027s';
-  }
+  // @ts-ignore
+  const team2 = teamArray[player2];
 
   const types = [
     'normal',
@@ -151,95 +63,183 @@ export default function Teams() {
   return (
     <>
       <ViewMode
-        header={`${replaceUsername(player1)} vs. ${replaceUsername(player2)}`}>
-        <div className='type-chart-header player-name'>
+        header={`${replaceUsername(player1)} vs. ${replaceUsername(player2)}`}
+        navigation={[player1, player2]}
+      >
+        <div
+          className='team-name-header'
+          id={player1}
+        >
           <h2 className='page-header w-full justify-start flex'>
             {replaceUsername(player1)}
           </h2>
         </div>
-        {returnPathTextArrayP1().map((pokemon: any, index: number) => {
+        {team1.pokemon.map((pokemon: any, index: number) => {
           return (
-            <ReturnPokemon
+            <ReturnMon
               pokemon={pokemon}
               key={index}
               animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+              direction='descending'
+              // @ts-ignore
+              sortStat={
+                typeof window !== 'undefined' &&
+                localStorage.stat !== null &&
+                localStorage.stat !== undefined
+                  ? localStorage.stat.toString()
+                  : 'HP'
+              }
             />
           );
         })}
-        <div className='type-chart-header'>
+        <div
+          className='type-chart-header-duo'
+          id={`${player1}-type-chart`}
+        >
+          <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
+        </div>
+        <div className='type-relations-list-view-duo'>
+          <div className='type-matchup-header'>
+            <div className='type-matchup-spacer'>Pokemon</div>
+            {types.map((type, index) => {
+              return (
+                <div
+                  className='type-icon-container type-matchup'
+                  key={index}
+                >
+                  <img
+                    src={`/icons/${type}.svg`}
+                    height={30}
+                    width={30}
+                    data-type={type}
+                    className='pokemon-type-icon list-view'
+                  />
+                  <div
+                    className='hover-only type_title'
+                    data-type={type}
+                  >
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className='type-matchup-data-container'>
+            {team1.pokemon.map((pokemon: any, index: number) => {
+              return (
+                <ReturnTypeMatchup
+                  pokemon={pokemon}
+                  key={index}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div
+          className='pokemon-chart-header duo type-chart-header'
+          id={`${player1}-stat-chart`}
+        >
+          <h2 className='page-header w-full justify-start flex'>
+            Pokemon Stats
+          </h2>
+        </div>
+        <div className='pokemon-chart-grid duo'>
+          {team1.pokemon.map((pokemon: any, index: number) => {
+            return (
+              <PokemonChart
+                name={pokemon}
+                key={index}
+              ></PokemonChart>
+            );
+          })}
+        </div>
+        <div
+          className='team-name-header second'
+          id={player2}
+        >
           <h2 className='page-header w-full justify-start flex'>
             {replaceUsername(player2)}
           </h2>
         </div>
-
-        {returnPathTextArrayP2().map((pokemon: any, index: number) => {
+        {team2.pokemon.map((pokemon: any, index: number) => {
           return (
-            <ReturnPokemon
+            <ReturnMon
               pokemon={pokemon}
               key={index}
               animation={`fadeIn min(calc(500ms * (.25 * ${index})), 1.5s) ease-in forwards`}
+              direction='descending'
+              // @ts-ignore
+              sortStat={
+                typeof window !== 'undefined' &&
+                localStorage.stat !== null &&
+                localStorage.stat !== undefined
+                  ? localStorage.stat.toString()
+                  : 'HP'
+              }
             />
           );
         })}
-        <div className='type-chart-header'>
-          <h2 className='page-header w-full justify-start flex'>Type Charts</h2>
+        <div
+          className='type-chart-header-duo'
+          id={`${player2}-type-chart`}
+        >
+          <h2 className='page-header w-full justify-start flex'>Type Chart</h2>
         </div>
-
-        <div className='type-relations-list-view'>
-          <div className='type-chart-header'>
-            <h2 className='page-header w-full justify-start flex'>
-              {replaceUsername(player1)}
-            </h2>
-          </div>
+        <div className='type-relations-list-view-duo'>
           <div className='type-matchup-header'>
             <div className='type-matchup-spacer'>Pokemon</div>
             {types.map((type, index) => {
               return (
-                <div key={index}>
-                  <img
+                <div
+                  className='type-icon-container type-matchup'
+                  key={index}
+                >
+                  <Image
                     src={`/icons/${type}.svg`}
                     height={30}
                     width={30}
                     data-type={type}
                     className='pokemon-type-icon list-view'
+                    alt='Type Icon'
                   />
+                  <div
+                    className='hover-only type_title'
+                    data-type={type}
+                  >
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                  </div>
                 </div>
               );
             })}
           </div>
           <div className='type-matchup-data-container'>
-            {returnPathTextArrayP1().map((pokemon: any, index: number) => {
-              return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
+            {team1.pokemon.map((pokemon: any, index: number) => {
+              return (
+                <ReturnTypeMatchup
+                  pokemon={pokemon}
+                  key={index}
+                />
+              );
             })}
           </div>
         </div>
-        <div className='type-relations-list-view'>
-          <div className='type-chart-header'>
-            <h2 className='page-header w-full justify-start flex'>
-              {replaceUsername(player2)}
-            </h2>
-          </div>
-          <div className='type-matchup-header'>
-            <div className='type-matchup-spacer'>Pokemon</div>
-            {types.map((type, index) => {
-              return (
-                <div key={index}>
-                  <img
-                    src={`/icons/${type}.svg`}
-                    height={30}
-                    width={30}
-                    data-type={type}
-                    className='pokemon-type-icon list-view'
-                  />
-                </div>
-              );
-            })}
-          </div>
-          <div className='type-matchup-data-container'>
-            {returnPathTextArrayP2().map((pokemon: any, index: number) => {
-              return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
-            })}
-          </div>
+        <div
+          className='pokemon-chart-header duo type-chart-header'
+          id={`${player2}-stat-chart`}
+        >
+          <h2 className='page-header w-full justify-start flex'>
+            Pokemon Stats
+          </h2>
+        </div>
+        <div className='pokemon-chart-grid duo'>
+          {team2.pokemon.map((pokemon: any, index: number) => {
+            return (
+              <PokemonChart
+                name={pokemon}
+                key={index}
+              ></PokemonChart>
+            );
+          })}
         </div>
       </ViewMode>
     </>

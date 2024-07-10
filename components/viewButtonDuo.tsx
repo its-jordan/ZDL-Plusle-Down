@@ -31,6 +31,7 @@ interface ViewProps {
     wins: number,
     losses: number
   ];
+  navigation: [player1: string, player2: string];
 }
 
 export function Header({ children }: ViewProps) {
@@ -55,123 +56,16 @@ export function useView() {
   return [pokemonView, setView];
 }
 
-function useStats() {
-  const [stat, setStat] = React.useState<string>(
-    typeof window !== 'undefined' && window.localStorage
-      ? localStorage.stat
-      : 'HP'
-  );
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.localStorage) {
-      localStorage.setItem('stat', stat);
-    }
-  }, [stat]);
-
-  return [stat, setStat];
-}
-
-function replaceStatName(e: string) {
-  if (e == 'HP') {
-    return 'HP';
-  } else if (e == 'ATK') {
-    return 'Attack';
-  } else if (e == 'SPATK') {
-    return 'Sp. Atk';
-  } else if (e == 'DEF') {
-    return 'Defense';
-  } else if (e == 'SPDEF') {
-    return 'Sp. Def';
-  } else if (e == 'SPEED') {
-    return 'Speed';
-  }
-}
-
-function returnIcon(e: string) {
-  if (e == 'HP') {
-    return <GiHealthNormal />;
-  } else if (e == 'ATK') {
-    return <TbSword />;
-  } else if (e == 'SPATK') {
-    return <TbSwords />;
-  } else if (e == 'DEF') {
-    return <TbShield />;
-  } else if (e == 'SPDEF') {
-    return <TbShieldFilled />;
-  } else if (e == 'SPEED') {
-    return <IoMdSpeedometer />;
-  }
-}
-
-export function StatStorage() {
-  const router = useRouter();
-  const [stat, setStat] = useStats();
-  const StatContext = createContext(stat);
-  const stats = useContext(StatContext);
-  const statsArray = ['HP', 'ATK', 'SPATK', 'DEF', 'SPDEF', 'SPEED'];
-  return (
-    <div className='stat-sort-container'>
-      <div className='stat-sort-header'>
-        <div className='sort'>
-          {stat == null || stat == undefined || stat == ''
-            ? 'Sort '
-            : 'Sort by '}
-        </div>
-        <div className='sort-stat'>
-          {stat !== null
-            ? stat == undefined
-              ? ''
-              : replaceStatName(stat.toString())
-            : ''}
-        </div>
-        <MdArrowDropDown />
-      </div>
-      <div className='stat-filter-container'>
-        {statsArray.map((stat, index) => {
-          return (
-            <button
-              className='stat-filter-button'
-              key={index}
-              data-stat={stat}
-              onClick={() => {
-                // @ts-ignore
-                setStat(stat);
-                router.refresh();
-              }}
-            >
-              {returnIcon(stat)}
-              {replaceStatName(stat)}
-            </button>
-          );
-        })}
-        <button
-          className='stat-filter-button'
-          // @ts-ignore
-          onClick={() => setStat('')}
-        >
-          <RiCloseCircleFill />
-          Clear Sort
-        </button>
-      </div>
-    </div>
-  );
-}
-
-export default function ViewMode({ children, header, links }: ViewProps) {
+export default function ViewMode({
+  children,
+  header,
+  links,
+  navigation,
+}: ViewProps) {
   const [view, setView] = useView();
   const ModeContext = createContext(view);
   const mode = useContext(ModeContext);
   const className = 'pokemon-grid ' + mode;
-
-  const [stat, setStat] = useStats();
-  const StatContext = createContext(stat);
-  const stats = useContext(StatContext);
-
-  function statStore() {
-    typeof window !== 'undefined' && localStorage.stat !== undefined
-      ? localStorage.getItem('stat')
-      : 'HP';
-  }
 
   function localStore() {
     typeof window !== 'undefined' && localStorage.view !== undefined
@@ -179,14 +73,9 @@ export default function ViewMode({ children, header, links }: ViewProps) {
       : 'list-view';
   }
 
-  function getStatStore() {
-    const sort =
-      typeof window !== 'undefined' ? localStorage.getItem('stat') : 'HP';
-    return sort;
-  }
-
   return (
     <main className='content-grid'>
+      {/* @ts-ignore */}
       <Header>
         <Link
           className='back-selector'
@@ -208,7 +97,7 @@ export default function ViewMode({ children, header, links }: ViewProps) {
         ) : (
           <></>
         )}
-        <h1 className='page-header flex-grow'>
+        <h1 className='page-header duo flex-grow'>
           {links != undefined ? (
             <>
               <div className='header-top'>
@@ -249,7 +138,56 @@ export default function ViewMode({ children, header, links }: ViewProps) {
             <>{header}</>
           )}
         </h1>
-        <StatStorage />
+        <nav className='duo-nav'>
+          <div className='duo-nav-player-container'>
+            <div className='duo-nav-player'>
+              <Link
+                className='duo-nav-player-link'
+                href={`#${navigation[0]}`}
+              >
+                {navigation[0]}
+              </Link>
+            </div>
+            <div className='duo-nav-links'>
+              <Link
+                className='duo-nav-link'
+                href={`#${navigation[0]}-type-chart`}
+              >
+                Type Chart
+              </Link>
+              <Link
+                className='duo-nav-link'
+                href={`#${navigation[0]}-stat-chart`}
+              >
+                Graph
+              </Link>
+            </div>
+          </div>
+          <div className='duo-nav-player-container'>
+            <div className='duo-nav-player'>
+              <Link
+                className='duo-nav-player-link'
+                href={`#${navigation[1]}`}
+              >
+                {navigation[1]}
+              </Link>
+            </div>
+            <div className='duo-nav-links'>
+              <Link
+                className='duo-nav-link'
+                href={`#${navigation[1]}-type-chart`}
+              >
+                Type Chart
+              </Link>
+              <Link
+                className='duo-nav-link'
+                href={`#${navigation[1]}-stat-chart`}
+              >
+                Graph
+              </Link>
+            </div>
+          </div>
+        </nav>
         {view === 'list-view' ? (
           <button
             // @ts-ignore
@@ -282,17 +220,7 @@ export default function ViewMode({ children, header, links }: ViewProps) {
         // @ts-ignore
         value={localStore()}
       >
-        <div
-          className={className}
-          data-sort={getStatStore()}
-        >
-          <StatContext.Provider
-            // @ts-ignore
-            value={statStore()}
-          >
-            {children}
-          </StatContext.Provider>
-        </div>
+        <div className={className}>{children}</div>
       </ModeContext.Provider>
     </main>
   );

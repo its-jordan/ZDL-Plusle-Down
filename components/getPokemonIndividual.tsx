@@ -160,9 +160,16 @@ export async function moveInfo(move: string) {
     <>
       {moveArray.map((data, index) => {
         return (
-          <div className='move-stats' key={index} data-id={data.id}>
+          <div
+            className='move-stats'
+            key={index}
+            data-id={data.id}
+          >
             {data.class ? (
-              <div className='move-stat-container' data-stat='class'>
+              <div
+                className='move-stat-container'
+                data-stat='class'
+              >
                 <div className='move-label'>Class</div>
                 <div className='move-stat-data'>{data.class}</div>
               </div>
@@ -170,7 +177,10 @@ export async function moveInfo(move: string) {
               <></>
             )}
             {data.power ? (
-              <div className='move-stat-container' data-stat='power'>
+              <div
+                className='move-stat-container'
+                data-stat='power'
+              >
                 <div className='move-label'>Power</div>
                 <div className='move-stat-data'>{data.power}</div>
               </div>
@@ -178,7 +188,10 @@ export async function moveInfo(move: string) {
               <></>
             )}
             {data.pp ? (
-              <div className='move-stat-container' data-stat='pp'>
+              <div
+                className='move-stat-container'
+                data-stat='pp'
+              >
                 <div className='move-label'>PP</div>
                 <div className='move-stat-data'>{data.pp}</div>
               </div>
@@ -186,7 +199,10 @@ export async function moveInfo(move: string) {
               <></>
             )}
             {data.accuracy ? (
-              <div className='move-stat-container' data-stat='acc'>
+              <div
+                className='move-stat-container'
+                data-stat='acc'
+              >
                 <div className='move-label'>ACC</div>
                 <div className='move-stat-data'>{data.accuracy}%</div>
               </div>
@@ -194,7 +210,10 @@ export async function moveInfo(move: string) {
               <></>
             )}
             {data.critrate ? (
-              <div className='move-stat-container' data-stat='crit'>
+              <div
+                className='move-stat-container'
+                data-stat='crit'
+              >
                 <div className='move-label'>CRIT</div>
                 <div className='move-stat-data'>
                   {data.critrate == 1 ? '12.5%' : 2 ? '50%' : '100%'}
@@ -204,7 +223,10 @@ export async function moveInfo(move: string) {
               <></>
             )}
             {data.effect ? (
-              <div className='move-stat-container' data-stat='effect'>
+              <div
+                className='move-stat-container'
+                data-stat='effect'
+              >
                 <div className='move-label'>Effect</div>
                 <div className='move-stat-data'>{data.effect}</div>
               </div>
@@ -238,15 +260,17 @@ function nameReplace(e: string) {
 }
 
 export default async function ReturnPokemonIndividual({ pokemon }: Pokemon) {
+  console.log(pokemon);
   return (
     <>
-      {(await callPokemonPage({ pokemon })).map((data, index) => {
+      {(await callPokemonPage({ pokemon })).map(async (data, index) => {
         return (
           <div
             key={index}
             className='pokemon-page-container'
             data-type={`${data.types[0]}`}
-            data-color={data.color}>
+            data-color={data.color}
+          >
             {/* <audio
               id='pokemon-cry'
               className='pokemon-cry'
@@ -264,7 +288,8 @@ export default async function ReturnPokemonIndividual({ pokemon }: Pokemon) {
                     key={index}
                     className='pokemon-move'
                     data-move={move.move?.name}
-                    data-type={moveType}>
+                    data-type={moveType}
+                  >
                     <Image
                       src={`/icons/${moveType}.svg`}
                       alt={`${moveType}`}

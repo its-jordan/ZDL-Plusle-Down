@@ -10,6 +10,7 @@ import replaceUsername from '@/functions/replaceUsername';
 import { teamArray } from '@/data/teamNames';
 import returnMons from '@/data/pokemonDataS2';
 import { standingConstructor } from '@/data/standings';
+import { PokemonChart } from '@/components/charts/spider';
 
 const types = [
   'normal',
@@ -58,7 +59,8 @@ export default function TeamsView() {
         team.picture,
         wins,
         losses,
-      ]}>
+      ]}
+    >
       {team.pokemon.map((pokemon: any, index: number) => {
         return (
           <ReturnMon
@@ -85,7 +87,10 @@ export default function TeamsView() {
           <div className='type-matchup-spacer'>Pokemon</div>
           {types.map((type, index) => {
             return (
-              <div className='type-icon-container type-matchup' key={index}>
+              <div
+                className='type-icon-container type-matchup'
+                key={index}
+              >
                 <img
                   src={`/icons/${type}.svg`}
                   height={30}
@@ -93,7 +98,10 @@ export default function TeamsView() {
                   data-type={type}
                   className='pokemon-type-icon list-view'
                 />
-                <div className='hover-only type_title' data-type={type}>
+                <div
+                  className='hover-only type_title'
+                  data-type={type}
+                >
                   {type.charAt(0).toUpperCase() + type.slice(1)}
                 </div>
               </div>
@@ -102,9 +110,27 @@ export default function TeamsView() {
         </div>
         <div className='type-matchup-data-container'>
           {returnPathTextArray().map((pokemon: any, index: number) => {
-            return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
+            return (
+              <ReturnTypeMatchup
+                pokemon={pokemon}
+                key={index}
+              />
+            );
           })}
         </div>
+      </div>
+      <div className='pokemon-chart-header type-chart-header'>
+        <h2 className='page-header w-full justify-start flex'>Pokemon Stats</h2>
+      </div>
+      <div className='pokemon-chart-grid'>
+        {team.pokemon.map((pokemon: any, index: number) => {
+          return (
+            <PokemonChart
+              name={pokemon}
+              key={index}
+            ></PokemonChart>
+          );
+        })}
       </div>
     </ViewMode>
   );

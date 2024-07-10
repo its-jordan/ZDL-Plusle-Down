@@ -39,7 +39,8 @@ export default function ViewModeIndividual({ pokemon, children }: ViewProps) {
           // @ts-ignore
           href={`https://www.smogon.com/dex/sv/pokemon/${pokemon}`}
           className='smogon-link'
-          target='_blank'>
+          target='_blank'
+        >
           View on Smogon <PiArrowUpRightBold />
         </Link>
       </Header>
