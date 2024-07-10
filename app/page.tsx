@@ -10,7 +10,6 @@ export default function Home() {
       <main>
         <div className='home-background'>
           <div className='home-text'>ZDL Season 2</div>
-          <Component />
           <Image
             className='muk-img'
             src={'/images/muk-mega.png'}
