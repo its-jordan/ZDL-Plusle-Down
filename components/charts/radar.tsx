@@ -31,7 +31,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function Component() {
+export function Component({ children }: { children: React.ReactNode }) {
   return (
     <Card>
       <CardHeader className='items-center'>
@@ -72,6 +72,7 @@ export function Component() {
           January - June 2024
         </div>
       </CardFooter>
+      {children}
     </Card>
   );
 }

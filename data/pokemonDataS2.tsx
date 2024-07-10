@@ -22,7 +22,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 92, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -53,7 +53,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 132, name: 'ATT' },
+        { stat: 132, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 132, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -79,7 +79,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -105,7 +105,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 150, name: 'ATT' },
+        { stat: 150, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -131,7 +131,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 40, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -167,7 +167,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 140, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 140, name: 'SPD' },
@@ -198,7 +198,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -229,7 +229,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -261,7 +261,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 180, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -295,7 +295,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 230, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -320,7 +320,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -346,7 +346,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 121, name: 'SPD' },
@@ -372,7 +372,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 165, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 45, name: 'SPD' },
@@ -402,7 +402,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -434,7 +434,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -453,7 +453,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 66, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 66, name: 'SPD' },
@@ -482,7 +482,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 114, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -506,7 +506,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -536,7 +536,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 165, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -566,7 +566,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -594,7 +594,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 92, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 132, name: 'SPD' },
@@ -621,7 +621,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 69, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 79, name: 'SPD' },
@@ -652,7 +652,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 69, name: 'ATT' },
+        { stat: 69, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 109, name: 'SPD' },
@@ -681,7 +681,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -712,7 +712,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -744,7 +744,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -775,7 +775,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 112, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -801,7 +801,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -828,7 +828,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -857,7 +857,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -868,7 +868,7 @@ export default function returnMons(e: string) {
   } else if (e == 'armaldo') {
     const data = {
       name: 'armaldo',
-      abilities: ['battle-armor', 'swift-swim'],
+      abilities: ['bATKle-armor', 'swift-swim'],
       id: 348,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/348.png',
@@ -882,7 +882,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -914,7 +914,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -940,7 +940,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 101, name: 'HP' },
-        { stat: 72, name: 'ATT' },
+        { stat: 72, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 99, name: 'SPA' },
         { stat: 89, name: 'SPD' },
@@ -967,7 +967,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 125, name: 'SPD' },
@@ -996,7 +996,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -1015,7 +1015,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 103, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 86, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 86, name: 'SPD' },
@@ -1041,7 +1041,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 103, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 126, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 126, name: 'SPD' },
@@ -1071,7 +1071,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 123, name: 'HP' },
-        { stat: 77, name: 'ATT' },
+        { stat: 77, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 99, name: 'SPA' },
         { stat: 92, name: 'SPD' },
@@ -1096,7 +1096,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 117, name: 'ATT' },
+        { stat: 117, name: 'ATK' },
         { stat: 184, name: 'DEF' },
         { stat: 44, name: 'SPA' },
         { stat: 46, name: 'SPD' },
@@ -1126,7 +1126,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 127, name: 'ATT' },
+        { stat: 127, name: 'ATK' },
         { stat: 184, name: 'DEF' },
         { stat: 34, name: 'SPA' },
         { stat: 36, name: 'SPD' },
@@ -1151,7 +1151,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -1181,7 +1181,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -1207,7 +1207,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 64, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 83, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -1233,7 +1233,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 64, name: 'HP' },
-        { stat: 165, name: 'ATT' },
+        { stat: 165, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 93, name: 'SPA' },
         { stat: 83, name: 'SPD' },
@@ -1262,7 +1262,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 54, name: 'SPA' },
         { stat: 86, name: 'SPD' },
@@ -1288,7 +1288,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 61, name: 'HP' },
-        { stat: 123, name: 'ATT' },
+        { stat: 123, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -1320,7 +1320,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -1352,7 +1352,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 112, name: 'ATT' },
+        { stat: 112, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -1378,7 +1378,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -1410,7 +1410,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 52, name: 'ATT' },
+        { stat: 52, name: 'ATK' },
         { stat: 168, name: 'DEF' },
         { stat: 47, name: 'SPA' },
         { stat: 138, name: 'SPD' },
@@ -1438,7 +1438,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 115, name: 'HP' },
-        { stat: 145, name: 'ATT' },
+        { stat: 145, name: 'ATK' },
         { stat: 92, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 86, name: 'SPD' },
@@ -1463,7 +1463,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -1492,7 +1492,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -1521,7 +1521,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 40, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -1550,7 +1550,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 150, name: 'ATT' },
+        { stat: 150, name: 'ATK' },
         { stat: 40, name: 'DEF' },
         { stat: 15, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -1575,7 +1575,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -1599,7 +1599,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 109, name: 'HP' },
-        { stat: 64, name: 'ATT' },
+        { stat: 64, name: 'ATK' },
         { stat: 91, name: 'DEF' },
         { stat: 103, name: 'SPA' },
         { stat: 83, name: 'SPD' },
@@ -1628,7 +1628,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -1656,7 +1656,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -1684,7 +1684,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 79, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -1718,7 +1718,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -1752,7 +1752,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 53, name: 'HP' },
-        { stat: 127, name: 'ATT' },
+        { stat: 127, name: 'ATK' },
         { stat: 53, name: 'DEF' },
         { stat: 151, name: 'SPA' },
         { stat: 79, name: 'SPD' },
@@ -1778,7 +1778,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 79, name: 'HP' },
-        { stat: 83, name: 'ATT' },
+        { stat: 83, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -1808,7 +1808,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -1827,7 +1827,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 255, name: 'HP' },
-        { stat: 10, name: 'ATT' },
+        { stat: 10, name: 'ATK' },
         { stat: 10, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 135, name: 'SPD' },
@@ -1851,7 +1851,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 69, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -1880,7 +1880,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 103, name: 'ATT' },
+        { stat: 103, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -1899,7 +1899,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -1930,7 +1930,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -1957,7 +1957,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 123, name: 'ATT' },
+        { stat: 123, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 57, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -1986,7 +1986,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 83, name: 'ATT' },
+        { stat: 83, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 112, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -2018,7 +2018,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -2052,7 +2052,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 67, name: 'HP' },
-        { stat: 89, name: 'ATT' },
+        { stat: 89, name: 'ATK' },
         { stat: 116, name: 'DEF' },
         { stat: 79, name: 'SPA' },
         { stat: 116, name: 'SPD' },
@@ -2086,7 +2086,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 111, name: 'HP' },
-        { stat: 127, name: 'ATT' },
+        { stat: 127, name: 'ATK' },
         { stat: 99, name: 'DEF' },
         { stat: 79, name: 'SPA' },
         { stat: 99, name: 'SPD' },
@@ -2117,7 +2117,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -2146,7 +2146,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -2175,7 +2175,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 107, name: 'HP' },
-        { stat: 139, name: 'ATT' },
+        { stat: 139, name: 'ATK' },
         { stat: 139, name: 'DEF' },
         { stat: 53, name: 'SPA' },
         { stat: 53, name: 'SPD' },
@@ -2209,7 +2209,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -2242,7 +2242,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -2270,7 +2270,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -2298,7 +2298,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 145, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -2328,7 +2328,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 150, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -2357,7 +2357,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 72, name: 'SPD' },
@@ -2386,7 +2386,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 108, name: 'ATT' },
+        { stat: 108, name: 'ATK' },
         { stat: 133, name: 'DEF' },
         { stat: 83, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -2405,7 +2405,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -2438,7 +2438,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -2470,7 +2470,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 97, name: 'HP' },
-        { stat: 101, name: 'ATT' },
+        { stat: 101, name: 'ATK' },
         { stat: 103, name: 'DEF' },
         { stat: 107, name: 'SPA' },
         { stat: 101, name: 'SPD' },
@@ -2499,7 +2499,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -2533,7 +2533,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -2558,7 +2558,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 170, name: 'HP' },
-        { stat: 113, name: 'ATT' },
+        { stat: 113, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -2592,7 +2592,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 145, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -2611,7 +2611,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 250, name: 'HP' },
-        { stat: 5, name: 'ATT' },
+        { stat: 5, name: 'ATK' },
         { stat: 5, name: 'DEF' },
         { stat: 35, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -2641,7 +2641,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 84, name: 'ATT' },
+        { stat: 84, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 109, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -2669,7 +2669,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 111, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -2699,7 +2699,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 104, name: 'ATT' },
+        { stat: 104, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 159, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -2726,7 +2726,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 76, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 92, name: 'SPA' },
         { stat: 42, name: 'SPD' },
@@ -2755,7 +2755,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 87, name: 'SPA' },
         { stat: 78, name: 'SPD' },
@@ -2787,7 +2787,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 107, name: 'ATT' },
+        { stat: 107, name: 'ATK' },
         { stat: 122, name: 'DEF' },
         { stat: 74, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -2812,7 +2812,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -2831,7 +2831,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -2860,7 +2860,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 116, name: 'ATT' },
+        { stat: 116, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -2886,7 +2886,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 71, name: 'HP' },
-        { stat: 73, name: 'ATT' },
+        { stat: 73, name: 'ATK' },
         { stat: 88, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 89, name: 'SPD' },
@@ -2917,7 +2917,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -2943,7 +2943,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 73, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -2973,7 +2973,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 130, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -2999,7 +2999,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 180, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 45, name: 'SPD' },
@@ -3030,7 +3030,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -3062,7 +3062,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 91, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 129, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 72, name: 'SPD' },
@@ -3088,7 +3088,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 58, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 145, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -3114,7 +3114,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 51, name: 'HP' },
-        { stat: 52, name: 'ATT' },
+        { stat: 52, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 82, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -3140,7 +3140,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -3174,7 +3174,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 122, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 69, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 69, name: 'SPD' },
@@ -3203,7 +3203,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -3229,7 +3229,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -3261,7 +3261,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 98, name: 'HP' },
-        { stat: 87, name: 'ATT' },
+        { stat: 87, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 53, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -3290,7 +3290,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 97, name: 'HP' },
-        { stat: 132, name: 'ATT' },
+        { stat: 132, name: 'ATK' },
         { stat: 77, name: 'DEF' },
         { stat: 62, name: 'SPA' },
         { stat: 67, name: 'SPD' },
@@ -3316,7 +3316,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 86, name: 'HP' },
-        { stat: 81, name: 'ATT' },
+        { stat: 81, name: 'ATK' },
         { stat: 97, name: 'DEF' },
         { stat: 81, name: 'SPA' },
         { stat: 107, name: 'SPD' },
@@ -3344,7 +3344,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -3376,7 +3376,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 63, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -3401,7 +3401,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -3431,7 +3431,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -3456,7 +3456,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -3481,7 +3481,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 135, name: 'SPD' },
@@ -3507,7 +3507,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 145, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -3536,7 +3536,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -3562,7 +3562,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 57, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -3588,7 +3588,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -3617,7 +3617,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -3648,7 +3648,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 107, name: 'ATT' },
+        { stat: 107, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -3680,7 +3680,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 112, name: 'ATT' },
+        { stat: 112, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -3708,7 +3708,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 67, name: 'HP' },
-        { stat: 58, name: 'ATT' },
+        { stat: 58, name: 'ATK' },
         { stat: 57, name: 'DEF' },
         { stat: 81, name: 'SPA' },
         { stat: 67, name: 'SPD' },
@@ -3716,9 +3716,9 @@ export default function returnMons(e: string) {
       ],
     };
     return data;
-  } else if (e == 'delcatty') {
+  } else if (e == 'delcATKy') {
     const data = {
-      name: 'delcatty',
+      name: 'delcATKy',
       abilities: ['cute-charm', 'normalize', 'wonder-skin'],
       id: 301,
       sprite:
@@ -3727,7 +3727,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -3754,7 +3754,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 45, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 45, name: 'SPD' },
@@ -3786,7 +3786,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 69, name: 'ATT' },
+        { stat: 69, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 114, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -3811,7 +3811,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 160, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 160, name: 'SPD' },
@@ -3836,7 +3836,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -3862,7 +3862,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -3893,7 +3893,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 131, name: 'ATT' },
+        { stat: 131, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 86, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -3923,7 +3923,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 150, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -3953,7 +3953,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 160, name: 'ATT' },
+        { stat: 160, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 160, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -3981,7 +3981,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 56, name: 'ATT' },
+        { stat: 56, name: 'ATK' },
         { stat: 77, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 77, name: 'SPD' },
@@ -4011,7 +4011,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -4030,7 +4030,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 48, name: 'HP' },
-        { stat: 48, name: 'ATT' },
+        { stat: 48, name: 'ATK' },
         { stat: 48, name: 'DEF' },
         { stat: 48, name: 'SPA' },
         { stat: 48, name: 'SPD' },
@@ -4057,7 +4057,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -4083,7 +4083,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 150, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -4109,7 +4109,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -4145,7 +4145,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 59, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 150, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 49, name: 'SPD' },
@@ -4175,7 +4175,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -4206,7 +4206,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 97, name: 'SPA' },
         { stat: 123, name: 'SPD' },
@@ -4236,7 +4236,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 91, name: 'HP' },
-        { stat: 134, name: 'ATT' },
+        { stat: 134, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -4265,7 +4265,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 91, name: 'SPD' },
@@ -4276,7 +4276,7 @@ export default function returnMons(e: string) {
   } else if (e == 'drapion') {
     const data = {
       name: 'drapion',
-      abilities: ['battle-armor', 'sniper', 'keen-eye'],
+      abilities: ['bATKle-armor', 'sniper', 'keen-eye'],
       id: 452,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/452.png',
@@ -4291,7 +4291,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -4320,7 +4320,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 48, name: 'SPA' },
         { stat: 68, name: 'SPD' },
@@ -4351,7 +4351,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 150, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 44, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 54, name: 'SPD' },
@@ -4378,7 +4378,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 77, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -4397,7 +4397,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -4408,7 +4408,7 @@ export default function returnMons(e: string) {
   } else if (e == 'dudunsparce') {
     const data = {
       name: 'dudunsparce',
-      abilities: ['serene-grace', 'run-away', 'rattled'],
+      abilities: ['serene-grace', 'run-away', 'rATKled'],
       id: 982,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png',
@@ -4416,7 +4416,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 125, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -4442,7 +4442,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 35, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -4476,7 +4476,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 35, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -4487,7 +4487,7 @@ export default function returnMons(e: string) {
   } else if (e == 'dunsparce') {
     const data = {
       name: 'dunsparce',
-      abilities: ['serene-grace', 'run-away', 'rattled'],
+      abilities: ['serene-grace', 'run-away', 'rATKled'],
       id: 206,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/206.png',
@@ -4495,7 +4495,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -4527,7 +4527,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -4557,7 +4557,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 58, name: 'HP' },
-        { stat: 109, name: 'ATT' },
+        { stat: 109, name: 'ATK' },
         { stat: 112, name: 'DEF' },
         { stat: 48, name: 'SPA' },
         { stat: 48, name: 'SPD' },
@@ -4583,7 +4583,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 45, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 135, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 135, name: 'SPD' },
@@ -4612,7 +4612,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -4636,7 +4636,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -4661,7 +4661,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -4690,7 +4690,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -4714,7 +4714,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 123, name: 'ATT' },
+        { stat: 123, name: 'ATK' },
         { stat: 67, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -4738,7 +4738,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -4766,7 +4766,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -4796,7 +4796,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 123, name: 'ATT' },
+        { stat: 123, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -4824,7 +4824,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -4858,7 +4858,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 84, name: 'HP' },
-        { stat: 86, name: 'ATT' },
+        { stat: 86, name: 'ATK' },
         { stat: 88, name: 'DEF' },
         { stat: 111, name: 'SPA' },
         { stat: 101, name: 'SPD' },
@@ -4889,7 +4889,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -4920,7 +4920,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -4949,7 +4949,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 115, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -4979,7 +4979,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -5004,7 +5004,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -5038,7 +5038,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -5071,7 +5071,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -5101,7 +5101,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -5120,7 +5120,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 104, name: 'HP' },
-        { stat: 91, name: 'ATT' },
+        { stat: 91, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 91, name: 'SPA' },
         { stat: 73, name: 'SPD' },
@@ -5131,7 +5131,7 @@ export default function returnMons(e: string) {
   } else if (e == 'falinks') {
     const data = {
       name: 'falinks',
-      abilities: ['battle-armor', 'defiant'],
+      abilities: ['bATKle-armor', 'defiant'],
       id: 870,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/870.png',
@@ -5146,7 +5146,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -5173,7 +5173,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 52, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 58, name: 'SPA' },
         { stat: 62, name: 'SPD' },
@@ -5192,7 +5192,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 2x', 'dark: 2x', 'ghost: 0x', 'psychic: 0.5x'],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -5219,7 +5219,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 61, name: 'SPA' },
         { stat: 61, name: 'SPD' },
@@ -5245,7 +5245,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 79, name: 'SPA' },
         { stat: 83, name: 'SPD' },
@@ -5277,7 +5277,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 94, name: 'ATT' },
+        { stat: 94, name: 'ATK' },
         { stat: 131, name: 'DEF' },
         { stat: 54, name: 'SPA' },
         { stat: 116, name: 'SPD' },
@@ -5306,7 +5306,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 91, name: 'ATT' },
+        { stat: 91, name: 'ATK' },
         { stat: 82, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 125, name: 'SPD' },
@@ -5336,7 +5336,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 82, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 74, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 64, name: 'SPD' },
@@ -5366,7 +5366,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -5395,7 +5395,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -5421,7 +5421,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -5447,7 +5447,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 68, name: 'DEF' },
         { stat: 112, name: 'SPA' },
         { stat: 154, name: 'SPD' },
@@ -5474,7 +5474,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -5504,7 +5504,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 140, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -5534,7 +5534,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -5561,7 +5561,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -5580,7 +5580,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -5599,7 +5599,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 76, name: 'ATT' },
+        { stat: 76, name: 'ATK' },
         { stat: 64, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -5624,7 +5624,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -5649,7 +5649,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 165, name: 'ATT' },
+        { stat: 165, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -5675,7 +5675,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 77, name: 'ATT' },
+        { stat: 77, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 97, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -5702,7 +5702,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 82, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 82, name: 'SPD' },
@@ -5729,7 +5729,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 108, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -5756,7 +5756,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 108, name: 'HP' },
-        { stat: 170, name: 'ATT' },
+        { stat: 170, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -5782,7 +5782,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -5808,7 +5808,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 165, name: 'SPA' },
         { stat: 135, name: 'SPD' },
@@ -5837,7 +5837,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -5863,7 +5863,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 111, name: 'HP' },
-        { stat: 83, name: 'ATT' },
+        { stat: 83, name: 'ATK' },
         { stat: 68, name: 'DEF' },
         { stat: 92, name: 'SPA' },
         { stat: 82, name: 'SPD' },
@@ -5893,7 +5893,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -5929,7 +5929,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 87, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 133, name: 'SPA' },
         { stat: 91, name: 'SPD' },
@@ -5958,7 +5958,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -5983,7 +5983,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -6008,7 +6008,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -6033,7 +6033,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -6058,7 +6058,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 145, name: 'ATT' },
+        { stat: 145, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -6085,7 +6085,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 35, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -6115,7 +6115,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 83, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 81, name: 'SPD' },
@@ -6142,7 +6142,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6171,7 +6171,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 123, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 62, name: 'DEF' },
         { stat: 97, name: 'SPA' },
         { stat: 81, name: 'SPD' },
@@ -6197,7 +6197,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 82, name: 'ATT' },
+        { stat: 82, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -6229,7 +6229,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -6258,7 +6258,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -6286,7 +6286,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 140, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -6317,7 +6317,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 89, name: 'HP' },
-        { stat: 124, name: 'ATT' },
+        { stat: 124, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -6344,7 +6344,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -6376,7 +6376,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -6402,7 +6402,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 84, name: 'ATT' },
+        { stat: 84, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 114, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6427,7 +6427,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -6458,7 +6458,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 122, name: 'DEF' },
         { stat: 58, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6489,7 +6489,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 122, name: 'DEF' },
         { stat: 58, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6520,7 +6520,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 122, name: 'DEF' },
         { stat: 58, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6551,7 +6551,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 122, name: 'DEF' },
         { stat: 58, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6578,7 +6578,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 63, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 72, name: 'SPD' },
@@ -6589,7 +6589,7 @@ export default function returnMons(e: string) {
   } else if (e == 'granbull') {
     const data = {
       name: 'granbull',
-      abilities: ['intimidate', 'quick-feet', 'rattled'],
+      abilities: ['intimidate', 'quick-feet', 'rATKled'],
       id: 210,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/210.png',
@@ -6604,7 +6604,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -6630,7 +6630,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 118, name: 'ATT' },
+        { stat: 118, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -6661,7 +6661,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 115, name: 'HP' },
-        { stat: 131, name: 'ATT' },
+        { stat: 131, name: 'ATK' },
         { stat: 131, name: 'DEF' },
         { stat: 53, name: 'SPA' },
         { stat: 53, name: 'SPD' },
@@ -6680,7 +6680,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6712,7 +6712,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 67, name: 'DEF' },
         { stat: 103, name: 'SPA' },
         { stat: 71, name: 'SPD' },
@@ -6739,7 +6739,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -6764,7 +6764,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -6783,7 +6783,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -6815,7 +6815,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 223, name: 'HP' },
-        { stat: 101, name: 'ATT' },
+        { stat: 101, name: 'ATK' },
         { stat: 53, name: 'DEF' },
         { stat: 97, name: 'SPA' },
         { stat: 53, name: 'SPD' },
@@ -6843,7 +6843,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 79, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -6875,7 +6875,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 155, name: 'ATT' },
+        { stat: 155, name: 'ATK' },
         { stat: 109, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -6901,7 +6901,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 144, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -6909,9 +6909,9 @@ export default function returnMons(e: string) {
       ],
     };
     return data;
-  } else if (e == 'hatterene') {
+  } else if (e == 'hATKerene') {
     const data = {
-      name: 'hatterene',
+      name: 'hATKerene',
       abilities: ['healer', 'anticipation', 'magic-bounce'],
       id: 858,
       sprite:
@@ -6927,7 +6927,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 57, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 136, name: 'SPA' },
         { stat: 103, name: 'SPD' },
@@ -6957,7 +6957,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 45, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -6987,7 +6987,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 74, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -7014,7 +7014,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 76, name: 'HP' },
-        { stat: 147, name: 'ATT' },
+        { stat: 147, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -7043,7 +7043,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 97, name: 'ATT' },
+        { stat: 97, name: 'ATK' },
         { stat: 66, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 66, name: 'SPD' },
@@ -7076,7 +7076,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 91, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 106, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 106, name: 'SPD' },
@@ -7102,7 +7102,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 62, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 52, name: 'DEF' },
         { stat: 109, name: 'SPA' },
         { stat: 94, name: 'SPD' },
@@ -7131,7 +7131,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -7160,7 +7160,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 185, name: 'ATT' },
+        { stat: 185, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -7186,7 +7186,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 108, name: 'HP' },
-        { stat: 112, name: 'ATT' },
+        { stat: 112, name: 'ATK' },
         { stat: 118, name: 'DEF' },
         { stat: 68, name: 'SPA' },
         { stat: 72, name: 'SPD' },
@@ -7212,7 +7212,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 79, name: 'DEF' },
         { stat: 35, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -7238,7 +7238,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 53, name: 'DEF' },
         { stat: 35, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -7264,7 +7264,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 35, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -7293,7 +7293,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 52, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 52, name: 'SPD' },
@@ -7319,7 +7319,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 150, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -7338,7 +7338,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 4x', 'fairy: 2x', 'psychic: 0x'],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 160, name: 'ATT' },
+        { stat: 160, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 170, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -7369,7 +7369,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -7400,7 +7400,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 140, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -7426,7 +7426,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 101, name: 'ATT' },
+        { stat: 101, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 97, name: 'SPD' },
@@ -7452,7 +7452,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 104, name: 'ATT' },
+        { stat: 104, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 94, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -7482,7 +7482,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 106, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -7514,7 +7514,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 92, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -7539,7 +7539,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 73, name: 'ATT' },
+        { stat: 73, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 73, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -7565,7 +7565,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 47, name: 'ATT' },
+        { stat: 47, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 73, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -7596,7 +7596,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -7615,7 +7615,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 2x', 'dark: 2x', 'ghost: 0x', 'psychic: 0.5x'],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -7645,7 +7645,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 76, name: 'HP' },
-        { stat: 104, name: 'ATT' },
+        { stat: 104, name: 'ATK' },
         { stat: 71, name: 'DEF' },
         { stat: 104, name: 'SPA' },
         { stat: 71, name: 'SPD' },
@@ -7671,7 +7671,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -7703,7 +7703,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 68, name: 'SPA' },
         { stat: 108, name: 'SPD' },
@@ -7737,7 +7737,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 72, name: 'ATT' },
+        { stat: 72, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 122, name: 'SPA' },
         { stat: 108, name: 'SPD' },
@@ -7765,7 +7765,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 154, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 108, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 68, name: 'SPD' },
@@ -7794,7 +7794,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 94, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 86, name: 'DEF' },
         { stat: 122, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -7827,7 +7827,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 88, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 108, name: 'SPD' },
@@ -7859,7 +7859,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 140, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -7888,7 +7888,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 134, name: 'ATT' },
+        { stat: 134, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 84, name: 'SPD' },
@@ -7922,7 +7922,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 112, name: 'ATT' },
+        { stat: 112, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 72, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -7954,7 +7954,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -7988,7 +7988,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -8012,7 +8012,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8041,7 +8041,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8069,7 +8069,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 35, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8094,7 +8094,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 40, name: 'HP' },
-        { stat: 35, name: 'ATT' },
+        { stat: 35, name: 'ATK' },
         { stat: 30, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -8113,7 +8113,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -8145,7 +8145,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 59, name: 'HP' },
-        { stat: 181, name: 'ATT' },
+        { stat: 181, name: 'ATK' },
         { stat: 131, name: 'DEF' },
         { stat: 59, name: 'SPA' },
         { stat: 31, name: 'SPD' },
@@ -8164,7 +8164,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -8196,7 +8196,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 91, name: 'HP' },
-        { stat: 72, name: 'ATT' },
+        { stat: 72, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 129, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -8204,9 +8204,9 @@ export default function returnMons(e: string) {
       ],
     };
     return data;
-  } else if (e == 'kilowattrel') {
+  } else if (e == 'kilowATKrel') {
     const data = {
-      name: 'kilowattrel',
+      name: 'kilowATKrel',
       abilities: ['wind-power', 'volt-absorb', 'competitive'],
       id: 941,
       sprite:
@@ -8224,7 +8224,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -8258,7 +8258,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -8283,7 +8283,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8309,7 +8309,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -8338,7 +8338,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 35, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -8363,7 +8363,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -8396,7 +8396,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 57, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 91, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 87, name: 'SPD' },
@@ -8430,7 +8430,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -8449,7 +8449,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8481,7 +8481,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -8507,7 +8507,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 77, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 51, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 51, name: 'SPD' },
@@ -8539,7 +8539,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 117, name: 'ATT' },
+        { stat: 117, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -8566,7 +8566,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 89, name: 'HP' },
-        { stat: 145, name: 'ATT' },
+        { stat: 145, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -8593,7 +8593,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 125, name: 'HP' },
-        { stat: 58, name: 'ATT' },
+        { stat: 58, name: 'ATK' },
         { stat: 58, name: 'DEF' },
         { stat: 76, name: 'SPA' },
         { stat: 76, name: 'SPD' },
@@ -8619,7 +8619,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 130, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8651,7 +8651,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -8683,7 +8683,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 140, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -8715,7 +8715,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -8747,7 +8747,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 160, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -8776,7 +8776,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -8807,7 +8807,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 103, name: 'ATT' },
+        { stat: 103, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -8836,7 +8836,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 35, name: 'ATT' },
+        { stat: 35, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -8855,7 +8855,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -8881,7 +8881,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 64, name: 'HP' },
-        { stat: 88, name: 'ATT' },
+        { stat: 88, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 88, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -8910,7 +8910,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -8942,7 +8942,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -8961,7 +8961,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 61, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 61, name: 'SPD' },
@@ -8991,7 +8991,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 71, name: 'HP' },
-        { stat: 102, name: 'ATT' },
+        { stat: 102, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 52, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -9010,7 +9010,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 76, name: 'ATT' },
+        { stat: 76, name: 'ATK' },
         { stat: 84, name: 'DEF' },
         { stat: 54, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -9038,7 +9038,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 136, name: 'ATT' },
+        { stat: 136, name: 'ATK' },
         { stat: 94, name: 'DEF' },
         { stat: 54, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -9070,7 +9070,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -9096,7 +9096,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -9122,7 +9122,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 69, name: 'HP' },
-        { stat: 69, name: 'ATT' },
+        { stat: 69, name: 'ATK' },
         { stat: 76, name: 'DEF' },
         { stat: 69, name: 'SPA' },
         { stat: 86, name: 'SPD' },
@@ -9154,7 +9154,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -9183,7 +9183,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -9209,7 +9209,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 43, name: 'HP' },
-        { stat: 30, name: 'ATT' },
+        { stat: 30, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -9233,7 +9233,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 79, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 79, name: 'SPD' },
@@ -9262,7 +9262,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 117, name: 'ATT' },
+        { stat: 117, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -9291,7 +9291,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -9320,7 +9320,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -9346,7 +9346,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -9372,7 +9372,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -9403,7 +9403,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -9432,7 +9432,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 67, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -9467,7 +9467,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -9502,7 +9502,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -9521,7 +9521,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 4x', 'fairy: 2x', 'psychic: 0x'],
       stats: [
         { stat: 86, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 88, name: 'DEF' },
         { stat: 68, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -9548,7 +9548,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -9574,7 +9574,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -9603,7 +9603,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -9627,7 +9627,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -9651,7 +9651,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -9679,7 +9679,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 40, name: 'ATT' },
+        { stat: 40, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 140, name: 'SPD' },
@@ -9708,7 +9708,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 86, name: 'ATT' },
+        { stat: 86, name: 'ATK' },
         { stat: 67, name: 'DEF' },
         { stat: 106, name: 'SPA' },
         { stat: 67, name: 'SPD' },
@@ -9719,7 +9719,7 @@ export default function returnMons(e: string) {
   } else if (e == 'marowak') {
     const data = {
       name: 'marowak',
-      abilities: ['rock-head', 'lightning-rod', 'battle-armor'],
+      abilities: ['rock-head', 'lightning-rod', 'bATKle-armor'],
       id: 105,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png',
@@ -9734,7 +9734,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -9768,7 +9768,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -9797,7 +9797,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 62, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 82, name: 'SPD' },
@@ -9816,7 +9816,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -9849,7 +9849,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -9882,7 +9882,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -9907,7 +9907,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -9932,7 +9932,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -9961,7 +9961,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 82, name: 'ATT' },
+        { stat: 82, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 83, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -9995,7 +9995,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 135, name: 'HP' },
-        { stat: 143, name: 'ATT' },
+        { stat: 143, name: 'ATK' },
         { stat: 143, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -10014,7 +10014,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 2x', 'dark: 2x', 'ghost: 0x', 'psychic: 0.5x'],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 77, name: 'ATT' },
+        { stat: 77, name: 'ATK' },
         { stat: 77, name: 'DEF' },
         { stat: 128, name: 'SPA' },
         { stat: 128, name: 'SPD' },
@@ -10048,7 +10048,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 76, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 81, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -10073,7 +10073,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 74, name: 'HP' },
-        { stat: 48, name: 'ATT' },
+        { stat: 48, name: 'ATK' },
         { stat: 76, name: 'DEF' },
         { stat: 83, name: 'SPA' },
         { stat: 81, name: 'SPD' },
@@ -10098,7 +10098,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -10132,7 +10132,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -10157,7 +10157,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10183,7 +10183,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -10209,7 +10209,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -10235,7 +10235,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 79, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 125, name: 'SPD' },
@@ -10254,7 +10254,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -10280,7 +10280,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -10311,7 +10311,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10335,7 +10335,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 40, name: 'ATT' },
+        { stat: 40, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -10361,7 +10361,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -10391,7 +10391,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -10421,7 +10421,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 58, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 58, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 58, name: 'SPD' },
@@ -10450,7 +10450,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 94, name: 'ATT' },
+        { stat: 94, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 94, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -10476,7 +10476,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 40, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -10504,7 +10504,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10530,7 +10530,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -10557,7 +10557,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10583,7 +10583,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10610,7 +10610,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 66, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -10635,7 +10635,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 116, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 107, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -10660,7 +10660,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 97, name: 'HP' },
-        { stat: 107, name: 'ATT' },
+        { stat: 107, name: 'ATK' },
         { stat: 101, name: 'DEF' },
         { stat: 127, name: 'SPA' },
         { stat: 89, name: 'SPD' },
@@ -10690,7 +10690,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 81, name: 'HP' },
-        { stat: 102, name: 'ATT' },
+        { stat: 102, name: 'ATK' },
         { stat: 77, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -10720,7 +10720,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 87, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -10750,7 +10750,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 109, name: 'HP' },
-        { stat: 53, name: 'ATT' },
+        { stat: 53, name: 'ATK' },
         { stat: 47, name: 'DEF' },
         { stat: 127, name: 'SPA' },
         { stat: 131, name: 'SPD' },
@@ -10779,7 +10779,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 73, name: 'HP' },
-        { stat: 76, name: 'ATT' },
+        { stat: 76, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 81, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10807,7 +10807,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 73, name: 'HP' },
-        { stat: 67, name: 'ATT' },
+        { stat: 67, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 81, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -10836,7 +10836,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 61, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -10863,7 +10863,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 86, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -10893,7 +10893,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 97, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -10919,7 +10919,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 93, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 101, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 81, name: 'SPD' },
@@ -10945,7 +10945,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -10974,7 +10974,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 84, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -11000,7 +11000,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 84, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -11027,7 +11027,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 84, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -11053,7 +11053,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 84, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 96, name: 'SPD' },
@@ -11072,7 +11072,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 59, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -11101,7 +11101,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 128, name: 'ATT' },
+        { stat: 128, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 58, name: 'SPA' },
         { stat: 86, name: 'SPD' },
@@ -11130,7 +11130,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11149,7 +11149,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 2x', 'dark: 2x', 'ghost: 0x', 'psychic: 0.5x'],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -11179,7 +11179,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -11209,7 +11209,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11238,7 +11238,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11266,7 +11266,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11297,7 +11297,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11331,7 +11331,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 145, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -11357,7 +11357,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -11381,7 +11381,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -11407,7 +11407,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 53, name: 'SPA' },
         { stat: 62, name: 'SPD' },
@@ -11438,7 +11438,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -11465,7 +11465,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 124, name: 'ATT' },
+        { stat: 124, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 69, name: 'SPA' },
         { stat: 71, name: 'SPD' },
@@ -11496,7 +11496,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -11522,7 +11522,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -11550,7 +11550,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -11580,7 +11580,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 88, name: 'ATT' },
+        { stat: 88, name: 'ATK' },
         { stat: 160, name: 'DEF' },
         { stat: 88, name: 'SPA' },
         { stat: 88, name: 'SPD' },
@@ -11608,7 +11608,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11619,7 +11619,7 @@ export default function returnMons(e: string) {
   } else if (e == 'perrserker') {
     const data = {
       name: 'perrserker',
-      abilities: ['battle-armor', 'tough-claws', 'steely-spirit'],
+      abilities: ['bATKle-armor', 'tough-claws', 'steely-spirit'],
       id: 863,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/863.png',
@@ -11642,7 +11642,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -11661,7 +11661,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -11672,7 +11672,7 @@ export default function returnMons(e: string) {
   } else if (e == 'persian-alola') {
     const data = {
       name: 'persian-alola',
-      abilities: ['fur-coat', 'technician', 'rattled'],
+      abilities: ['fur-coat', 'technician', 'rATKled'],
       id: 10108,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10108.png',
@@ -11687,7 +11687,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -11713,7 +11713,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -11740,7 +11740,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 83, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11767,7 +11767,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 83, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -11794,7 +11794,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -11818,7 +11818,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 48, name: 'HP' },
-        { stat: 101, name: 'ATT' },
+        { stat: 101, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 91, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -11844,7 +11844,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -11873,7 +11873,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 155, name: 'ATT' },
+        { stat: 155, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -11897,7 +11897,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 40, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -11923,7 +11923,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -11955,7 +11955,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -11981,7 +11981,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 134, name: 'SPA' },
         { stat: 114, name: 'SPD' },
@@ -12000,7 +12000,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -12019,7 +12019,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -12049,7 +12049,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 74, name: 'ATT' },
+        { stat: 74, name: 'ATK' },
         { stat: 74, name: 'DEF' },
         { stat: 126, name: 'SPA' },
         { stat: 116, name: 'SPD' },
@@ -12075,7 +12075,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -12107,7 +12107,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 145, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -12126,7 +12126,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 71, name: 'HP' },
-        { stat: 82, name: 'ATT' },
+        { stat: 82, name: 'ATK' },
         { stat: 64, name: 'DEF' },
         { stat: 64, name: 'SPA' },
         { stat: 59, name: 'SPD' },
@@ -12157,7 +12157,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 86, name: 'HP' },
-        { stat: 68, name: 'ATT' },
+        { stat: 68, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 109, name: 'SPA' },
         { stat: 66, name: 'SPD' },
@@ -12183,7 +12183,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -12209,7 +12209,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -12241,7 +12241,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -12272,7 +12272,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -12298,7 +12298,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -12328,7 +12328,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -12358,7 +12358,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 125, name: 'HP' },
-        { stat: 73, name: 'ATT' },
+        { stat: 73, name: 'ATK' },
         { stat: 91, name: 'DEF' },
         { stat: 137, name: 'SPA' },
         { stat: 89, name: 'SPD' },
@@ -12382,7 +12382,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -12411,7 +12411,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -12435,7 +12435,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 115, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -12464,7 +12464,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 97, name: 'HP' },
-        { stat: 165, name: 'ATT' },
+        { stat: 165, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -12493,7 +12493,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -12519,7 +12519,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -12538,7 +12538,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 81, name: 'ATT' },
+        { stat: 81, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -12564,7 +12564,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 71, name: 'ATT' },
+        { stat: 71, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -12589,7 +12589,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 200, name: 'SPD' },
@@ -12616,7 +12616,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 200, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -12640,7 +12640,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -12659,7 +12659,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 160, name: 'ATT' },
+        { stat: 160, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -12688,7 +12688,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 200, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -12722,7 +12722,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 150, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 150, name: 'SPD' },
@@ -12751,7 +12751,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -12776,7 +12776,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -12808,7 +12808,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 119, name: 'ATT' },
+        { stat: 119, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 54, name: 'SPA' },
         { stat: 67, name: 'SPD' },
@@ -12840,7 +12840,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 45, name: 'SPD' },
@@ -12872,7 +12872,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 115, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -12903,7 +12903,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 55, name: 'ATT' },
+        { stat: 55, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -12932,7 +12932,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -12964,7 +12964,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 139, name: 'ATT' },
+        { stat: 139, name: 'ATK' },
         { stat: 71, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 101, name: 'SPD' },
@@ -12993,7 +12993,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -13023,7 +13023,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 77, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 77, name: 'SPD' },
@@ -13051,7 +13051,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 107, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 107, name: 'SPD' },
@@ -13078,7 +13078,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 107, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 107, name: 'SPD' },
@@ -13109,7 +13109,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 107, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 107, name: 'SPD' },
@@ -13137,7 +13137,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 107, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 107, name: 'SPD' },
@@ -13164,7 +13164,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 107, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 107, name: 'SPD' },
@@ -13195,7 +13195,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 58, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 145, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -13220,7 +13220,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -13245,7 +13245,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -13275,7 +13275,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -13307,7 +13307,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 64, name: 'ATT' },
+        { stat: 64, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 111, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -13333,7 +13333,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 108, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -13365,7 +13365,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 108, name: 'ATT' },
+        { stat: 108, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -13391,7 +13391,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 107, name: 'ATT' },
+        { stat: 107, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -13417,7 +13417,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -13449,7 +13449,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 25, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -13478,7 +13478,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 81, name: 'ATT' },
+        { stat: 81, name: 'ATK' },
         { stat: 97, name: 'DEF' },
         { stat: 121, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -13504,7 +13504,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -13535,7 +13535,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -13564,7 +13564,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -13594,7 +13594,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 145, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -13624,7 +13624,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -13654,7 +13654,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 150, name: 'ATT' },
+        { stat: 150, name: 'ATK' },
         { stat: 140, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -13683,7 +13683,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 89, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 69, name: 'SPD' },
@@ -13710,7 +13710,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 108, name: 'ATT' },
+        { stat: 108, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 108, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -13737,7 +13737,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -13763,7 +13763,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 115, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 99, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -13792,7 +13792,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -13818,7 +13818,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -13844,7 +13844,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -13873,7 +13873,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -13900,7 +13900,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 73, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -13932,7 +13932,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 40, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 40, name: 'SPD' },
@@ -13964,7 +13964,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -13993,7 +13993,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -14024,7 +14024,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 1, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 30, name: 'SPD' },
@@ -14058,7 +14058,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -14090,7 +14090,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -14115,7 +14115,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 20, name: 'HP' },
-        { stat: 10, name: 'ATT' },
+        { stat: 10, name: 'ATK' },
         { stat: 230, name: 'DEF' },
         { stat: 10, name: 'SPA' },
         { stat: 230, name: 'SPD' },
@@ -14144,7 +14144,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 58, name: 'ATT' },
+        { stat: 58, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 103, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -14163,7 +14163,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -14189,7 +14189,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 98, name: 'ATT' },
+        { stat: 98, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -14218,7 +14218,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 98, name: 'ATT' },
+        { stat: 98, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -14247,7 +14247,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 98, name: 'ATT' },
+        { stat: 98, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 98, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -14278,7 +14278,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 71, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 106, name: 'DEF' },
         { stat: 121, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -14304,7 +14304,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 62, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 68, name: 'SPA' },
         { stat: 82, name: 'SPD' },
@@ -14336,7 +14336,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 140, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -14370,7 +14370,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 104, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -14396,7 +14396,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 103, name: 'HP' },
-        { stat: 93, name: 'ATT' },
+        { stat: 93, name: 'ATK' },
         { stat: 67, name: 'DEF' },
         { stat: 71, name: 'SPA' },
         { stat: 61, name: 'SPD' },
@@ -14415,7 +14415,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 150, name: 'HP' },
-        { stat: 160, name: 'ATT' },
+        { stat: 160, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -14444,7 +14444,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 135, name: 'ATT' },
+        { stat: 135, name: 'ATK' },
         { stat: 79, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -14475,7 +14475,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -14502,7 +14502,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -14533,7 +14533,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 180, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -14564,7 +14564,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -14591,7 +14591,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -14617,7 +14617,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 82, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 86, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -14636,7 +14636,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 20, name: 'ATT' },
+        { stat: 20, name: 'ATK' },
         { stat: 35, name: 'DEF' },
         { stat: 20, name: 'SPA' },
         { stat: 45, name: 'SPD' },
@@ -14665,7 +14665,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -14684,7 +14684,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 160, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -14716,7 +14716,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -14742,7 +14742,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 79, name: 'ATT' },
+        { stat: 79, name: 'ATK' },
         { stat: 92, name: 'DEF' },
         { stat: 52, name: 'SPA' },
         { stat: 86, name: 'SPD' },
@@ -14761,7 +14761,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -14786,7 +14786,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 92, name: 'ATT' },
+        { stat: 92, name: 'ATK' },
         { stat: 108, name: 'DEF' },
         { stat: 92, name: 'SPA' },
         { stat: 108, name: 'SPD' },
@@ -14813,7 +14813,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 82, name: 'HP' },
-        { stat: 96, name: 'ATT' },
+        { stat: 96, name: 'ATK' },
         { stat: 51, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 51, name: 'SPD' },
@@ -14845,7 +14845,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 61, name: 'HP' },
-        { stat: 131, name: 'ATT' },
+        { stat: 131, name: 'ATK' },
         { stat: 211, name: 'DEF' },
         { stat: 53, name: 'SPA' },
         { stat: 101, name: 'SPD' },
@@ -14872,7 +14872,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -14903,7 +14903,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -14937,7 +14937,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 200, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -14971,7 +14971,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 230, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -15000,7 +15000,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 135, name: 'DEF' },
         { stat: 20, name: 'SPA' },
         { stat: 20, name: 'SPD' },
@@ -15019,7 +15019,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -15048,7 +15048,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 109, name: 'HP' },
-        { stat: 66, name: 'ATT' },
+        { stat: 66, name: 'ATK' },
         { stat: 84, name: 'DEF' },
         { stat: 81, name: 'SPA' },
         { stat: 99, name: 'SPD' },
@@ -15082,7 +15082,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 109, name: 'HP' },
-        { stat: 81, name: 'ATT' },
+        { stat: 81, name: 'ATK' },
         { stat: 99, name: 'DEF' },
         { stat: 66, name: 'SPA' },
         { stat: 84, name: 'SPD' },
@@ -15093,7 +15093,7 @@ export default function returnMons(e: string) {
   } else if (e == 'sudowoodo') {
     const data = {
       name: 'sudowoodo',
-      abilities: ['sturdy', 'rock-head', 'rattled'],
+      abilities: ['sturdy', 'rock-head', 'rATKled'],
       id: 185,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/185.png',
@@ -15111,7 +15111,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -15137,7 +15137,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -15166,7 +15166,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -15193,7 +15193,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 73, name: 'ATT' },
+        { stat: 73, name: 'ATK' },
         { stat: 83, name: 'DEF' },
         { stat: 73, name: 'SPA' },
         { stat: 83, name: 'SPD' },
@@ -15219,7 +15219,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -15245,7 +15245,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 150, name: 'ATT' },
+        { stat: 150, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 110, name: 'SPD' },
@@ -15273,7 +15273,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 87, name: 'ATT' },
+        { stat: 87, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 87, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -15300,7 +15300,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -15329,7 +15329,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 67, name: 'HP' },
-        { stat: 57, name: 'ATT' },
+        { stat: 57, name: 'ATK' },
         { stat: 55, name: 'DEF' },
         { stat: 77, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -15355,7 +15355,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -15385,7 +15385,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 81, name: 'ATT' },
+        { stat: 81, name: 'ATK' },
         { stat: 71, name: 'DEF' },
         { stat: 74, name: 'SPA' },
         { stat: 69, name: 'SPD' },
@@ -15414,7 +15414,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -15446,7 +15446,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -15476,7 +15476,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -15504,7 +15504,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -15530,7 +15530,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -15555,7 +15555,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 68, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -15574,7 +15574,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -15606,7 +15606,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -15636,7 +15636,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -15662,7 +15662,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -15693,7 +15693,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -15712,7 +15712,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -15745,7 +15745,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 91, name: 'HP' },
-        { stat: 129, name: 'ATT' },
+        { stat: 129, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 72, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -15771,7 +15771,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 58, name: 'ATT' },
+        { stat: 58, name: 'ATK' },
         { stat: 58, name: 'DEF' },
         { stat: 87, name: 'SPA' },
         { stat: 92, name: 'SPD' },
@@ -15797,7 +15797,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 120, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -15825,7 +15825,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 79, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -15853,7 +15853,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 79, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 145, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -15885,7 +15885,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 155, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 125, name: 'DEF' },
         { stat: 55, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -15918,7 +15918,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 77, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -15945,7 +15945,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -15980,7 +15980,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 98, name: 'ATT' },
+        { stat: 98, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 40, name: 'SPA' },
         { stat: 73, name: 'SPD' },
@@ -16011,7 +16011,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 50, name: 'ATT' },
+        { stat: 50, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -16040,7 +16040,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 140, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -16067,7 +16067,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 79, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -16094,7 +16094,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 79, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -16121,7 +16121,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 109, name: 'ATT' },
+        { stat: 109, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -16148,7 +16148,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -16179,7 +16179,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 50, name: 'HP' },
-        { stat: 63, name: 'ATT' },
+        { stat: 63, name: 'ATK' },
         { stat: 152, name: 'DEF' },
         { stat: 53, name: 'SPA' },
         { stat: 142, name: 'SPD' },
@@ -16208,7 +16208,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 83, name: 'HP' },
-        { stat: 106, name: 'ATT' },
+        { stat: 106, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 86, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -16238,7 +16238,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 98, name: 'ATT' },
+        { stat: 98, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 114, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -16269,7 +16269,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 76, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 82, name: 'SPD' },
@@ -16298,7 +16298,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 99, name: 'HP' },
-        { stat: 68, name: 'ATT' },
+        { stat: 68, name: 'ATK' },
         { stat: 83, name: 'DEF' },
         { stat: 72, name: 'SPA' },
         { stat: 87, name: 'SPD' },
@@ -16327,7 +16327,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 72, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 98, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 98, name: 'SPD' },
@@ -16355,7 +16355,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 78, name: 'ATT' },
+        { stat: 78, name: 'ATK' },
         { stat: 135, name: 'DEF' },
         { stat: 91, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -16384,7 +16384,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 78, name: 'HP' },
-        { stat: 84, name: 'ATT' },
+        { stat: 84, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 109, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -16418,7 +16418,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 73, name: 'HP' },
-        { stat: 84, name: 'ATT' },
+        { stat: 84, name: 'ATK' },
         { stat: 78, name: 'DEF' },
         { stat: 119, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -16452,7 +16452,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 134, name: 'ATT' },
+        { stat: 134, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -16486,7 +16486,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 164, name: 'ATT' },
+        { stat: 164, name: 'ATK' },
         { stat: 150, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -16517,7 +16517,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 82, name: 'HP' },
-        { stat: 121, name: 'ATT' },
+        { stat: 121, name: 'ATK' },
         { stat: 119, name: 'DEF' },
         { stat: 69, name: 'SPA' },
         { stat: 59, name: 'SPD' },
@@ -16543,7 +16543,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 95, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 110, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -16570,7 +16570,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 80, name: 'DEF' },
         { stat: 65, name: 'SPA' },
         { stat: 55, name: 'SPD' },
@@ -16595,7 +16595,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 48, name: 'HP' },
-        { stat: 72, name: 'ATT' },
+        { stat: 72, name: 'ATK' },
         { stat: 48, name: 'DEF' },
         { stat: 72, name: 'SPA' },
         { stat: 48, name: 'SPD' },
@@ -16623,7 +16623,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 130, name: 'HP' },
-        { stat: 140, name: 'ATT' },
+        { stat: 140, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -16642,7 +16642,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -16674,7 +16674,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 130, name: 'ATT' },
+        { stat: 130, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 63, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -16699,7 +16699,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 130, name: 'DEF' },
         { stat: 75, name: 'SPA' },
         { stat: 130, name: 'SPD' },
@@ -16724,7 +16724,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 71, name: 'HP' },
-        { stat: 95, name: 'ATT' },
+        { stat: 95, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -16750,7 +16750,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 130, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -16781,7 +16781,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 102, name: 'ATT' },
+        { stat: 102, name: 'ATK' },
         { stat: 73, name: 'DEF' },
         { stat: 78, name: 'SPA' },
         { stat: 65, name: 'SPD' },
@@ -16810,7 +16810,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 65, name: 'ATT' },
+        { stat: 65, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -16839,7 +16839,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 82, name: 'ATT' },
+        { stat: 82, name: 'ATK' },
         { stat: 83, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -16868,7 +16868,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 123, name: 'DEF' },
         { stat: 122, name: 'SPA' },
         { stat: 120, name: 'SPD' },
@@ -16897,7 +16897,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 102, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 102, name: 'SPD' },
@@ -16929,7 +16929,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 100, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 100, name: 'SPD' },
@@ -16958,7 +16958,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 100, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -16984,7 +16984,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 77, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 145, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -17013,7 +17013,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 110, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -17045,7 +17045,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 91, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 129, name: 'SPD' },
@@ -17074,7 +17074,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 52, name: 'ATT' },
+        { stat: 52, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -17100,7 +17100,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 73, name: 'ATT' },
+        { stat: 73, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 47, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -17128,7 +17128,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 80, name: 'HP' },
-        { stat: 110, name: 'ATT' },
+        { stat: 110, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 130, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -17157,7 +17157,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 60, name: 'ATT' },
+        { stat: 60, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 135, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -17183,7 +17183,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 170, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 90, name: 'SPA' },
         { stat: 45, name: 'SPD' },
@@ -17208,7 +17208,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 99, name: 'HP' },
-        { stat: 83, name: 'ATT' },
+        { stat: 83, name: 'ATK' },
         { stat: 91, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 83, name: 'SPD' },
@@ -17234,7 +17234,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 80, name: 'ATT' },
+        { stat: 80, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -17253,7 +17253,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 69, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 69, name: 'SPD' },
@@ -17283,7 +17283,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 70, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 65, name: 'DEF' },
         { stat: 45, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -17310,7 +17310,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -17339,7 +17339,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 120, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -17371,7 +17371,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 67, name: 'ATT' },
+        { stat: 67, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 77, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -17397,7 +17397,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 110, name: 'HP' },
-        { stat: 78, name: 'ATT' },
+        { stat: 78, name: 'ATK' },
         { stat: 73, name: 'DEF' },
         { stat: 76, name: 'SPA' },
         { stat: 71, name: 'SPD' },
@@ -17423,7 +17423,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 140, name: 'HP' },
-        { stat: 70, name: 'ATT' },
+        { stat: 70, name: 'ATK' },
         { stat: 45, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 50, name: 'SPD' },
@@ -17449,7 +17449,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 45, name: 'HP' },
-        { stat: 20, name: 'ATT' },
+        { stat: 20, name: 'ATK' },
         { stat: 20, name: 'DEF' },
         { stat: 25, name: 'SPA' },
         { stat: 25, name: 'SPD' },
@@ -17483,7 +17483,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 85, name: 'HP' },
-        { stat: 85, name: 'ATT' },
+        { stat: 85, name: 'ATK' },
         { stat: 100, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 135, name: 'SPD' },
@@ -17508,7 +17508,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 190, name: 'HP' },
-        { stat: 33, name: 'ATT' },
+        { stat: 33, name: 'ATK' },
         { stat: 58, name: 'DEF' },
         { stat: 33, name: 'SPA' },
         { stat: 58, name: 'SPD' },
@@ -17539,7 +17539,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 59, name: 'ATT' },
+        { stat: 59, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 79, name: 'SPA' },
         { stat: 105, name: 'SPD' },
@@ -17567,7 +17567,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 79, name: 'ATT' },
+        { stat: 79, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 59, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -17597,7 +17597,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 69, name: 'ATT' },
+        { stat: 69, name: 'ATK' },
         { stat: 95, name: 'DEF' },
         { stat: 69, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -17608,7 +17608,7 @@ export default function returnMons(e: string) {
   } else if (e == 'wugtrio') {
     const data = {
       name: 'wugtrio',
-      abilities: ['gooey', 'rattled', 'sand-veil'],
+      abilities: ['gooey', 'rATKled', 'sand-veil'],
       id: 961,
       sprite:
         'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png',
@@ -17623,7 +17623,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 35, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 50, name: 'DEF' },
         { stat: 50, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -17642,7 +17642,7 @@ export default function returnMons(e: string) {
       weaknesses: ['bug: 2x', 'dark: 2x', 'ghost: 0x', 'psychic: 0.5x'],
       stats: [
         { stat: 103, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 72, name: 'DEF' },
         { stat: 105, name: 'SPA' },
         { stat: 75, name: 'SPD' },
@@ -17671,7 +17671,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 65, name: 'HP' },
-        { stat: 75, name: 'ATT' },
+        { stat: 75, name: 'ATK' },
         { stat: 70, name: 'DEF' },
         { stat: 95, name: 'SPA' },
         { stat: 70, name: 'SPD' },
@@ -17695,7 +17695,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 83, name: 'HP' },
-        { stat: 89, name: 'ATT' },
+        { stat: 89, name: 'ATK' },
         { stat: 71, name: 'DEF' },
         { stat: 173, name: 'SPA' },
         { stat: 71, name: 'SPD' },
@@ -17724,7 +17724,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 86, name: 'HP' },
-        { stat: 76, name: 'ATT' },
+        { stat: 76, name: 'ATK' },
         { stat: 86, name: 'DEF' },
         { stat: 116, name: 'SPA' },
         { stat: 56, name: 'SPD' },
@@ -17750,7 +17750,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 92, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 115, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 115, name: 'SPD' },
@@ -17769,7 +17769,7 @@ export default function returnMons(e: string) {
       weaknesses: ['fighting: 2x', 'ghost: 0x'],
       stats: [
         { stat: 73, name: 'HP' },
-        { stat: 115, name: 'ATT' },
+        { stat: 115, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 60, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -17797,7 +17797,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 90, name: 'ATT' },
+        { stat: 90, name: 'ATK' },
         { stat: 85, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -17827,7 +17827,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 90, name: 'HP' },
-        { stat: 125, name: 'ATT' },
+        { stat: 125, name: 'ATK' },
         { stat: 90, name: 'DEF' },
         { stat: 85, name: 'SPA' },
         { stat: 90, name: 'SPD' },
@@ -17861,7 +17861,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 105, name: 'HP' },
-        { stat: 120, name: 'ATT' },
+        { stat: 120, name: 'ATK' },
         { stat: 105, name: 'DEF' },
         { stat: 70, name: 'SPA' },
         { stat: 95, name: 'SPD' },
@@ -17885,7 +17885,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 75, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 63, name: 'DEF' },
         { stat: 80, name: 'SPA' },
         { stat: 63, name: 'SPD' },
@@ -17909,7 +17909,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 88, name: 'HP' },
-        { stat: 112, name: 'ATT' },
+        { stat: 112, name: 'ATK' },
         { stat: 75, name: 'DEF' },
         { stat: 102, name: 'SPA' },
         { stat: 80, name: 'SPD' },
@@ -17935,7 +17935,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 60, name: 'HP' },
-        { stat: 105, name: 'ATT' },
+        { stat: 105, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 120, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -17961,7 +17961,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 55, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 60, name: 'DEF' },
         { stat: 125, name: 'SPA' },
         { stat: 60, name: 'SPD' },
@@ -17988,7 +17988,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 54, name: 'HP' },
-        { stat: 100, name: 'ATT' },
+        { stat: 100, name: 'ATK' },
         { stat: 71, name: 'DEF' },
         { stat: 61, name: 'SPA' },
         { stat: 85, name: 'SPD' },
@@ -18018,7 +18018,7 @@ export default function returnMons(e: string) {
       ],
       stats: [
         { stat: 40, name: 'HP' },
-        { stat: 45, name: 'ATT' },
+        { stat: 45, name: 'ATK' },
         { stat: 35, name: 'DEF' },
         { stat: 30, name: 'SPA' },
         { stat: 40, name: 'SPD' },

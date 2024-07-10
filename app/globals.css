@@ -681,19 +681,40 @@ body.light {
   padding: 0.5rem 0.5rem;
   background: linear-gradient(
     125deg,
-    color-mix(in srgb, var(--_type-color), var(--background-secondary)),
+    color-mix(
+      in srgb,
+      var(--_type-color) var(--a, 50%),
+      var(--background-secondary)
+    ),
     var(--background-secondary) 50%
   );
-  border: 1px solid var(--background-icons);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
+      transparent 60%
+    );
   border-radius: 2rem 2rem 1.5rem 1.5rem;
+  transition: --a 300ms ease, border 300ms ease;
 }
 
 .pokemon-card:hover {
+  --a: 90%;
   background: linear-gradient(
     125deg,
-    color-mix(in srgb, var(--_type-color) 90%, var(--background-secondary)),
+    color-mix(
+      in srgb,
+      var(--_type-color) var(--a, 90%),
+      var(--background-secondary)
+    ),
     var(--background-secondary) 50%
   );
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
+      transparent 0%
+    );
 }
 
 .pokemon-card .pokemon-type-icon {
@@ -2414,28 +2435,6 @@ input:invalid {
   margin-bottom: var(--playoff-cutoff);
 }
 
-.pokemon-chart-grid {
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  justify-content: space-between;
-  justify-items: space-between;
-  width: 100%;
-}
-
-.pokemon-chart-grid:not(.duo) {
-  order: 100000;
-}
-
-.pokemon-chart-header:not(.duo) {
-  order: 99999;
-}
-
-.pokemon-chart-header.duo {
-  border-top: 0;
-  margin-top: 0;
-}
-
 :root {
   --chart-1: 12 76% 61%;
   --chart-2: 173 58% 39%;
@@ -2507,29 +2506,74 @@ input:invalid {
   fill: hsl(330, 50%, 68%);
 }
 
+.pokemon-chart-grid:not(.duo) {
+  order: 100000;
+}
+
+.pokemon-chart-header:not(.duo) {
+  order: 99999;
+}
+
+.pokemon-chart-header.duo {
+  border-top: 0;
+  margin-top: 0;
+}
+
+.pokemon-chart-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-content: space-between;
+  justify-items: space-between;
+  width: 100%;
+}
+
+@property --a {
+  syntax: '<percentage>'; /* its type */
+  inherits: false;
+  initial-value: 50%; /* the initial value */
+}
+
 .chart-card {
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
   padding: 0;
   background: linear-gradient(
-    125deg,
-    color-mix(in srgb, var(--_type-color), var(--background-secondary)),
-    var(--background-secondary) 50%
+    180deg,
+    color-mix(
+      in srgb,
+      var(--_type-color) var(--a, 50%),
+      var(--background-secondary)
+    ),
+    var(--background-secondary) 60%
   );
-  border: 1px solid var(--background-hovers);
-  border-radius: 1.5rem;
-  &:hover {
-    background: linear-gradient(
-      125deg,
-      color-mix(in srgb, var(--_type-color) 90%, var(--background-secondary)),
-      var(--background-secondary) 50%
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
+      transparent 60%
     );
+  border-radius: 1.5rem;
+  transition: border 300ms ease, --a 300ms ease;
+  &:hover {
+    --a: 90%;
+    background: linear-gradient(
+      180deg,
+      color-mix(
+        in srgb,
+        var(--_type-color) var(--a, 90%),
+        var(--background-secondary)
+      ),
+      var(--background-secondary) 60%
+    );
+    border: 1px solid
+      color-mix(
+        in srgb,
+        color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
+        transparent 0%
+      );
   }
-}
-
-.chart-axis {
-  opacity: 0.5;
 }
 
 .chart-header {
@@ -2541,11 +2585,138 @@ input:invalid {
   padding: 0.5rem;
   background-color: color-mix(
     in srgb,
-    color-mix(in srgb, var(--_type-color), var(--background-secondary) 70%),
+    color-mix(in srgb, var(--_type-color), var(--background-secondary) 50%),
     transparent 40%
   );
-  overflow: hidden;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
+      transparent 0%
+    );
+  border-bottom: none;
+  margin-right: -1px;
+  margin-top: -1px;
   border-radius: 1.4rem 1.4rem 0 0;
+}
+
+/* 
+.chart-graph {
+  flex-grow: 1;
+} */
+
+.chart-footer {
+  display: none;
+}
+
+.chart-footer:has(.chart-abilities-header) {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+  border-top: 1px solid var(--background-hovers);
+  padding: 1rem 1.5rem 0.5rem;
+  transition: padding 300ms ease;
+}
+
+.chart-footer:has(.chart-abilities-header):hover {
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.chart-abilities {
+  border-top: 1px solid var(--background-hovers);
+  padding: 1rem 1.5rem 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.chart-abilities-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.chart-abilities-container.speed-stat {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.chart-ability {
+  padding: 0.25rem 0.5rem;
+  background-color: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
+    transparent 60%
+  );
+  backdrop-filter: blur(7px);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
+      transparent 30%
+    );
+  border-radius: 0.5rem;
+  justify-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  min-width: max-content;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.chart-ability.speed-stat {
+  position: relative;
+  flex-grow: 1;
+  flex: 1;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+  background-color: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
+    transparent 60%
+  );
+  backdrop-filter: blur(7px);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
+      transparent 30%
+    );
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chart-speed-name {
+  flex-grow: 1;
+  justify-content: start;
+  display: flex;
+}
+
+.chart-speed {
+  font-size: 0.675rem;
+  background-color: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
+    transparent 20%
+  );
+  border: 1px solid
+    color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%);
+  border-radius: 0.25rem;
+  padding: 0.1675rem 0.35rem;
+}
+
+.chart-axis {
+  opacity: 0.5;
+}
+
+.recharts-surface {
+  overflow: visible;
 }
 
 .chart-header > * {
@@ -2568,7 +2739,18 @@ input:invalid {
     transparent 40%
   );
   backdrop-filter: blur(7px);
-  border: 1px solid var(--background-hovers);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
+      transparent 0%
+    );
+  padding: 0.5rem 0.75rem;
+  font-size: 0.775rem;
+}
+
+.chart-axis text {
+  fill: white;
 }
 
 .chart-pokemon {
@@ -2605,14 +2787,6 @@ input:invalid {
   border-radius: 9999px;
 }
 
-.chart-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: start;
-  align-items: end;
-  gap: 0.25rem;
-}
-
 .chart-footer > * {
   padding: 0 !important;
 }
@@ -2621,8 +2795,31 @@ input:invalid {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: start;
   width: 100%;
+  gap: 0;
+  opacity: 0;
+  height: 0;
+  transition: all 300ms ease;
+}
+
+.chart-footer:has(.chart-abilities-header):hover .chart-footer-stats {
+  opacity: 1;
+  height: 76px;
   gap: 0.5rem;
+}
+
+.chart-abilities-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-down {
+  font-size: 1.5rem;
 }
 
 .chart-footer-end {
@@ -2631,21 +2828,53 @@ input:invalid {
 }
 
 .stat-label {
+  position: relative;
   flex-grow: 1;
   flex: 1;
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem 0.25rem 0.25rem;
   background-color: color-mix(
     in srgb,
     color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
     transparent 60%
   );
   backdrop-filter: blur(7px);
-  border: 1px solid var(--background-hovers);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      color-mix(in srgb, var(--_type-color), var(--background-secondary) 80%),
+      transparent 30%
+    );
   border-radius: 0.5rem;
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   min-width: 30%;
+  gap: 0.25rem;
+}
+
+.high-stat-value {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.high-stat {
+  font-size: 0.675rem;
+  background-color: color-mix(
+    in srgb,
+    color-mix(in srgb, currentColor, var(--background-secondary) 80%),
+    transparent 20%
+  );
+  border: 1px solid
+    color-mix(in srgb, currentColor, var(--background-secondary) 60%);
+  border-radius: 0.25rem;
+  padding: 0.1675rem 0.35rem;
+}
+
+.high-stat-text {
+  color: currentColor;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .stat-hp {
