@@ -52,7 +52,7 @@ export default function CommonPage({
 
 export function ScheduleTemplate({ children, header }: ViewPropsNoMatch) {
   return (
-    <div>
+    <div className='schedule-top-layer'>
       <div className='schedule-container'>{children}</div>
     </div>
   );
@@ -61,7 +61,6 @@ export function ScheduleTemplate({ children, header }: ViewPropsNoMatch) {
 export function MatchTemplate({ match, index }: ViewProps) {
   // @ts-ignore
   const team1 = teamArray[match.player1];
-  console.log(team1);
   // @ts-ignore
   const team2 = teamArray[match.player2];
   return (
@@ -71,12 +70,19 @@ export function MatchTemplate({ match, index }: ViewProps) {
       className='match-container'
       data-score1={match?.score.charAt(0)}
       data-score2={match?.score.charAt(2)}
-      data-played={match?.score !== '0-0' ? 'true' : 'false'}>
+      data-played={match?.score !== '0-0' ? 'true' : 'false'}
+    >
       {match?.score !== '0-0' ? (
         <>
           <div className='match-player-container'>
             <div className='match-player player-1'>
-              <Image className='match-player-image' src={team1.picture} alt={`${team1.discord}'s Team Picture`} height={100} width={100}></Image>
+              <Image
+                className='match-player-image'
+                src={team1.picture}
+                alt={`${team1.discord}'s Team Picture`}
+                height={100}
+                width={100}
+              ></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team1.team}</div>
                 <div className='match-player-name'>{team1.discord}</div>
@@ -88,7 +94,13 @@ export function MatchTemplate({ match, index }: ViewProps) {
           </div>
           <div className='match-player-container'>
             <div className='match-player player-2'>
-              <Image className='match-player-image' src={team2.picture} alt={`${team2.discord}'s Team Picture`} height={100} width={100}></Image>
+              <Image
+                className='match-player-image'
+                src={team2.picture}
+                alt={`${team2.discord}'s Team Picture`}
+                height={100}
+                width={100}
+              ></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team2.team}</div>
                 <div className='match-player-name'>{team2.discord}</div>
@@ -103,7 +115,13 @@ export function MatchTemplate({ match, index }: ViewProps) {
         <>
           <div className='match-player-container'>
             <div className='match-player player-1'>
-            <Image className='match-player-image' src={team1.picture} alt={`${team1.discord}'s Team Picture`} height={100} width={100}></Image>
+              <Image
+                className='match-player-image'
+                src={team1.picture}
+                alt={`${team1.discord}'s Team Picture`}
+                height={100}
+                width={100}
+              ></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team1.team}</div>
                 <div className='match-player-name'>{team1.discord}</div>
@@ -112,7 +130,13 @@ export function MatchTemplate({ match, index }: ViewProps) {
           </div>
           <div className='match-player-container'>
             <div className='match-player player-2'>
-            <Image className='match-player-image' src={team2.picture} alt={`${team2.discord}'s Team Picture`} height={100} width={100}></Image>
+              <Image
+                className='match-player-image'
+                src={team2.picture}
+                alt={`${team2.discord}'s Team Picture`}
+                height={100}
+                width={100}
+              ></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team2.team}</div>
                 <div className='match-player-name'>{team2.discord}</div>

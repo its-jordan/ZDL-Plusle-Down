@@ -132,7 +132,7 @@ html {
   z-index: 1;
   background-image: linear-gradient(
     135deg,
-    var(--background-base) 20%,
+    var(--background-base) 0%,
     transparent 20%,
     var(--background-base) 90%
   );
@@ -150,19 +150,33 @@ body.dark {
   --background-icons: rgba(56, 56, 56, 1);
   --background-hovers: rgba(68, 68, 68, 0.75);
   --color-icons: rgba(255, 255, 255, 0.25);
-  background-color: var(--background-base);
+  --type: var(--ghost);
+  /* background-color: var(--background-base); */
   color: var(--color-base);
+  background: linear-gradient(
+    10deg,
+    color-mix(in srgb, var(--type) 50%, var(--background-base)),
+    var(--background-base) 90%
+  );
+  background-attachment: fixed;
 }
 
 body.light {
+  --type: var(--steel);
   --color-base: rgb(12, 12, 12);
   --background-base: rgb(241, 241, 241);
   --background-secondary: rgba(211, 211, 211, 0.75);
   --background-icons: rgb(189, 189, 189);
   --background-hovers: rgba(161, 161, 161, 0.75);
   --color-icons: rgba(0, 0, 0, 0.25);
-  background-color: var(--background-base);
+  /* background-color: var(--background-base); */
   color: var(--color-base);
+  background: linear-gradient(
+    10deg,
+    color-mix(in srgb, var(--type) 50%, var(--background-base)),
+    var(--background-base) 90%
+  );
+  background-attachment: fixed;
 }
 
 /* Utilities */
@@ -1294,6 +1308,10 @@ body.light {
   gap: 1rem;
 }
 
+.tab-container > div:last-child {
+  padding: 0 !important;
+}
+
 .match-container {
   display: flex;
   flex-flow: column nowrap;
@@ -1301,10 +1319,10 @@ body.light {
   align-items: start;
   background-color: var(--background-secondary);
   border: 1px solid var(--background-hovers);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   gap: 0.5rem;
   padding: 1rem 1.5rem 1rem 1rem;
-  flex-grow: 0;
+  flex-grow: 1;
   width: 100%;
   transition: background-color 300ms ease;
 }
@@ -1761,9 +1779,9 @@ body.light {
   flex-flow: row nowrap;
   justify-content: start;
   padding: 0;
-  width: max-content;
+  width: 100%;
   background-color: var(--background-secondary);
-  border-radius: 1.5rem !important;
+  border-radius: 1rem !important;
   border: 1px solid var(--background-hovers);
   gap: 0 !important;
 }

@@ -16,38 +16,53 @@ const WeekArray = [
   'week-6',
   'week-7',
   'week-8',
+  'playoffs-week-1',
+  'playoffs-week-2',
+  'finals',
 ];
 
 export default function Scores() {
   const [selected, setSelected] = React.useState('week-1');
   return (
     <>
-      <CommonPage header={'Scores'} customClass='schedule-grid'>
-        <div className='flex w-full flex-col z-[1000]'>
+      <CommonPage
+        header={'Scores'}
+        customClass='schedule-grid'
+      >
+        <div className='tab-container flex w-full flex-col z-[1000]'>
           <Tabs
             aria-label='Options'
             className='subheading'
             selectedKey={selected}
             // @ts-ignore
             onSelectionChange={setSelected}
-            classNames={{ tab: 'tab' }}>
+            classNames={{ tab: 'tab' }}
+          >
             {WeekArray.map((match: string, index: number) => {
               const e = match;
               return (
                 <Tab
-                  key={match}
+                  key={index}
                   title={
                     match.charAt(0).toUpperCase() +
-                    match.slice(1).replace('-', ' ')
-                  }>
+                    match.split('-')[0].slice(1) +
+                    (match.split('-')[1]
+                      ? ' ' +
+                        match.split('-')[1].charAt(0).toUpperCase() +
+                        match.split('-')[1].slice(1).replaceAll('-', ' ')
+                      : '') +
+                    (match.split('-')[2] ? ' ' + match.split('-')[2] : '')
+                  }
+                >
                   <ScheduleTemplate
                     header={
                       match.charAt(0).toUpperCase() +
                       match.slice(1).replace('-', ' ')
-                    }>
+                    }
+                  >
                     {
                       //  @ts-ignore
-                      WeeklySchedule[e].map((match, index) => {
+                      WeeklySchedule[e]?.map((match, index) => {
                         return (
                           <MatchTemplate
                             match={match}

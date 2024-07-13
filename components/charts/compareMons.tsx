@@ -59,24 +59,24 @@ export function Component() {
           <BarChart
             accessibilityLayer
             data={chartData}
-            layout='vertical'
+            layout='horizontal'
             margin={{
               right: 16,
             }}
           >
             <CartesianGrid horizontal={false} />
             <YAxis
+              dataKey='desktop'
+              type='number'
+              hide
+            />
+            <XAxis
               dataKey='month'
               type='category'
               tickLine={false}
               tickMargin={10}
               axisLine={false}
               tickFormatter={(value) => value.slice(0, 3)}
-              hide
-            />
-            <XAxis
-              dataKey='desktop'
-              type='number'
               hide
             />
             <ChartTooltip
