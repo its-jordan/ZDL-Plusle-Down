@@ -198,29 +198,47 @@
     {
       "player1": "seanboyq",
       "player2": "bigmanbinch",
-      "score": "0-0"
+      "score": "0-1"
     },
-    { "player1": "dtbaggins", "player2": "thanabros", "score": "0-0" },
+    { "player1": "dtbaggins", "player2": "thanabros", "score": "1-0" },
     {
       "player1": "castleflutes",
       "player2": "aquagtothepast",
-      "score": "0-0"
+      "score": "0-1"
     },
     {
       "player1": "beachwatch",
       "player2": "ifurgat",
-      "score": "0-0"
+      "score": "0-1"
     },
     {
       "player1": "revelreloaded",
       "player2": "resolamxxy",
-      "score": "0-0"
+      "score": "1-0"
     },
     {
       "player1": "racer_59",
       "player2": "its_jordan",
+      "score": "1-0"
+    },
+    { "player1": "tokotoro", "player2": "c0c0_", "score": "1-0" }
+  ],
+  "playoffs-week-1": [
+    {
+      "player1": "ifurgat",
+      "player2": "c0c0_",
       "score": "0-0"
     },
-    { "player1": "tokotoro", "player2": "c0c0_", "score": "0-0" }
+    { "player1": "revelreloaded", "player2": "bigmanbinch", "score": "0-0" },
+    {
+      "player1": "racer_59",
+      "player2": "tokotoro",
+      "score": "0-0"
+    },
+    {
+      "player1": "aquagtothepast",
+      "player2": "seanboyq",
+      "score": "0-0"
+    }
   ]
 }
