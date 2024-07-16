@@ -19,6 +19,8 @@ import {
 import { RiCloseCircleFill } from 'react-icons/ri';
 import { TbSword, TbSwords, TbShield, TbShieldFilled } from 'react-icons/tb';
 import Image from 'next/image';
+import { nameSplit } from './getPokemon';
+import returnMons from '@/data/pokemonDataS2';
 
 interface ViewProps {
   children: React.ReactNode;
@@ -31,6 +33,7 @@ interface ViewProps {
     wins: number,
     losses: number
   ];
+  pokemon?: [string];
 }
 
 export function Header({ children }: ViewProps) {
@@ -157,7 +160,12 @@ export function StatStorage() {
   );
 }
 
-export default function ViewMode({ children, header, links }: ViewProps) {
+export default function ViewMode({
+  children,
+  header,
+  links,
+  pokemon,
+}: ViewProps) {
   const [view, setView] = useView();
   const ModeContext = createContext(view);
   const mode = useContext(ModeContext);
@@ -185,8 +193,33 @@ export default function ViewMode({ children, header, links }: ViewProps) {
     return sort;
   }
 
+  function shuffleArray(array: any) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const largeArray = pokemon?.flatMap((i) => [i, i, i, i, i, i]);
+  const shuffleMons = shuffleArray(largeArray);
+
   return (
     <main className='content-grid'>
+      <div className='background-mon-container'>
+        {shuffleMons?.map((e: string, i: number) => {
+          return (
+            <Image
+              className='background-pokemon'
+              key={i}
+              src={returnMons(e).sprite}
+              alt={`${e} sprite.`}
+              width={500}
+              height={500}
+            ></Image>
+          );
+        })}
+      </div>
       <Header>
         <Link
           className='back-selector'

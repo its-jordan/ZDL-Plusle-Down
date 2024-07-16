@@ -16,7 +16,7 @@ export default function Home() {
             data-pokemon={'muk-mega'}
             width={2560}
             height={2560}
-            alt='plusle and minun'
+            alt='Mega Muk'
           ></Image>
           <div className='home-fg'></div>
         </div>

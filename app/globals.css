@@ -708,7 +708,7 @@ body.light {
       color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
       transparent 60%
     );
-  border-radius: 2rem 2rem 1.5rem 1.5rem;
+  border-radius: 1.75rem 1.75rem 1.5rem 1.5rem;
   transition: --a 300ms ease, border 300ms ease;
 }
 
@@ -2553,6 +2553,7 @@ input:invalid {
 }
 
 .chart-card {
+  z-index: 1;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -3008,4 +3009,27 @@ input:invalid {
 
 .header-container:has(.duo) {
   height: 115px;
+}
+
+.background-mon-container {
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  width: 200%;
+  height: 150%;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: start;
+  z-index: 0;
+  opacity: 1;
+  transform: rotate(-15deg);
+  margin-left: -30rem;
+  margin-top: -30rem;
+  opacity: 0.01;
+}
+
+.background-pokemon {
+  position: relative;
+  pointer-events: none;
+  margin-right: -2rem;
 }

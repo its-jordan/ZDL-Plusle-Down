@@ -41,15 +41,6 @@ const types = [
 export default function TeamsView() {
   const returnPathTextArray = Teams();
   const pathname = usePathname().replace('/teams/', '');
-  function pathnameApos() {
-    if (
-      pathname == 'dtbaggins' ||
-      pathname == 'thanabros' ||
-      pathname == 'castleflutes'
-    )
-      return '\u0027';
-    else return '\u0027s';
-  }
   // @ts-ignore
   const team = teamArray[pathname];
   const wins = standingConstructor(pathname, 'normal', false).wins;
@@ -78,6 +69,7 @@ export default function TeamsView() {
         wins,
         losses,
       ]}
+      pokemon={team.pokemon}
     >
       {team.pokemon.map((pokemon: any, index: number) => {
         return (
