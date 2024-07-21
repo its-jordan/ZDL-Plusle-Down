@@ -1,6 +1,6 @@
 'use client';
 
-import ViewMode from '@/components/viewButton';
+import ViewMode from '@/components/viewButtonAll';
 import allmons from '@/data/allmons2.json';
 import ReturnMon from '@/components/getPokemon';
 
