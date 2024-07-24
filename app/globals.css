@@ -300,7 +300,11 @@ body.light {
   padding: var(--_nav-padding);
   gap: 0.5rem;
   border-radius: 9999px;
-  transition: width 300ms ease;
+  transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navigation_container.visible .navigation {
@@ -352,7 +356,7 @@ body.light {
   padding: calc(var(--_icon) / var(--_icon-padding-factor));
   color: var(--color-icons);
   overflow: visible;
-  transition: 300ms ease;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navigation_icon.profile {
@@ -406,7 +410,7 @@ body.light {
   backdrop-filter: blur(5px);
   opacity: 0;
   scale: 0;
-  transition: 300ms ease;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom;
   width: max-content;
 }
@@ -424,7 +428,7 @@ body.light {
   backdrop-filter: blur(5px);
   opacity: 0;
   scale: 0;
-  transition: 300ms ease;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom;
   width: max-content;
 }
@@ -709,7 +713,8 @@ body.light {
       transparent 60%
     );
   border-radius: 1.75rem 1.75rem 1.5rem 1.5rem;
-  transition: --a 300ms ease, border 300ms ease;
+  transition: --a 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    border 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .pokemon-card:hover {
@@ -724,11 +729,7 @@ body.light {
     var(--background-secondary) 50%
   );
   border: 1px solid
-    color-mix(
-      in srgb,
-      color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%),
-      transparent 0%
-    );
+    color-mix(in srgb, var(--_type-color), var(--background-secondary) 60%);
 }
 
 .pokemon-card .pokemon-type-icon {
@@ -745,7 +746,7 @@ body.light {
   height: 3rem;
   padding: 0.5rem;
   order: 1;
-  animation: fadeIn 750ms ease-in;
+  animation: fadeIn 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275)-in;
   justify-content: center;
   align-items: center;
 }
@@ -759,7 +760,7 @@ body.light {
 }
 
 .pokemon-img.loading {
-  animation: fadeIn 300ms ease-in;
+  animation: fadeIn 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275)-in;
 }
 
 .page-header {
@@ -869,7 +870,7 @@ body.light {
   backdrop-filter: blur(5px);
   opacity: 0;
   scale: 0;
-  transition: 300ms ease;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom;
   width: max-content;
 }
@@ -962,7 +963,7 @@ body.light {
   order: 100;
   padding: 0.5rem;
   border-radius: 9999px;
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .show-more:hover {
@@ -992,7 +993,7 @@ body.light {
   height: auto;
   aspect-ratio: 276/378;
   background: var(--background-secondary);
-  transition: scale 300ms ease;
+  transition: scale 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom center;
   z-index: 2;
 }
@@ -1006,7 +1007,7 @@ body.light {
     color-mix(in srgb, var(--_type-color), rgb(44, 44, 44)),
     rgb(44, 44, 44) 50%
   );
-  transition: scale 300ms ease;
+  transition: scale 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom center;
   z-index: 2;
 }
@@ -1129,7 +1130,7 @@ body.light {
   padding: 1rem 1.5rem;
   background-color: transparent;
   border-radius: 9999px;
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .view-button:hover,
@@ -1169,7 +1170,7 @@ body.light {
 .teams-hover > * {
   padding: 1rem 2rem;
   width: 100%;
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .teams-hover > *:hover {
@@ -1197,7 +1198,7 @@ body.light {
   gap: 0.25rem;
   padding: 1.5rem 2.5rem;
   flex-grow: 1;
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   overflow: hidden;
   isolation: isolate;
 }
@@ -1211,7 +1212,8 @@ body.light {
   z-index: -1;
   opacity: 1;
   transform-origin: left center;
-  transition: width 500ms ease, opacity 1000ms ease;
+  transition: width 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .team-name:hover {
@@ -1230,14 +1232,14 @@ body.light {
   align-items: start;
   gap: 1rem;
   padding-left: 100px;
-  transition: padding-left 500ms ease;
+  transition: padding-left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .team-name-teamname {
   font-weight: 700;
   font-size: 1.25rem;
   padding-left: 100px;
-  transition: padding-left 500ms ease;
+  transition: padding-left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .team-name:hover .team-name-teamname,
@@ -1252,7 +1254,7 @@ body.light {
   align-items: center;
   gap: 0.5rem;
   opacity: 0.5;
-  transition: opacity 300ms ease;
+  transition: opacity 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .showdown-link:hover,
@@ -1324,7 +1326,7 @@ body.light {
   padding: 1rem 1.5rem 1rem 1rem;
   flex-grow: 1;
   width: 100%;
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .match-player-container {
@@ -1448,7 +1450,7 @@ body.light {
   color: white !important;
   opacity: 0;
   scale: 0;
-  transition: 300ms ease;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom;
   backdrop-filter: blur(10px);
 }
@@ -1595,7 +1597,7 @@ body.light {
   height: 3rem;
   padding: 0.5rem;
   order: 1;
-  animation: fadeIn 750ms ease-in;
+  animation: fadeIn 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275)-in;
 }
 
 .type-matchup-spacer {
@@ -1647,13 +1649,14 @@ body.light {
   background-color: var(--background-secondary);
   border: 1px solid var(--background-hovers);
   border-radius: 2rem;
-  transition: background-color 300ms ease, border-radius 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    border-radius 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .stat-sort-header svg {
   height: 2rem;
   width: 2rem;
-  transition: all 300ms ease;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .stat-sort-container:hover svg {
@@ -1671,7 +1674,8 @@ body.light {
   z-index: 10000;
   top: 100%;
   transform-origin: top;
-  transition: opacity 300ms ease, scale 300ms 300ms ease;
+  transition: opacity 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    scale 300ms 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   pointer-events: none;
   scale: 1 0;
 }
@@ -1688,7 +1692,7 @@ body.light {
   padding: 1rem 2rem;
   border-radius: 0;
   width: var(--_width);
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .stat-filter-button svg {
@@ -1717,7 +1721,7 @@ body.light {
   opacity: 1;
   pointer-events: all;
   scale: 1 1;
-  transition: scale 300ms ease;
+  transition: scale 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .stat-sort-container:hover .stat-sort-header {
@@ -1795,7 +1799,7 @@ body.light {
   background-color: var(--background-secondary);
   border: 1px solid var(--background-hovers);
   border-radius: 9999px;
-  transition: background-color 300ms ease;
+  transition: background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .smogon-link:hover {
@@ -1854,7 +1858,8 @@ body.light {
   border-radius: 1rem;
   border: 1px solid var(--_type-color);
   background-color: var(--background-secondary);
-  transition: border-radius 300ms ease, background-color 300ms ease;
+  transition: border-radius 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .move-stats {
@@ -1875,7 +1880,8 @@ body.light {
   border-top: 1px solid var(--background-secondary);
   opacity: 0;
   z-index: 10;
-  transition: opacity 300ms ease, border-radius 300ms ease;
+  transition: opacity 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    border-radius 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   pointer-events: none;
 }
 
@@ -2160,7 +2166,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
 .pokemon-grid.grid-view .pokemon-ability {
   flex-grow: 1;
   width: calc(100% / 3);
-  transition: width 300ms ease;
+  transition: width 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .pokemon-grid.grid-view .pokemon-ability:hover {
@@ -2194,7 +2200,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
   opacity: 0;
   scale: 0;
   translate: calc(-100% + 60%);
-  transition: 300ms ease;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: bottom;
   width: max-content;
 }
@@ -2289,7 +2295,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
     var(--background-secondary) 50%
   );
   padding-block: 1rem;
-  transition: all 300ms ease;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .standings-data .type-icon-container .pokemon-type-icon {
@@ -2403,7 +2409,7 @@ html:has(.pokemon-page-container[data-color='red']) body {
   grid-column: 1/-1;
   background-color: transparent;
   border-bottom: 1px solid var(--background-hovers);
-  transition: border-bottom 300ms ease;
+  transition: border-bottom 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .settings-input.pic {
@@ -2436,7 +2442,7 @@ input:invalid {
 .profile-hover :last-child {
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  transition: all 300ms ease;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .profile-hover :last-child:hover {
@@ -2574,7 +2580,8 @@ input:invalid {
       transparent 60%
     );
   border-radius: 1.5rem;
-  transition: border 300ms ease, --a 300ms ease;
+  transition: border 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    --a 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     --a: 90%;
     background: linear-gradient(
@@ -2636,7 +2643,7 @@ input:invalid {
   gap: 0.5rem;
   border-top: 1px solid var(--background-hovers);
   padding: 1rem 1.5rem 0.5rem;
-  transition: padding 300ms ease;
+  transition: padding 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .chart-footer:has(.chart-abilities-header):hover {
@@ -2819,7 +2826,7 @@ input:invalid {
   gap: 0;
   opacity: 0;
   height: 0;
-  transition: all 300ms ease;
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .chart-footer:has(.chart-abilities-header):hover .chart-footer-stats {
@@ -2996,7 +3003,7 @@ input:invalid {
 }
 
 .duo-nav-link {
-  transition: opacity 300ms ease;
+  transition: opacity 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .duo-nav-links:has(> :hover) > :not(:hover) {
