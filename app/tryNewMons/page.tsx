@@ -1,4 +1,4 @@
-import mons from '@/data/allmons2.json';
+import mons from '@/data/allmons3.json';
 
 async function tryMonsAPI(mon: string[]) {
   return mon.forEach(async (mon) => {
@@ -16,11 +16,11 @@ async function tryMonsAPI(mon: string[]) {
 }
 
 export default async function TryMon() {
-  // tryMonsAPI(mons);
-  return (
-    <div>
-      Trying every pokemon against the pokeapi. Check Console for more
-      information.
-    </div>
-  );
+  tryMonsAPI(mons);
+  // return (
+  //   <div>
+  //     Trying every pokemon against the pokeapi. Check Console for more
+  //     information.
+  //   </div>
+  // );
 }

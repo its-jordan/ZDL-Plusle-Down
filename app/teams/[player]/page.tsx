@@ -11,7 +11,7 @@ import Teams from '@/data/teamNames';
 
 import replaceUsername from '@/functions/replaceUsername';
 import { teamArray } from '@/data/teamNames';
-import returnMons from '@/data/pokemonDataS2';
+import returnMons from '@/data/pokemonDataO2';
 import { standingConstructor } from '@/data/standings';
 import { PokemonChart } from '@/components/charts/spider';
 import Image from 'next/image';
@@ -69,8 +69,7 @@ export default function TeamsView() {
         wins,
         losses,
       ]}
-      pokemon={team.pokemon}
-    >
+      pokemon={team.pokemon}>
       {team.pokemon.map((pokemon: any, index: number) => {
         return (
           <ReturnMon
@@ -97,10 +96,7 @@ export default function TeamsView() {
           <div className='type-matchup-spacer'>Pokemon</div>
           {types.map((type, index) => {
             return (
-              <div
-                className='type-icon-container type-matchup'
-                key={index}
-              >
+              <div className='type-icon-container type-matchup' key={index}>
                 <Image
                   src={`/icons/${type}.svg`}
                   height={30}
@@ -109,10 +105,7 @@ export default function TeamsView() {
                   className='pokemon-type-icon list-view'
                   alt={`${type} type header`}
                 />
-                <div
-                  className='hover-only type_title'
-                  data-type={type}
-                >
+                <div className='hover-only type_title' data-type={type}>
                   {type.charAt(0).toUpperCase() + type.slice(1)}
                 </div>
               </div>
@@ -121,12 +114,7 @@ export default function TeamsView() {
         </div>
         <div className='type-matchup-data-container'>
           {returnPathTextArray().map((pokemon: any, index: number) => {
-            return (
-              <ReturnTypeMatchup
-                pokemon={pokemon}
-                key={index}
-              />
-            );
+            return <ReturnTypeMatchup pokemon={pokemon} key={index} />;
           })}
         </div>
       </div>
@@ -136,10 +124,7 @@ export default function TeamsView() {
       <div className='pokemon-chart-grid'>
         {team.pokemon.map((pokemon: any, index: number) => {
           return (
-            <PokemonChart
-              name={pokemon}
-              key={index}
-            >
+            <PokemonChart name={pokemon} key={index}>
               <div className='chart-abilities'>
                 <h2 className='chart-abilities-header'>Speed Calculations</h2>
                 <div className='chart-abilities-container speed-stat'>
@@ -180,8 +165,7 @@ export default function TeamsView() {
                         <Link
                           href={`https://www.smogon.com/dex/sv/abilities/${ability}`}
                           key={index}
-                          className='chart-ability'
-                        >
+                          className='chart-ability'>
                           {replaceAbilityName(ability)}
                         </Link>
                       );

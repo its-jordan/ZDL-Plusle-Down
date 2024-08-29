@@ -1,6 +1,6 @@
-// import { replaceStatNames } from '@/components/getPokemon';
-// import { getTypeWeaknesses } from '@/data/pokemon-types';
-// import allMons from '@/data/allmons2.json';
+import { replaceStatNames } from '@/components/getPokemon';
+import { getTypeWeaknesses } from '@/data/pokemon-types';
+import allMons from '@/data/allmons3.json';
 
 // async function fetchMon(e: string) {
 //   const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${e}`);
@@ -113,7 +113,7 @@
 // export default async function FetchMon() {
 //   return (
 //     <div>
-//       <div>{'{'}</div>
+//       <div>{'export default function returnMons(e: string) {'}</div>
 //       {allMons.map((pokemon, index) => {
 //         return <div key={index}>{fetchMon(pokemon)}</div>;
 //       })}

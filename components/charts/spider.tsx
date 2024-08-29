@@ -7,7 +7,7 @@ import {
   Radar,
   RadarChart,
 } from 'recharts';
-import returnMons from '@/data/pokemonDataS2';
+import returnMons from '@/data/pokemonDataO2';
 
 import { ArrowBigUp } from 'lucide-react';
 
@@ -79,10 +79,7 @@ export function PokemonChart({ name, children }: ChartData) {
   const monType = monData.types[0];
 
   return (
-    <Card
-      className='chart-card'
-      data-type={monType}
-    >
+    <Card className='chart-card' data-type={monType}>
       <CardHeader className='chart-header'>
         <Image
           loading='lazy'
@@ -95,8 +92,7 @@ export function PokemonChart({ name, children }: ChartData) {
         />
         <Link
           href={`https://www.smogon.com/dex/sv/pokemon/${name}`}
-          className='chart-pokemon'
-        >
+          className='chart-pokemon'>
           <div className='chart-pokemon-name'>{nameSplit(name)}</div>
           <div className='chart-types'>
             <div className='pokemon-types'>
@@ -104,10 +100,7 @@ export function PokemonChart({ name, children }: ChartData) {
                 return (
                   <>
                     {type !== undefined || null ? (
-                      <div
-                        className='type-icon-container'
-                        key={index}
-                      >
+                      <div className='type-icon-container' key={index}>
                         <Image
                           src={`/icons/${type}.svg`}
                           height={30}
@@ -116,10 +109,7 @@ export function PokemonChart({ name, children }: ChartData) {
                           alt={`${type} icon.`}
                           className='pokemon-type-icon'
                         />
-                        <div
-                          className='hover-only type_title'
-                          data-type={type}
-                        >
+                        <div className='hover-only type_title' data-type={type}>
                           {type.charAt(0).toUpperCase() + type.slice(1)}
                         </div>
                       </div>
@@ -136,26 +126,19 @@ export function PokemonChart({ name, children }: ChartData) {
       <CardContent className='pb-0 chart-graph'>
         <ChartContainer
           config={chartConfig}
-          className='mx-auto aspect-square max-h-[250px]'
-        >
+          className='mx-auto aspect-square max-h-[250px]'>
           <RadarChart data={chartData}>
             <ChartTooltip
               cursor={false}
               content={
-                <ChartTooltipContent
-                  className='chart-tooltip'
-                  hideLabel
-                />
+                <ChartTooltipContent className='chart-tooltip' hideLabel />
               }
             />
             <PolarGrid
               className={`chart-fill-${monType} opacity-10`}
               fill={`var(--${monData.types[0]})`}
             />
-            <PolarAngleAxis
-              className='chart-axis'
-              dataKey='axisHeader'
-            />
+            <PolarAngleAxis className='chart-axis' dataKey='axisHeader' />
             <Radar
               dataKey='value'
               fill={`var(--${monData.types[0]})`}
@@ -187,8 +170,7 @@ export function PokemonChart({ name, children }: ChartData) {
                 {value.value >= 100 ? (
                   <div
                     className={`stat-label stat-${value.stat.toLowerCase()}`}
-                    key={index}
-                  >
+                    key={index}>
                     {/* <ArrowBigUp /> */}
                     <div className='high-stat'>
                       <div className='high-stat-text'>{value.value}</div>

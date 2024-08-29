@@ -1,7 +1,7 @@
 import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
 import { getTypeWeaknesses } from '../data/pokemon-types/index';
-import returnMons from '@/data/pokemonDataS2';
+import returnMons from '@/data/pokemonDataO2';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 import { MdCatchingPokemon } from 'react-icons/md';
 import Image from 'next/image';
@@ -181,10 +181,7 @@ export function ReturnTypeMatchup({ pokemon }: Pokemon) {
   const data = returnMons(mon);
   return (
     <div className='type-matchup-data'>
-      <div
-        className='type-matchup-pokemon'
-        data-type={`${data.types[0]}`}
-      >
+      <div className='type-matchup-pokemon' data-type={`${data.types[0]}`}>
         <Image
           loading='lazy'
           className='pokemon-img matchup-data'
@@ -201,48 +198,29 @@ export function ReturnTypeMatchup({ pokemon }: Pokemon) {
           <button
             key={index}
             className={`type-heading ${type}`}
-            data-column={index + 1}
-          >
+            data-column={index + 1}>
             {data.weaknesses.includes(`${type}: .25x`) ? (
-              <div
-                className={`multiplier quarter`}
-                data-multiplier={'.25x'}
-              >
+              <div className={`multiplier quarter`} data-multiplier={'.25x'}>
                 {'1/4'}
               </div>
             ) : data.weaknesses.includes(`${type}: 0.5x`) ? (
-              <div
-                className={`multiplier half`}
-                data-multiplier={'.5x'}
-              >
+              <div className={`multiplier half`} data-multiplier={'.5x'}>
                 {'1/2'}
               </div>
             ) : data.weaknesses.includes(`${type}: 2x`) ? (
-              <div
-                className={`multiplier double`}
-                data-multiplier={'2x'}
-              >
+              <div className={`multiplier double`} data-multiplier={'2x'}>
                 {'2x'}
               </div>
             ) : data.weaknesses.includes(`${type}: 4x`) ? (
-              <div
-                className={`multiplier quadruple`}
-                data-multiplier={'4x'}
-              >
+              <div className={`multiplier quadruple`} data-multiplier={'4x'}>
                 {'4x'}
               </div>
             ) : data.weaknesses.includes(`${type}: 0x`) ? (
-              <div
-                className={`multiplier immune`}
-                data-multiplier={'0'}
-              >
+              <div className={`multiplier immune`} data-multiplier={'0'}>
                 {'0'}
               </div>
             ) : (
-              <div
-                className={`multiplier normal`}
-                data-multiplier={'1x'}
-              >
+              <div className={`multiplier normal`} data-multiplier={'1x'}>
                 {''}
               </div>
             )}
@@ -333,8 +311,7 @@ export default function ReturnMon({
       // target='_blank'
       data-type={`${data.types[0]}`}
       data-localLoad='true'
-      style={setStyle(data)}
-    >
+      style={setStyle(data)}>
       <div className='pokemon-number'>#{data.id}</div>
       <div className='pokemon-name'>
         {data.name ? nameSplit(data.name) : ''}
@@ -344,10 +321,7 @@ export default function ReturnMon({
           return (
             <>
               {type !== undefined || null ? (
-                <div
-                  className='type-icon-container'
-                  key={index}
-                >
+                <div className='type-icon-container' key={index}>
                   <Image
                     src={`/icons/${type}.svg`}
                     height={30}
@@ -356,10 +330,7 @@ export default function ReturnMon({
                     alt={`${type} icon.`}
                     className='pokemon-type-icon'
                   />
-                  <div
-                    className='hover-only type_title'
-                    data-type={type}
-                  >
+                  <div className='hover-only type_title' data-type={type}>
                     {type.charAt(0).toUpperCase() + type.slice(1)}
                   </div>
                 </div>
@@ -376,8 +347,7 @@ export default function ReturnMon({
             <Link
               href={`https://www.smogon.com/dex/sv/abilities/${data}`}
               className='pokemon-ability'
-              key={index}
-            >
+              key={index}>
               {replaceAbilityName(data)}
             </Link>
           );
@@ -389,10 +359,7 @@ export default function ReturnMon({
             return;
           }
           return (
-            <div
-              className='pokemon-stat'
-              key={index}
-            >
+            <div className='pokemon-stat' key={index}>
               <div className='pokemon-stat-value'>{stat.stat}</div>
               <div className='pokemon-stat-name'>{stat.name}</div>
             </div>

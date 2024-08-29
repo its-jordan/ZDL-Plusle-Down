@@ -1,52 +1,44 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import teams from '@/data/teamsS2.json';
+import teams from '@/data/teams02.json';
 
 export const teamArray = {
-  racer_59: {
-    name: 'Brandon',
-    team: 'video games suck',
-    pokemon: teams.racer_59,
-    discord: 'racer_59',
-    showdown: 'racer59',
+  lupamai: {
+    name: 'Lupa',
+    team: 'Fairview Floatzels',
+    pokemon: teams['lupa.mai'],
+    discord: 'lupa.mai',
+    showdown: 'the jazzy ursaring',
     picture: '/images/teams/racer_59.png',
   },
-  thanabros: {
-    name: 'Ben',
-    team: 'Sandbox Boys',
-    pokemon: teams.thanabros,
-    discord: 'thanabros',
-    showdown: 'THANABR0S',
+  jaegerpods: {
+    name: 'Nick',
+    team: 'My Name is Jeff',
+    pokemon: teams.jaegerpods,
+    discord: 'jaegerpods',
+    showdown: 'Jaegervans',
     picture: '/images/teams/thanabros.png',
   },
   seanboyq: {
     name: 'Sean',
-    team: '#unban mega muk',
+    team: 'Rayquaza Jordans',
     pokemon: teams.seanboyq,
     discord: 'seanboyq',
     showdown: 'SeanBoyQ',
     picture: '/images/teams/seanboyq.png',
   },
-  bigmanbinch: {
-    name: 'Mitch',
-    team: 'Plano Poliwrath',
-    pokemon: teams.bigmanbinch,
-    discord: 'bigmanbinch',
-    showdown: 'Grumpydogman',
-    picture: '/images/teams/bigmanbinch.jpg',
-  },
-  castleflutes: {
-    name: 'Dom',
-    team: '11:59 Hawaiian Standard',
-    pokemon: teams.castleflutes,
+  danknett: {
+    name: 'Jake',
+    team: 'The Thugshadows',
+    pokemon: teams.danknett,
     discord: 'castleflutes',
     showdown: 'johnstaraptor',
     picture: '/images/teams/castleflutes.png',
   },
   beachwatch: {
     name: 'Lars',
-    team: 'Zokeys show(down) - 269 offensive',
+    team: 'El Paso Texas Glooms',
     pokemon: teams.beachwatch,
     discord: 'beachwatch',
     showdown: 'brickneyspears',
@@ -62,7 +54,7 @@ export const teamArray = {
   },
   dtbaggins: {
     name: 'Jon',
-    team: 'Berry Roo',
+    team: 'Fe Legion',
     pokemon: teams.dtbaggins,
     discord: 'dtbaggins',
     showdown: 'DTBaggins',
@@ -78,7 +70,7 @@ export const teamArray = {
   },
   its_jordan: {
     name: 'Jordan',
-    team: 'OMGVAMPIRESARESOKAWAII🧛‍♀️',
+    team: 'OMGVAMPSANDPIPLUPARESOKAWAII🦇',
     pokemon: teams.its_jordan,
     discord: 'its_jordan',
     showdown: 'doomedschultze',
@@ -86,7 +78,7 @@ export const teamArray = {
   },
   ifurgat: {
     name: 'Jakob',
-    team: 'Fuck My Disgusting Chungus Life',
+    team: 'i was just squidding',
     pokemon: teams.ifurgat,
     discord: 'ifurgat',
     showdown: 'ifurgat',
@@ -94,7 +86,7 @@ export const teamArray = {
   },
   resolamxxy: {
     name: 'Max',
-    team: 'Kafka Sunlight 🐱',
+    team: 'Pristine Art 🤤',
     pokemon: teams.resolamxxy,
     discord: 'resolamxxy',
     showdown: 'resolamxxy',
@@ -102,37 +94,26 @@ export const teamArray = {
   },
   tokotoro: {
     name: 'Jackson',
-    team: 'Catpost Co.',
+    team: 'Catpost Corral',
     pokemon: teams.tokotoro,
     discord: 'tokotoro',
     showdown: 't0kotoro',
     picture: '/images/teams/tokotoro.png',
   },
-  aquagtothepast: {
-    name: 'Cooper',
-    team: 'um... gulp!',
-    pokemon: teams.aquagtothepast,
-    discord: 'aquagtothepast',
-    showdown: 'Okidogi',
-    picture: '/images/teams/aquagtothepast.jpg',
-  },
 };
 
 export const teamsArray = [
   {
-    ...teamArray.racer_59,
+    ...teamArray.lupamai,
   },
   {
-    ...teamArray.thanabros,
+    ...teamArray.jaegerpods,
   },
   {
     ...teamArray.seanboyq,
   },
   {
-    ...teamArray.bigmanbinch,
-  },
-  {
-    ...teamArray.castleflutes,
+    ...teamArray.danknett,
   },
   {
     ...teamArray.beachwatch,
@@ -158,26 +139,20 @@ export const teamsArray = [
   {
     ...teamArray.tokotoro,
   },
-  {
-    ...teamArray.aquagtothepast,
-  },
 ];
 
 export function useTeamName(e: string) {
-  if (e == 'racer_59') {
-    const array = teamArray.racer_59;
+  if (e == 'lupamai') {
+    const array = teamArray.lupamai;
     return array.team;
-  } else if (e == 'thanabros') {
-    const array = teamArray.thanabros;
+  } else if (e == 'jaegerpods') {
+    const array = teamArray.jaegerpods;
     return array.team;
   } else if (e == 'seanboyq') {
     const array = teamArray.seanboyq;
     return array.team;
-  } else if (e == 'bigmanbinch') {
-    const array = teamArray.bigmanbinch;
-    return array.team;
-  } else if (e == 'castleflutes') {
-    const array = teamArray.castleflutes;
+  } else if (e == 'danknett') {
+    const array = teamArray.danknett;
     return array.team;
   } else if (e == 'beachwatch') {
     const array = teamArray.beachwatch;
@@ -203,32 +178,23 @@ export function useTeamName(e: string) {
   } else if (e == 'tokotoro') {
     const array = teamArray.tokotoro;
     return array.team;
-  } else if (e == 'aquagtothepast') {
-    const array = teamArray.aquagtothepast;
-    return array.team;
-  } else {
-    const array = teamArray.racer_59;
-    return array.team;
   }
 }
 
 export default function Teams() {
   const e = usePathname().replace('/teams/', '');
   function returnPathTextArray() {
-    if (e == 'racer_59') {
-      const array = teamArray.racer_59;
+    if (e == 'lupamai') {
+      const array = teamArray.lupamai;
       return array.pokemon;
-    } else if (e == 'thanabros') {
-      const array = teamArray.thanabros;
+    } else if (e == 'jaegerpods') {
+      const array = teamArray.jaegerpods;
       return array.pokemon;
     } else if (e == 'seanboyq') {
       const array = teamArray.seanboyq;
       return array.pokemon;
-    } else if (e == 'bigmanbinch') {
-      const array = teamArray.bigmanbinch;
-      return array.pokemon;
-    } else if (e == 'castleflutes') {
-      const array = teamArray.castleflutes;
+    } else if (e == 'danknett') {
+      const array = teamArray.danknett;
       return array.pokemon;
     } else if (e == 'beachwatch') {
       const array = teamArray.beachwatch;
@@ -254,11 +220,8 @@ export default function Teams() {
     } else if (e == 'tokotoro') {
       const array = teamArray.tokotoro;
       return array.pokemon;
-    } else if (e == 'aquagtothepast') {
-      const array = teamArray.aquagtothepast;
-      return array.pokemon;
     } else {
-      const array = teamArray.racer_59;
+      const array = teamArray.tokotoro;
       return array.pokemon;
     }
   }
