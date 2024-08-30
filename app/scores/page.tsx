@@ -3,32 +3,17 @@ import CommonPage, {
   MatchTemplate,
   ScheduleTemplate,
 } from '@/components/commonPage';
-import WeeklySchedule from '@/data/schedule2.json';
+import WeeklySchedule from '@/data/schedule3.json';
 import React from 'react';
 import { Tabs, Tab, Card, CardBody } from '@nextui-org/react';
 
-const WeekArray = [
-  'week-1',
-  'week-2',
-  'week-3',
-  'week-4',
-  'week-5',
-  'week-6',
-  'week-7',
-  'week-8',
-  'playoffs-week-1',
-  'playoffs-week-2',
-  'finals',
-];
+const WeekArray = ['week-1', 'week-2', 'week-3'];
 
 export default function Scores() {
   const [selected, setSelected] = React.useState('week-1');
   return (
     <>
-      <CommonPage
-        header={'Scores'}
-        customClass='schedule-grid'
-      >
+      <CommonPage header={'Scores'} customClass='schedule-grid'>
         <div className='tab-container flex w-full flex-col z-[1000]'>
           <Tabs
             aria-label='Options'
@@ -36,8 +21,7 @@ export default function Scores() {
             selectedKey={selected}
             // @ts-ignore
             onSelectionChange={setSelected}
-            classNames={{ tab: 'tab' }}
-          >
+            classNames={{ tab: 'tab' }}>
             {WeekArray.map((match: string, index: number) => {
               const e = match;
               return (
@@ -52,14 +36,12 @@ export default function Scores() {
                         match.split('-')[1].slice(1).replaceAll('-', ' ')
                       : '') +
                     (match.split('-')[2] ? ' ' + match.split('-')[2] : '')
-                  }
-                >
+                  }>
                   <ScheduleTemplate
                     header={
                       match.charAt(0).toUpperCase() +
                       match.slice(1).replace('-', ' ')
-                    }
-                  >
+                    }>
                     {
                       //  @ts-ignore
                       WeeklySchedule[e]?.map((match, index) => {

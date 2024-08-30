@@ -110,8 +110,8 @@ html {
   font-size: 8rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: #e8f85f;
-  text-shadow: 0 0 15px var(--poison);
+  color: #3dda79;
+  text-shadow: 0 0 15px var(--grass);
 }
 
 .muk-img {
@@ -150,7 +150,7 @@ body.dark {
   --background-icons: rgba(56, 56, 56, 1);
   --background-hovers: rgba(68, 68, 68, 0.75);
   --color-icons: rgba(255, 255, 255, 0.25);
-  --type: var(--ghost);
+  --type: var(--grass);
   /* background-color: var(--background-base); */
   color: var(--color-base);
   background: linear-gradient(
@@ -2455,10 +2455,6 @@ input:invalid {
 .standings-container {
   --playoff-cutoff: 1.5rem;
   position: relative;
-}
-
-.standings-container :nth-child(9) {
-  margin-bottom: var(--playoff-cutoff);
 }
 
 :root {

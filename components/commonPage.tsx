@@ -70,8 +70,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
       className='match-container'
       data-score1={match?.score.charAt(0)}
       data-score2={match?.score.charAt(2)}
-      data-played={match?.score !== '0-0' ? 'true' : 'false'}
-    >
+      data-played={match?.score !== '0-0' ? 'true' : 'false'}>
       {match?.score !== '0-0' ? (
         <>
           <div className='match-player-container'>
@@ -81,8 +80,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
                 src={team1.picture}
                 alt={`${team1.discord}'s Team Picture`}
                 height={100}
-                width={100}
-              ></Image>
+                width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team1.team}</div>
                 <div className='match-player-name'>{team1.discord}</div>
@@ -99,8 +97,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
                 src={team2.picture}
                 alt={`${team2.discord}'s Team Picture`}
                 height={100}
-                width={100}
-              ></Image>
+                width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team2.team}</div>
                 <div className='match-player-name'>{team2.discord}</div>
@@ -120,8 +117,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
                 src={team1.picture}
                 alt={`${team1.discord}'s Team Picture`}
                 height={100}
-                width={100}
-              ></Image>
+                width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team1.team}</div>
                 <div className='match-player-name'>{team1.discord}</div>
@@ -135,8 +131,7 @@ export function MatchTemplate({ match, index }: ViewProps) {
                 src={team2.picture}
                 alt={`${team2.discord}'s Team Picture`}
                 height={100}
-                width={100}
-              ></Image>
+                width={100}></Image>
               <div className='match-player-data'>
                 <div className='match-team-name'>{team2.team}</div>
                 <div className='match-player-name'>{team2.discord}</div>

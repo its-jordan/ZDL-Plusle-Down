@@ -140,8 +140,7 @@ export function StatStorage() {
                 // @ts-ignore
                 setStat(stat);
                 router.refresh();
-              }}
-            >
+              }}>
               {returnIcon(stat)}
               {replaceStatName(stat)}
             </button>
@@ -150,8 +149,7 @@ export function StatStorage() {
         <button
           className='stat-filter-button'
           // @ts-ignore
-          onClick={() => setStat('')}
-        >
+          onClick={() => setStat('')}>
           <RiCloseCircleFill />
           Clear Sort
         </button>
@@ -215,16 +213,12 @@ export default function ViewMode({
               src={returnMons(e).sprite}
               alt={`${e} sprite.`}
               width={500}
-              height={500}
-            ></Image>
+              height={500}></Image>
           );
         })}
       </div>
       <Header>
-        <Link
-          className='back-selector'
-          href={'/teams'}
-        >
+        <Link className='back-selector' href={'/teams'}>
           <div className='back-button'>
             <PiArrowLeftBold />
             <div>Teams</div>
@@ -236,8 +230,7 @@ export default function ViewMode({
             src={links?.[3]}
             height={300}
             width={300}
-            alt={'Team Picture'}
-          ></Image>
+            alt={'Team Picture'}></Image>
         ) : (
           <></>
         )}
@@ -252,8 +245,7 @@ export default function ViewMode({
                   data-losses={links[5]}
                   data-percentage={
                     links[4] >= links[5] ? 'positive' : 'negative'
-                  }
-                >
+                  }>
                   {links[4]} - {links[5]}
                 </div>
               </div>
@@ -270,12 +262,12 @@ export default function ViewMode({
                   </div>
                   <div>{links[1]}</div>
                 </div>
-                <div>
+                <Link href={`https://pokemonshowdown.com/users/${links[2]}`}>
                   <div>
                     <MdOutlineCatchingPokemon />
                   </div>
                   <div>{links[2]}</div>
-                </div>
+                </Link>
               </div>
             </>
           ) : (
@@ -289,8 +281,7 @@ export default function ViewMode({
             onClick={() => setView('grid-view')}
             className='view-selector'
             data-current-view={view}
-            aria-label={`Switch to grid view.`}
-          >
+            aria-label={`Switch to grid view.`}>
             <div className='view-button'>
               <PiGridFourLight />
               <PiListNumbersFill />
@@ -302,8 +293,7 @@ export default function ViewMode({
             data-current-position={view}
             aria-label={`switch to list view`}
             // @ts-ignore
-            onClick={() => setView('list-view')}
-          >
+            onClick={() => setView('list-view')}>
             <div className='view-button'>
               <PiGridFourFill />
               <PiListNumbersLight />
@@ -313,16 +303,11 @@ export default function ViewMode({
       </Header>
       <ModeContext.Provider
         // @ts-ignore
-        value={localStore()}
-      >
-        <div
-          className={className}
-          data-sort={getStatStore()}
-        >
+        value={localStore()}>
+        <div className={className} data-sort={getStatStore()}>
           <StatContext.Provider
             // @ts-ignore
-            value={statStore()}
-          >
+            value={statStore()}>
             {children}
           </StatContext.Provider>
         </div>

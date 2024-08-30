@@ -10,7 +10,7 @@ export const teamArray = {
     pokemon: teams['lupa.mai'],
     discord: 'lupa.mai',
     showdown: 'the jazzy ursaring',
-    picture: '/images/teams/racer_59.png',
+    picture: '/images/teams/lupamai.png',
   },
   jaegerpods: {
     name: 'Nick',
@@ -18,7 +18,7 @@ export const teamArray = {
     pokemon: teams.jaegerpods,
     discord: 'jaegerpods',
     showdown: 'Jaegervans',
-    picture: '/images/teams/thanabros.png',
+    picture: '/images/teams/jaegerpods.jpg',
   },
   seanboyq: {
     name: 'Sean',
@@ -34,7 +34,7 @@ export const teamArray = {
     pokemon: teams.danknett,
     discord: 'castleflutes',
     showdown: 'johnstaraptor',
-    picture: '/images/teams/castleflutes.png',
+    picture: '/images/teams/danknett.png',
   },
   beachwatch: {
     name: 'Lars',
@@ -58,7 +58,7 @@ export const teamArray = {
     pokemon: teams.dtbaggins,
     discord: 'dtbaggins',
     showdown: 'DTBaggins',
-    picture: '/images/teams/dtbaggins.jpg',
+    picture: '/images/teams/dtbaggins.png',
   },
   revelreloaded: {
     name: 'Mark',
@@ -98,7 +98,7 @@ export const teamArray = {
     pokemon: teams.tokotoro,
     discord: 'tokotoro',
     showdown: 't0kotoro',
-    picture: '/images/teams/tokotoro.png',
+    picture: '/images/teams/tokotoro.jpg',
   },
 };
 
