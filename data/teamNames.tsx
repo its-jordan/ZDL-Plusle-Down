@@ -32,8 +32,8 @@ export const teamArray = {
     name: 'Jake',
     team: 'The Thugshadows',
     pokemon: teams.danknett,
-    discord: 'castleflutes',
-    showdown: 'johnstaraptor',
+    discord: 'danknett',
+    showdown: 'pweenween',
     picture: '/images/teams/danknett.png',
   },
   beachwatch: {
