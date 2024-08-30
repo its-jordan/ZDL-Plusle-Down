@@ -7,8 +7,8 @@ import GetCurrentTime, { GetCurrentDate } from '@/utils/getdate';
 import Profile from '@/utils/getProfilePic';
 
 export const metadata: Metadata = {
-  title: 'ZDL - Season 2',
-  description: 'Why Mega Muk banned?',
+  title: 'ZDL - Offseason 2',
+  description: 'SeanBoyQ got them Rayquaza Jordans? Oooh he fitted up.',
 };
 
 export default function RootLayout({
