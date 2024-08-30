@@ -13,8 +13,7 @@ const sortedStandings = [...standings].sort(
   (a, b) =>
     winPercentage(b.wins, b.losses) - winPercentage(a.wins, a.losses) ||
     b.wins - a.wins ||
-    a.losses - b.losses ||
-    b.kills - a.kills
+    a.losses - b.losses
 );
 const sortedStandingsReverse = [...standings].sort((a, b) => a.wins - b.wins);
 
@@ -27,10 +26,7 @@ const gamesBehind = (wins: number, maxWins: number) => {
 export default function Standings() {
   return (
     <CommonPage header='Standings'>
-      <div
-        className='standings-container'
-        role='treegrid'
-      >
+      <div className='standings-container' role='treegrid'>
         <div className='standings-header'>
           <div className='standings-header-content'></div>
           <div className='standings-header-content'>Name</div>
@@ -38,7 +34,6 @@ export default function Standings() {
           <div className='standings-header-content'>Losses</div>
           <div className='standings-header-content'>Win Pct.</div>
           <div className='standings-header-content'>GB</div>
-          {/* <div className='standings-header-content'>Kills</div> */}
         </div>
         {sortedStandings.map((data, index) => {
           return (
@@ -46,18 +41,11 @@ export default function Standings() {
               href={`/teams/${data.name}`}
               className='standings-data'
               data-type={data.primaryType}
-              key={index}
-            >
-              <div
-                className='standings-data-content'
-                data-type='position'
-              >
+              key={index}>
+              <div className='standings-data-content' data-type='position'>
                 {index + 1}
               </div>
-              <div
-                className='standings-data-content'
-                data-type='name'
-              >
+              <div className='standings-data-content' data-type='name'>
                 <div className='standings-data-teamname'>
                   <div>{data.teamName} </div>
                   {data.eliminated ? (
@@ -70,16 +58,10 @@ export default function Standings() {
                   {replaceUsername(data.name)}
                 </div>
               </div>
-              <div
-                className='standings-data-content'
-                data-type='wins'
-              >
+              <div className='standings-data-content' data-type='wins'>
                 {data.wins}
               </div>
-              <div
-                className='standings-data-content'
-                data-type='losses'
-              >
+              <div className='standings-data-content' data-type='losses'>
                 {data.losses}
               </div>
               <div className='standings-data-winpct'>
@@ -94,9 +76,6 @@ export default function Standings() {
               <div className='standings-data-gb'>
                 {maxWins ? gamesBehind(data.wins, maxWins) : ''}
               </div>
-              {/* <div className='standings-data-kills'>
-                {data.kills}
-              </div> */}
             </Link>
           );
         })}
