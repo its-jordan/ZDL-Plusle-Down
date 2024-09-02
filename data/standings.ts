@@ -19,20 +19,26 @@ export function matches(currentWeek: string) {
 export function allResults(filter: string) {
   const week1 = matches('week-1');
   const week2 = matches('week-2');
-  // const week3 = matches('week-3');
-  // const week4 = matches('week-4');
+  const week3 = matches('week-3');
+  const week4 = matches('week-4');
   // const week5 = matches('week-5');
   // const week6 = matches('week-6');
   // const week7 = matches('week-7');
   // const week8 = matches('week-8');
 
-  const winnerArray = week1.winners.concat(week2.winners);
+  const winnerArray = week1.winners
+    .concat(week2.winners)
+    .concat(week3.winners)
+    .concat(week4.winners);
 
   const winnerFilter: number = winnerArray.filter(
     (ele: string) => ele == filter
   ).length;
 
-  const losersArray = week1.losers.concat(week2.losers);
+  const losersArray = week1.losers
+    .concat(week2.losers)
+    .concat(week3.losers)
+    .concat(week4.losers);
 
   const loserFilter: number = losersArray.filter(
     (ele: string) => ele == filter
@@ -46,11 +52,7 @@ export function standingConstructor(
   type: string,
   eliminated: boolean
 ) {
-  enum forfeits {
-    racer_56 = 0,
-    its_jordan = 0,
-    ifurgat = 0,
-  }
+  enum forfeits {}
   const index = teamsArray.findIndex((value) => value.name == name).toString();
   console.log(index);
   return {

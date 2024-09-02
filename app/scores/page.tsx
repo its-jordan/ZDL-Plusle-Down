@@ -7,7 +7,7 @@ import WeeklySchedule from '@/data/schedule3.json';
 import React from 'react';
 import { Tabs, Tab, Card, CardBody } from '@nextui-org/react';
 
-const WeekArray = ['week-1', 'week-2', 'week-3'];
+const WeekArray = ['week-1', 'week-2', 'week-3', 'week-4'];
 
 export default function Scores() {
   const [selected, setSelected] = React.useState('week-1');
