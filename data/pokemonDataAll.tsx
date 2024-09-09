@@ -30037,7 +30037,7 @@ export default function returnMons(e: string) {
       abilities: ['damp', 'water-absorb', 'unaware'],
       id: 10179,
       sprite:
-        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10179.png',
+        'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png',
       types: ['water', 'ground'],
       weaknesses: [
         'electric: 0x',
