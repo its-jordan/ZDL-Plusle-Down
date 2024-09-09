@@ -1,7 +1,7 @@
 import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
 import { getTypeWeaknesses } from '../data/pokemon-types/index';
-import returnMons from '@/data/pokemonDataAll';
+import returnMons from '@/data/pokemonDataO2';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 import { MdCatchingPokemon } from 'react-icons/md';
 import Image from 'next/image';
