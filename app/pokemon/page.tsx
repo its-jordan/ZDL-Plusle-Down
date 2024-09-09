@@ -1,13 +1,13 @@
 'use client';
 
 import ViewMode from '@/components/viewButtonAll';
-import allmons from '@/data/allmons3.json';
+import allMons from '@/functions/combineArrays';
 import ReturnMon from '@/components/getPokemon';
 
 export default function AllMons() {
   return (
     <ViewMode header={`All Pokemon`}>
-      {allmons.map((pokemon: any, index: number) => {
+      {allMons.map((pokemon: any, index: number) => {
         return (
           <ReturnMon
             pokemon={pokemon}

@@ -45,7 +45,7 @@ export function useView() {
     typeof window !== 'undefined' ? localStorage.view : 'list-view'
   );
 
-  const pokemonView = view === 'list-view' ? 'list-view' : 'grid-view';
+  const pokemonView = view === 'grid-view' ? 'grid-view' : 'list-view';
 
   useEffect(() => {
     const body = window.document.body;

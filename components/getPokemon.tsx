@@ -1,7 +1,7 @@
 import { GoKebabHorizontal } from 'react-icons/go';
 import Link from 'next/link';
 import { getTypeWeaknesses } from '../data/pokemon-types/index';
-import returnMons from '@/data/pokemonDataO2';
+import returnMons from '@/data/pokemonDataAll';
 import { PiArrowUpRightBold } from 'react-icons/pi';
 import { MdCatchingPokemon } from 'react-icons/md';
 import Image from 'next/image';
@@ -348,7 +348,7 @@ export default function ReturnMon({
               href={`https://www.smogon.com/dex/sv/abilities/${data}`}
               className='pokemon-ability'
               key={index}>
-              {replaceAbilityName(data)}
+              {data ? replaceAbilityName(data) : <></>}
             </Link>
           );
         })}
